@@ -5,7 +5,8 @@ uses
   frameHydraCustom in 'frameHydraCustom.pas' {HydraCustomFrame: TFrame},
   formHydra in 'formHydra.pas' {HydraForm},
   unitHydraUtil in 'unitHydraUtil.pas',
-  frameHydraHome in 'frameHydraHome.pas' {HydraHomeFrame: TFrame};
+  frameHydraHome in 'frameHydraHome.pas' {HydraHomeFrame: TFrame},
+  frameHydraTest in 'frameHydraTest.pas' {HydraTestFrame: TFrame};
 
 {$R *.res}
 

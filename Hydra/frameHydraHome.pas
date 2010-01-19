@@ -20,9 +20,11 @@ type
     cxButtonEdit1: TcxButtonEdit;
     cxButton1: TcxButton;
   private
-    { Private declarations }
+
+  protected
+    function GetComponentTip(Sender: TObject): String; override;
   public
-    { Public declarations }
+
   end;
 
 var
@@ -30,6 +32,19 @@ var
 
 implementation
 
+uses
+  xProcs;
+
 {$R *.dfm}
+
+{ THydraHomeFrame }
+
+function THydraHomeFrame.
+GetComponentTip(Sender: TObject): String;
+begin
+  Result := '欢迎来到Hydra系统。' + CRLF + CRLF +
+    '请输入您的账号和密码，然后点击确定。' + CRLF + CRLF +
+    '注意，账号可以在您的会员卡的背面找到，密码请向工作人员索取。';
+end;
 
 end.

@@ -4,4 +4,7 @@ object HydraCustomFrame: THydraCustomFrame
   Width = 435
   Height = 266
   Align = alClient
+  TabOrder = 0
+  OnEnter = FrameEnter
+  OnExit = FrameExit
 end

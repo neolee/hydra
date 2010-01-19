@@ -1,7 +1,7 @@
 object HydraForm: THydraForm
-  Left = 431
-  Top = 207
-  Width = 690
+  Left = 329
+  Top = 195
+  Width = 768
   Height = 581
   Caption = 'Hydra Testbed'
   Color = clBtnFace
@@ -3135,7 +3135,7 @@ object HydraForm: THydraForm
   object pnlTop: TPanel
     Left = 0
     Top = 0
-    Width = 674
+    Width = 752
     Height = 77
     Align = alTop
     BevelOuter = bvNone
@@ -3168,51 +3168,36 @@ object HydraForm: THydraForm
   object pcMain: TcxPageControl
     Left = 0
     Top = 77
-    Width = 674
+    Width = 567
     Height = 466
-    ActivePage = sheetStart
     Align = alClient
-    Focusable = False
+    Options = [pcoAlwaysShowGoDialogButton, pcoCloseButton, pcoGradient, pcoGradientClientArea, pcoRedrawOnResize]
     TabOrder = 0
     ClientRectBottom = 462
     ClientRectLeft = 4
-    ClientRectRight = 670
-    ClientRectTop = 24
-    object sheetStart: TcxTabSheet
-      Caption = 'Start'
-      ImageIndex = 0
-      object lblUserName: TcxLabel
-        Left = 20
-        Top = 20
-        Caption = 'User name:'
-        Transparent = True
-      end
-      object edtUserName: TcxTextEdit
-        Left = 20
-        Top = 44
-        TabOrder = 1
-        Width = 121
-      end
-      object lblPassword: TcxLabel
-        Left = 20
-        Top = 76
-        Caption = 'Password:'
-        Transparent = True
-      end
-      object edtPassword: TcxMaskEdit
-        Left = 20
-        Top = 100
-        TabOrder = 3
-        Width = 121
-      end
-      object btnLogin: TcxButton
-        Left = 20
-        Top = 140
-        Width = 75
-        Height = 25
-        Caption = 'Login'
-        TabOrder = 4
-      end
+    ClientRectRight = 563
+    ClientRectTop = 4
+  end
+  object pnlTip: TPanel
+    Left = 567
+    Top = 77
+    Width = 185
+    Height = 466
+    Align = alRight
+    Alignment = taLeftJustify
+    BevelOuter = bvNone
+    TabOrder = 2
+    DesignSize = (
+      185
+      466)
+    object memoTip: TcxMemo
+      Left = 4
+      Top = 20
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Style.Color = clInfoBk
+      TabOrder = 0
+      Height = 442
+      Width = 177
     end
   end
   object skinController: TdxSkinController

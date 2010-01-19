@@ -8,849 +8,859 @@
   resources were bound to the produced executable.
 */
 
-#define cxExtEditConsts_cxSEditRichEditLinkFail 64688
-#define cxExtEditConsts_scxSEditRepositoryRichEditItem 64689
-#define cxExtEditConsts_cxSEditRichEditUndoCaption 64690
-#define cxExtEditConsts_cxSEditRichEditRedoCaption 64691
-#define cxExtEditConsts_cxSEditRichEditCutCaption 64692
-#define cxExtEditConsts_cxSEditRichEditCopyCaption 64693
-#define cxExtEditConsts_cxSEditRichEditPasteCaption 64694
-#define cxExtEditConsts_cxSEditRichEditDeleteCaption 64695
-#define cxExtEditConsts_cxSEditRichEditSelectAllCaption 64696
-#define cxExtEditConsts_cxSEditCheckGroupCaptionStateDelimiter 64704
-#define cxExtEditConsts_cxSEditCheckGroupFilterColumnSeparator 64705
-#define cxExtEditConsts_cxSEditCheckGroupChecked 64706
-#define cxExtEditConsts_cxSEditCheckGroupGrayed 64707
-#define cxExtEditConsts_cxSEditCheckGroupUnchecked 64708
-#define cxExtEditConsts_cxSCheckComboBoxStatesItemsPropertyDlgCaption 64709
-#define cxExtEditConsts_cxSCheckGroupStatesItemsPropertyDlgCaption 64710
-#define cxExtEditConsts_cxSCheckComboBoxEmptySelectionText 64711
-#define cxExtEditConsts_cxSColorComboBoxDefaultDescription 64712
-#define cxExtEditConsts_cxSEditRichEditLibraryError 64713
-#define cxExtEditConsts_cxSEditRichEditLineInsertionError 64714
-#define cxExtEditConsts_cxSEditRichEditLoadFail 64715
-#define cxExtEditConsts_cxSEditRichEditSaveFail 64716
-#define cxExtEditConsts_cxSEditRichEditSelectionSaveFail 64717
-#define cxExtEditConsts_cxSEditRichEditOleInterfaceFail 64718
-#define cxExtEditConsts_cxSEditRichEditCallBackFail 64719
-#define cxPCConsts_scxPCAllowRotateError 64720
-#define cxExtEditConsts_scxSEditRepositoryColorComboBoxItem 64721
-#define cxExtEditConsts_scxSEditRepositoryFontNameComboBoxItem 64722
-#define cxExtEditConsts_scxSEditRepositoryLabelItem 64723
-#define cxExtEditConsts_scxSEditRepositoryProgressBarItem 64724
-#define cxExtEditConsts_scxSEditRepositoryTrackBarItem 64725
-#define cxExtEditConsts_scxSEditRepositorySpinButtonItem 64726
-#define cxExtEditConsts_scxSEditRepositoryCheckComboBox 64727
-#define cxExtEditConsts_scxSEditRepositoryShellComboBoxItem 64728
-#define cxExtEditConsts_scxSEditRepositoryCheckGroupItem 64729
-#define cxExtEditConsts_scxUDAssociated 64730
-#define cxExtEditConsts_scxHotZoneStyleMediaPlayer9 64731
-#define cxExtEditConsts_scxHotZoneStyleMediaPlayer8 64732
-#define cxExtEditConsts_scxHotZoneStyleXPTaskBar 64733
-#define cxExtEditConsts_scxHotZoneStyleSimple 64734
-#define cxExtEditConsts_scxLoadingFonts 64735
-#define cxFilterControlStrs_cxSFilterControlDialogActionApplyCaption 64736
-#define cxFilterControlStrs_cxSFilterControlDialogActionOkCaption 64737
-#define cxFilterControlStrs_cxSFilterControlDialogActionCancelCaption 64738
-#define cxFilterControlStrs_cxSFilterControlDialogFileExt 64739
-#define cxFilterControlStrs_cxSFilterControlDialogFileFilter 64740
-#define cxPCConsts_scxPCImageListIndexError 64741
-#define cxPCConsts_scxPCNoBaseImages 64742
-#define cxPCConsts_scxPCNoRegisteredStyles 64743
-#define cxPCConsts_scxPCPageIndexError 64744
-#define cxPCConsts_scxPCPainterClassError 64745
-#define cxPCConsts_scxPCStandardStyleError 64746
-#define cxPCConsts_scxPCStyleNameError 64747
-#define cxPCConsts_scxPCTabCountEqualsZero 64748
-#define cxPCConsts_scxPCTabIndexError 64749
-#define cxPCConsts_scxPCTabVisibleIndexOutsOfBounds 64750
-#define cxPCConsts_scxPCVisibleTabListEmpty 64751
-#define cxFilterControlStrs_cxSFilterControlNullString 64752
-#define cxFilterControlStrs_cxSFilterErrorBuilding 64753
-#define cxFilterControlStrs_cxSFilterDialogCaption 64754
-#define cxFilterControlStrs_cxSFilterDialogInvalidValue 64755
-#define cxFilterControlStrs_cxSFilterDialogUse 64756
-#define cxFilterControlStrs_cxSFilterDialogSingleCharacter 64757
-#define cxFilterControlStrs_cxSFilterDialogCharactersSeries 64758
-#define cxFilterControlStrs_cxSFilterDialogOperationAnd 64759
-#define cxFilterControlStrs_cxSFilterDialogOperationOr 64760
-#define cxFilterControlStrs_cxSFilterDialogRows 64761
-#define cxFilterControlStrs_cxSFilterControlDialogCaption 64762
-#define cxFilterControlStrs_cxSFilterControlDialogNewFile 64763
-#define cxFilterControlStrs_cxSFilterControlDialogOpenDialogCaption 64764
-#define cxFilterControlStrs_cxSFilterControlDialogSaveDialogCaption 64765
-#define cxFilterControlStrs_cxSFilterControlDialogActionSaveCaption 64766
-#define cxFilterControlStrs_cxSFilterControlDialogActionOpenCaption 64767
-#define cxFilterConsts_cxSFilterBoxAllCaption 64768
-#define cxFilterConsts_cxSFilterBoxCustomCaption 64769
-#define cxFilterConsts_cxSFilterBoxBlanksCaption 64770
-#define cxFilterConsts_cxSFilterBoxNonBlanksCaption 64771
-#define cxFilterControlStrs_cxSFilterBoolOperatorAnd 64772
-#define cxFilterControlStrs_cxSFilterBoolOperatorOr 64773
-#define cxFilterControlStrs_cxSFilterBoolOperatorNotAnd 64774
-#define cxFilterControlStrs_cxSFilterBoolOperatorNotOr 64775
-#define cxFilterControlStrs_cxSFilterRootButtonCaption 64776
-#define cxFilterControlStrs_cxSFilterAddCondition 64777
-#define cxFilterControlStrs_cxSFilterAddGroup 64778
-#define cxFilterControlStrs_cxSFilterRemoveRow 64779
-#define cxFilterControlStrs_cxSFilterClearAll 64780
-#define cxFilterControlStrs_cxSFilterFooterAddCondition 64781
-#define cxFilterControlStrs_cxSFilterGroupCaption 64782
-#define cxFilterControlStrs_cxSFilterRootGroupCaption 64783
-#define cxFilterConsts_cxSFilterOperatorNext30Days 64784
-#define cxFilterConsts_cxSFilterOperatorNextMonth 64785
-#define cxFilterConsts_cxSFilterOperatorNextYear 64786
-#define cxFilterConsts_cxSFilterOperatorFuture 64787
-#define cxFilterConsts_cxSFilterAndCaption 64788
-#define cxFilterConsts_cxSFilterOrCaption 64789
-#define cxFilterConsts_cxSFilterNotCaption 64790
-#define cxFilterConsts_cxSFilterBlankCaption 64791
-#define cxFilterConsts_cxSFilterOperatorIsNull 64792
-#define cxFilterConsts_cxSFilterOperatorIsNotNull 64793
-#define cxFilterConsts_cxSFilterOperatorBeginsWith 64794
-#define cxFilterConsts_cxSFilterOperatorDoesNotBeginWith 64795
-#define cxFilterConsts_cxSFilterOperatorEndsWith 64796
-#define cxFilterConsts_cxSFilterOperatorDoesNotEndWith 64797
-#define cxFilterConsts_cxSFilterOperatorContains 64798
-#define cxFilterConsts_cxSFilterOperatorDoesNotContain 64799
-#define cxFilterConsts_cxSFilterOperatorTomorrow 64800
-#define cxFilterConsts_cxSFilterOperatorLast7Days 64801
-#define cxFilterConsts_cxSFilterOperatorLastWeek 64802
-#define cxFilterConsts_cxSFilterOperatorLast14Days 64803
-#define cxFilterConsts_cxSFilterOperatorLastTwoWeeks 64804
-#define cxFilterConsts_cxSFilterOperatorLast30Days 64805
-#define cxFilterConsts_cxSFilterOperatorLastMonth 64806
-#define cxFilterConsts_cxSFilterOperatorLastYear 64807
-#define cxFilterConsts_cxSFilterOperatorPast 64808
-#define cxFilterConsts_cxSFilterOperatorThisWeek 64809
-#define cxFilterConsts_cxSFilterOperatorThisMonth 64810
-#define cxFilterConsts_cxSFilterOperatorThisYear 64811
-#define cxFilterConsts_cxSFilterOperatorNext7Days 64812
-#define cxFilterConsts_cxSFilterOperatorNextWeek 64813
-#define cxFilterConsts_cxSFilterOperatorNext14Days 64814
-#define cxFilterConsts_cxSFilterOperatorNextTwoWeeks 64815
-#define cxEditConsts_scxMaskEditMaskCollectionFiles 64816
-#define cxEditConsts_cxSSpinEditInvalidNumericValue 64817
-#define cxFilterConsts_cxSFilterOperatorEqual 64818
-#define cxFilterConsts_cxSFilterOperatorNotEqual 64819
-#define cxFilterConsts_cxSFilterOperatorLess 64820
-#define cxFilterConsts_cxSFilterOperatorLessEqual 64821
-#define cxFilterConsts_cxSFilterOperatorGreater 64822
-#define cxFilterConsts_cxSFilterOperatorGreaterEqual 64823
-#define cxFilterConsts_cxSFilterOperatorLike 64824
-#define cxFilterConsts_cxSFilterOperatorNotLike 64825
-#define cxFilterConsts_cxSFilterOperatorBetween 64826
-#define cxFilterConsts_cxSFilterOperatorNotBetween 64827
-#define cxFilterConsts_cxSFilterOperatorInList 64828
-#define cxFilterConsts_cxSFilterOperatorNotInList 64829
-#define cxFilterConsts_cxSFilterOperatorYesterday 64830
-#define cxFilterConsts_cxSFilterOperatorToday 64831
-#define cxEditConsts_scxRegExprTooBigReferenceNumber 64832
-#define cxEditConsts_scxRegExprCantCreateEmptyEnum 64833
-#define cxEditConsts_scxRegExprSubrangeOrder 64834
-#define cxEditConsts_scxRegExprHexNumberExpected0 64835
-#define cxEditConsts_scxRegExprHexNumberExpected 64836
-#define cxEditConsts_scxRegExprMissing 64837
-#define cxEditConsts_scxRegExprUnnecessary 64838
-#define cxEditConsts_scxRegExprIncorrectSpace 64839
-#define cxEditConsts_scxRegExprNotCompiled 64840
-#define cxEditConsts_scxRegExprIncorrectParameterQuantifier 64841
-#define cxEditConsts_scxRegExprCantUseParameterQuantifier 64842
-#define cxEditConsts_scxMaskEditRegExprError 64843
-#define cxEditConsts_scxMaskEditInvalidEditValue 64844
-#define cxEditConsts_scxMaskEditNoMask 64845
-#define cxEditConsts_scxMaskEditIllegalFileFormat 64846
-#define cxEditConsts_scxMaskEditEmptyMaskCollectionFile 64847
-#define cxEditConsts_scxSEditRepositorySpinItem 64848
-#define cxEditConsts_scxSEditRepositoryRadioGroupItem 64849
-#define cxEditConsts_scxSEditRepositoryTextItem 64850
-#define cxEditConsts_scxSEditRepositoryTimeItem 64851
-#define cxEditConsts_scxRegExprLine 64852
-#define cxEditConsts_scxRegExprChar 64853
-#define cxEditConsts_scxRegExprNotAssignedSourceStream 64854
-#define cxEditConsts_scxRegExprEmptySourceStream 64855
-#define cxEditConsts_scxRegExprCantUsePlusQuantifier 64856
-#define cxEditConsts_scxRegExprCantUseStarQuantifier 64857
-#define cxEditConsts_scxRegExprCantCreateEmptyAlt 64858
-#define cxEditConsts_scxRegExprCantCreateEmptyBlock 64859
-#define cxEditConsts_scxRegExprIllegalSymbol 64860
-#define cxEditConsts_scxRegExprIllegalQuantifier 64861
-#define cxEditConsts_scxRegExprNotSupportQuantifier 64862
-#define cxEditConsts_scxRegExprIllegalIntegerValue 64863
-#define cxEditConsts_cxNavigator_DeleteRecordQuestion 64864
-#define cxEditConsts_scxSEditRepositoryBlobItem 64865
-#define cxEditConsts_scxSEditRepositoryButtonItem 64866
-#define cxEditConsts_scxSEditRepositoryCalcItem 64867
-#define cxEditConsts_scxSEditRepositoryCheckBoxItem 64868
-#define cxEditConsts_scxSEditRepositoryComboBoxItem 64869
-#define cxEditConsts_scxSEditRepositoryCurrencyItem 64870
-#define cxEditConsts_scxSEditRepositoryDateItem 64871
-#define cxEditConsts_scxSEditRepositoryHyperLinkItem 64872
-#define cxEditConsts_scxSEditRepositoryImageComboBoxItem 64873
-#define cxEditConsts_scxSEditRepositoryImageItem 64874
-#define cxEditConsts_scxSEditRepositoryLookupComboBoxItem 64875
-#define cxEditConsts_scxSEditRepositoryMaskItem 64876
-#define cxEditConsts_scxSEditRepositoryMemoItem 64877
-#define cxEditConsts_scxSEditRepositoryMRUItem 64878
-#define cxEditConsts_scxSEditRepositoryPopupItem 64879
-#define cxEditConsts_cxNavigatorHint_First 64880
-#define cxEditConsts_cxNavigatorHint_Prior 64881
-#define cxEditConsts_cxNavigatorHint_PriorPage 64882
-#define cxEditConsts_cxNavigatorHint_Next 64883
-#define cxEditConsts_cxNavigatorHint_NextPage 64884
-#define cxEditConsts_cxNavigatorHint_Last 64885
-#define cxEditConsts_cxNavigatorHint_Insert 64886
-#define cxEditConsts_cxNavigatorHint_Append 64887
-#define cxEditConsts_cxNavigatorHint_Delete 64888
-#define cxEditConsts_cxNavigatorHint_Edit 64889
-#define cxEditConsts_cxNavigatorHint_Post 64890
-#define cxEditConsts_cxNavigatorHint_Cancel 64891
-#define cxEditConsts_cxNavigatorHint_Refresh 64892
-#define cxEditConsts_cxNavigatorHint_SaveBookmark 64893
-#define cxEditConsts_cxNavigatorHint_GotoBookmark 64894
-#define cxEditConsts_cxNavigatorHint_Filter 64895
-#define cxEditConsts_cxSBlobPicture 64896
-#define cxEditConsts_cxSBlobPictureEmpty 64897
-#define cxEditConsts_cxSMenuItemCaptionCut 64898
-#define cxEditConsts_cxSMenuItemCaptionCopy 64899
-#define cxEditConsts_cxSMenuItemCaptionPaste 64900
-#define cxEditConsts_cxSMenuItemCaptionDelete 64901
-#define cxEditConsts_cxSMenuItemCaptionLoad 64902
-#define cxEditConsts_cxSMenuItemCaptionSave 64903
-#define cxEditConsts_cxSDatePopupClear 64904
-#define cxEditConsts_cxSDatePopupNow 64905
-#define cxEditConsts_cxSDatePopupOK 64906
-#define cxEditConsts_cxSDatePopupToday 64907
-#define cxEditConsts_cxSDateError 64908
-#define cxEditConsts_scxSCalcError 64909
-#define cxEditConsts_scxSHyperLinkPrefix 64910
-#define cxEditConsts_scxSHyperLinkDoubleSlash 64911
-#define cxEditConsts_cxSEditPopupCircularReferencingError 64912
-#define cxEditConsts_cxSEditPostError 64913
-#define cxEditConsts_cxSEditTimeConvertError 64914
-#define cxEditConsts_cxSEditValidateErrorText 64915
-#define cxEditConsts_cxSEditValueOutOfBounds 64916
-#define cxEditConsts_cxSEditCheckBoxChecked 64917
-#define cxEditConsts_cxSEditCheckBoxGrayed 64918
-#define cxEditConsts_cxSEditCheckBoxUnchecked 64919
-#define cxEditConsts_cxSRadioGroupDefaultCaption 64920
-#define cxEditConsts_cxSTextTrue 64921
-#define cxEditConsts_cxSTextFalse 64922
-#define cxEditConsts_cxSBlobButtonOK 64923
-#define cxEditConsts_cxSBlobButtonCancel 64924
-#define cxEditConsts_cxSBlobButtonClose 64925
-#define cxEditConsts_cxSBlobMemo 64926
-#define cxEditConsts_cxSBlobMemoEmpty 64927
-#define cxLibraryStrs_cxSDateSaturday 64928
-#define cxLibraryStrs_cxSDateFirst 64929
-#define cxLibraryStrs_cxSDateSecond 64930
-#define cxLibraryStrs_cxSDateThird 64931
-#define cxLibraryStrs_cxSDateFourth 64932
-#define cxLibraryStrs_cxSDateFifth 64933
-#define cxLibraryStrs_cxSDateSixth 64934
-#define cxLibraryStrs_cxSDateSeventh 64935
-#define cxLibraryStrs_cxSDateBOM 64936
-#define cxLibraryStrs_cxSDateEOM 64937
-#define cxLibraryStrs_cxSDateNow 64938
-#define cxEditConsts_cxSEditButtonCancel 64939
-#define cxEditConsts_cxSEditButtonOK 64940
-#define cxEditConsts_cxSEditDateConvertError 64941
-#define cxEditConsts_cxSEditInvalidRepositoryItem 64942
-#define cxEditConsts_cxSEditNumericValueConvertError 64943
-#define cxDataConsts_cxSDBDetailFilterControllerNotFound 64944
-#define cxDataConsts_cxSDBNotInGridMode 64945
-#define cxDataConsts_cxSDBKeyFieldNotFound 64946
-#define cxLibraryStrs_scxCantCreateRegistryKey 64947
-#define cxLibraryStrs_scxCantOpenRegistryKey 64948
-#define cxLibraryStrs_scxErrorStoreObject 64949
-#define cxLibraryStrs_scxConverterCantCreateStyleRepository 64950
-#define cxLibraryStrs_cxSDateToday 64951
-#define cxLibraryStrs_cxSDateYesterday 64952
-#define cxLibraryStrs_cxSDateTomorrow 64953
-#define cxLibraryStrs_cxSDateSunday 64954
-#define cxLibraryStrs_cxSDateMonday 64955
-#define cxLibraryStrs_cxSDateTuesday 64956
-#define cxLibraryStrs_cxSDateWednesday 64957
-#define cxLibraryStrs_cxSDateThursday 64958
-#define cxLibraryStrs_cxSDateFriday 64959
-#define dxSkinsStrs_sdxRight 64960
-#define dxSkinsStrs_sdxBottom 64961
-#define DBConsts_SBcdOverflow 64962
-#define DBConsts_SInvalidBcdValue 64963
-#define DBConsts_SInvalidFormatType 64964
-#define DBConsts_SCouldNotParseTimeStamp 64965
-#define DBConsts_SInvalidSqlTimeStamp 64966
-#define cxDataConsts_cxSDataReadError 64967
-#define cxDataConsts_cxSDataWriteError 64968
-#define cxDataConsts_cxSDataItemExistError 64969
-#define cxDataConsts_cxSDataRecordIndexError 64970
-#define cxDataConsts_cxSDataItemIndexError 64971
-#define cxDataConsts_cxSDataProviderModeError 64972
-#define cxDataConsts_cxSDataInvalidStreamFormat 64973
-#define cxDataConsts_cxSDataRowIndexError 64974
-#define cxDataConsts_cxSDataCustomDataSourceInvalidCompare 64975
-#define dxSkinsStrs_sdxFormFrameRight 64976
-#define dxSkinsStrs_sdxFormFrameBottom 64977
-#define dxSkinsStrs_sdxSmallFormFrameLeft 64978
-#define dxSkinsStrs_sdxSmallFormCaption 64979
-#define dxSkinsStrs_sdxSmallFormFrameRight 64980
-#define dxSkinsStrs_sdxSmallFormFrameBottom 64981
-#define dxSkinsStrs_sdxFormButtonClose 64982
-#define dxSkinsStrs_sdxFormButtonHelp 64983
-#define dxSkinsStrs_sdxFormButtonMaximize 64984
-#define dxSkinsStrs_sdxFormButtonMinimize 64985
-#define dxSkinsStrs_sdxFormButtonRestore 64986
-#define dxSkinsStrs_sdxSmallFormButtonClose 64987
-#define dxSkinsStrs_sdxStatusBar 64988
-#define dxSkinsStrs_sdxBorders 64989
-#define dxSkinsStrs_sdxLeft 64990
-#define dxSkinsStrs_sdxTop 64991
-#define dxSkinsStrs_sdxHeader 64992
-#define dxSkinsStrs_sdxHeaderLeft 64993
-#define dxSkinsStrs_sdxHeaderRight 64994
-#define dxSkinsStrs_sdxHeaderSpecial 64995
-#define dxSkinsStrs_sdxIndicatorImages 64996
-#define dxSkinsStrs_sdxGridFixedLine 64997
-#define dxSkinsStrs_sdxPlusMinus 64998
-#define dxSkinsStrs_sdxPlusMinusEx 64999
-#define dxSkinsStrs_sdxVGridBandLine 65000
-#define dxSkinsStrs_sdxVGridLine 65001
-#define dxSkinsStrs_sdxVGridRow 65002
-#define dxSkinsStrs_sdxVGridRowHeader 65003
-#define dxSkinsStrs_sdxTextShadowColor 65004
-#define dxSkinsStrs_sdxFormFrameLeft 65005
-#define dxSkinsStrs_sdxFormCaption 65006
-#define dxSkinsStrs_sdxFormContent 65007
-#define dxSkinsStrs_sdxPageControlVert 65008
-#define dxSkinsStrs_sdxHeaderDownGrow 65009
-#define dxSkinsStrs_sdxRowIndentFar 65010
-#define dxSkinsStrs_sdxRowIndentNear 65011
-#define dxSkinsStrs_sdxSelectedHeaderDownGrow 65012
-#define dxSkinsStrs_sdxSelectedHeaderHGrow 65013
-#define dxSkinsStrs_sdxSelectedHeaderUpGrow 65014
-#define dxSkinsStrs_sdxCardSeparator 65015
-#define dxSkinsStrs_sdxFilterButton 65016
-#define dxSkinsStrs_sdxFilterButtonActive 65017
-#define dxSkinsStrs_sdxFilterPanel 65018
-#define dxSkinsStrs_sdxFooterCell 65019
-#define dxSkinsStrs_sdxFooterPanel 65020
-#define dxSkinsStrs_sdxGridLine 65021
-#define dxSkinsStrs_sdxGroupByBox 65022
-#define dxSkinsStrs_sdxGroupRow 65023
-#define dxSkinsStrs_sdxScreenTipTitleItem 65024
-#define dxSkinsStrs_sdxScreenTipWindow 65025
-#define dxSkinsStrs_sdxTrackBarThumb 65026
-#define dxSkinsStrs_sdxTrackBarThumbBoth 65027
-#define dxSkinsStrs_sdxTrackBarThumbUp 65028
-#define dxSkinsStrs_sdxTrackBarThumbVert 65029
-#define dxSkinsStrs_sdxTrackBarThumbVertBoth 65030
-#define dxSkinsStrs_sdxTrackBarThumbVertUp 65031
-#define dxSkinsStrs_sdxTrackBarTrack 65032
-#define dxSkinsStrs_sdxTrackBarTrackVert 65033
-#define dxSkinsStrs_sdxPageControlHeaderBottom 65034
-#define dxSkinsStrs_sdxPageControlHeaderLeft 65035
-#define dxSkinsStrs_sdxPageControlHeaderRight 65036
-#define dxSkinsStrs_sdxPageControlHeaderTop 65037
-#define dxSkinsStrs_sdxPageControlHorz 65038
-#define dxSkinsStrs_sdxPageControlPane 65039
-#define dxSkinsStrs_sdxNavigatorGlyphsVert 65040
-#define dxSkinsStrs_sdxProgressBorder 65041
-#define dxSkinsStrs_sdxProgressBorderVert 65042
-#define dxSkinsStrs_sdxProgressChunk 65043
-#define dxSkinsStrs_sdxProgressChunkVert 65044
-#define dxSkinsStrs_sdxRadioGroup 65045
-#define dxSkinsStrs_sdxScrollButton 65046
-#define dxSkinsStrs_sdxScrollContentHorz 65047
-#define dxSkinsStrs_sdxScrollContentVert 65048
-#define dxSkinsStrs_sdxScrollThumbButtonHorz 65049
-#define dxSkinsStrs_sdxScrollThumbButtonVert 65050
-#define dxSkinsStrs_sdxSizeGrip 65051
-#define dxSkinsStrs_sdxSplitterHorz 65052
-#define dxSkinsStrs_sdxSplitterVert 65053
-#define dxSkinsStrs_sdxScreenTipItem 65054
-#define dxSkinsStrs_sdxScreenTipSeparator 65055
-#define dxSkinsStrs_sdxDockCtrlWindowGlyphs 65056
-#define dxSkinsStrs_sdxGroupPanel 65057
-#define dxSkinsStrs_sdxGroupPanelBottom 65058
-#define dxSkinsStrs_sdxGroupPanelCaptionBottom 65059
-#define dxSkinsStrs_sdxGroupPanelCaptionLeft 65060
-#define dxSkinsStrs_sdxGroupPanelCaptionRight 65061
-#define dxSkinsStrs_sdxGroupPanelCaptionTop 65062
-#define dxSkinsStrs_sdxGroupPanelLeft 65063
-#define dxSkinsStrs_sdxGroupPanelNoBorder 65064
-#define dxSkinsStrs_sdxGroupPanelRight 65065
-#define dxSkinsStrs_sdxGroupPanelTop 65066
-#define dxSkinsStrs_sdxButton 65067
-#define dxSkinsStrs_sdxCheckbox 65068
-#define dxSkinsStrs_sdxClock 65069
-#define dxSkinsStrs_sdxClockGlass 65070
-#define dxSkinsStrs_sdxNavigatorGlyphs 65071
-#define dxSkinsStrs_sdxSchedulerTimeRuler 65072
-#define dxSkinsStrs_sdxDCActiveTabHeaderDownGrow 65073
-#define dxSkinsStrs_sdxDCActiveTabHeaderHGrow 65074
-#define dxSkinsStrs_sdxDCActiveTabHeaderUpGrow 65075
-#define dxSkinsStrs_sdxDockCtrlAutoHideBar 65076
-#define dxSkinsStrs_sdxDockCtrlAutoHideBarBottom 65077
-#define dxSkinsStrs_sdxDockCtrlAutoHideBarLeft 65078
-#define dxSkinsStrs_sdxDockCtrlAutoHideBarRight 65079
-#define dxSkinsStrs_sdxDockCtrlBorder 65080
-#define dxSkinsStrs_sdxDockCtrlCaption 65081
-#define dxSkinsStrs_sdxDockCtrlInactiveCaptionTextColor 65082
-#define dxSkinsStrs_sdxDockCtrlTabHeader 65083
-#define dxSkinsStrs_sdxDockCtrlTabHeaderAutoHideBar 65084
-#define dxSkinsStrs_sdxDockCtrlTabHeaderBackground 65085
-#define dxSkinsStrs_sdxDockCtrlTabHeaderLine 65086
-#define dxSkinsStrs_sdxDockCtrlWindowButton 65087
-#define dxSkinsStrs_sdxSchedulerAppointment 65088
-#define dxSkinsStrs_sdxSchedulerAppointmentBorderSize 65089
-#define dxSkinsStrs_sdxSchedulerAppointmentBottomShadow 65090
-#define dxSkinsStrs_sdxSchedulerAppointmentMask 65091
-#define dxSkinsStrs_sdxSchedulerAppointmentRight 65092
-#define dxSkinsStrs_sdxSchedulerAppointmentRightShadow 65093
-#define dxSkinsStrs_sdxSchedulerCurrentTimeIndicator 65094
-#define dxSkinsStrs_sdxSchedulerMoreButton 65095
-#define dxSkinsStrs_sdxSchedulerNavButtonNext 65096
-#define dxSkinsStrs_sdxSchedulerNavButtonNextArrow 65097
-#define dxSkinsStrs_sdxSchedulerNavButtonPrev 65098
-#define dxSkinsStrs_sdxSchedulerNavButtonPrevArrow 65099
-#define dxSkinsStrs_sdxSchedulerTimeGridCurrentTimeIndicator 65100
-#define dxSkinsStrs_sdxSchedulerTimeGridHeader 65101
-#define dxSkinsStrs_sdxSchedulerTimeGridHeaderSelected 65102
-#define dxSkinsStrs_sdxSchedulerTimeLine 65103
-#define dxSkinsStrs_sdxNavPaneFormBorder 65104
-#define dxSkinsStrs_sdxNavPaneFormSizeGrip 65105
-#define dxSkinsStrs_sdxNavPaneGroupButton 65106
-#define dxSkinsStrs_sdxNavPaneGroupButtonSelected 65107
-#define dxSkinsStrs_sdxNavPaneGroupCaption 65108
-#define dxSkinsStrs_sdxNavPaneGroupClient 65109
-#define dxSkinsStrs_sdxNavPaneItem 65110
-#define dxSkinsStrs_sdxNavPaneItemSelected 65111
-#define dxSkinsStrs_sdxNavPaneOverflowPanel 65112
-#define dxSkinsStrs_sdxNavPaneOverflowPanelExpandItem 65113
-#define dxSkinsStrs_sdxNavPaneOverflowPanelItem 65114
-#define dxSkinsStrs_sdxNavPaneScrollDownBtn 65115
-#define dxSkinsStrs_sdxNavPaneScrollUpBtn 65116
-#define dxSkinsStrs_sdxNavPaneSplitter 65117
-#define dxSkinsStrs_sdxSchedulerAllDayArea 65118
-#define dxSkinsStrs_sdxSchedulerAllDayAreaSelected 65119
-#define dxSkinsStrs_sdxRibbonTabGroupRightScroll 65120
-#define dxSkinsStrs_sdxRibbonTabHeaderDownGrowIndent 65121
-#define dxSkinsStrs_sdxRibbonTabHeaderPage 65122
-#define dxSkinsStrs_sdxRibbonTabPanel 65123
-#define dxSkinsStrs_sdxRibbonTabPanelGroupButton 65124
-#define dxSkinsStrs_sdxNavBarBackground 65125
-#define dxSkinsStrs_sdxNavBarGroupClient 65126
-#define dxSkinsStrs_sdxNavBarGroupCloseButton 65127
-#define dxSkinsStrs_sdxNavBarGroupHeader 65128
-#define dxSkinsStrs_sdxNavBarGroupOpenButton 65129
-#define dxSkinsStrs_sdxNavBarItem 65130
-#define dxSkinsStrs_sdxNavPaneCaptionFontSize 65131
-#define dxSkinsStrs_sdxNavPaneCaptionHeight 65132
-#define dxSkinsStrs_sdxNavPaneCollapseButton 65133
-#define dxSkinsStrs_sdxNavPaneCollapsedGroupClient 65134
-#define dxSkinsStrs_sdxNavPaneExpandButton 65135
-#define dxSkinsStrs_sdxRibbonQuickAccessToolbarOffset 65136
-#define dxSkinsStrs_sdxRibbonQuickToolbarAbove 65137
-#define dxSkinsStrs_sdxRibbonQuickToolbarBelow 65138
-#define dxSkinsStrs_sdxRibbonQuickToolbarButtonGlyph 65139
-#define dxSkinsStrs_sdxRibbonQuickToolbarDropDown 65140
-#define dxSkinsStrs_sdxRibbonQuickToolbarGlyph 65141
-#define dxSkinsStrs_sdxRibbonQuickToolbarInCaption 65142
-#define dxSkinsStrs_sdxRibbonSmallButton 65143
-#define dxSkinsStrs_sdxRibbonSplitButtonLeft 65144
-#define dxSkinsStrs_sdxRibbonSplitButtonRight 65145
-#define dxSkinsStrs_sdxRibbonStatusBarBackground 65146
-#define dxSkinsStrs_sdxRibbonStatusBarButton 65147
-#define dxSkinsStrs_sdxRibbonStatusBarSeparator 65148
-#define dxSkinsStrs_sdxRibbonTabGroup 65149
-#define dxSkinsStrs_sdxRibbonTabGroupHeader 65150
-#define dxSkinsStrs_sdxRibbonTabGroupLeftScroll 65151
-#define dxSkinsStrs_sdxRibbonFormFrameLeft 65152
-#define dxSkinsStrs_sdxRibbonFormFrameRight 65153
-#define dxSkinsStrs_sdxRibbonGalleryBackground 65154
-#define dxSkinsStrs_sdxRibbonGalleryButtonDown 65155
-#define dxSkinsStrs_sdxRibbonGalleryButtonDropDown 65156
-#define dxSkinsStrs_sdxRibbonGalleryButtonUp 65157
-#define dxSkinsStrs_sdxRibbonGalleryGroupCaption 65158
-#define dxSkinsStrs_sdxRibbonGalleryPane 65159
-#define dxSkinsStrs_sdxRibbonGallerySizeGrips 65160
-#define dxSkinsStrs_sdxRibbonGallerySizingPanel 65161
-#define dxSkinsStrs_sdxRibbonHeaderBackground 65162
-#define dxSkinsStrs_sdxRibbonLargeButton 65163
-#define dxSkinsStrs_sdxRibbonLargeSplitButtonBottom 65164
-#define dxSkinsStrs_sdxRibbonLargeSplitButtonTop 65165
-#define dxSkinsStrs_sdxRibbonQATCustomizeButtonOutsideQAT 65166
-#define dxSkinsStrs_sdxRibbonQATIndentBeforeCustomizeItem 65167
-#define dxSkinsStrs_sdxRibbonAppMenuFooterBackground 65168
-#define dxSkinsStrs_sdxRibbonAppMenuHeaderBackground 65169
-#define dxSkinsStrs_sdxRibbonButtonArrow 65170
-#define dxSkinsStrs_sdxRibbonButtonDisabledText 65171
-#define dxSkinsStrs_sdxRibbonButtonGroup 65172
-#define dxSkinsStrs_sdxRibbonButtonGroupButton 65173
-#define dxSkinsStrs_sdxRibbonButtonGroupSeparator 65174
-#define dxSkinsStrs_sdxRibbonCollapsedToolBarBackground 65175
-#define dxSkinsStrs_sdxRibbonCollapsedToolBarGlyphBackground 65176
-#define dxSkinsStrs_sdxRibbonDialogFrameBottom 65177
-#define dxSkinsStrs_sdxRibbonDialogFrameLeft 65178
-#define dxSkinsStrs_sdxRibbonDialogFrameRight 65179
-#define dxSkinsStrs_sdxRibbonDocumentNameTextColor 65180
-#define dxSkinsStrs_sdxRibbonExtraPaneColor 65181
-#define dxSkinsStrs_sdxRibbonFormBottom 65182
-#define dxSkinsStrs_sdxRibbonFormCaption 65183
-#define dxSkinsStrs_sdxBarsPopupMenu 65184
-#define dxSkinsStrs_sdxBarsPopupMenuCheck 65185
-#define dxSkinsStrs_sdxBarsPopupMenuExpandButton 65186
-#define dxSkinsStrs_sdxBarsPopupMenuLinkSelected 65187
-#define dxSkinsStrs_sdxBarsPopupMenuSeparator 65188
-#define dxSkinsStrs_sdxBarsPopupMenuSideStrip 65189
-#define dxSkinsStrs_sdxBarsPopupMenuSideStripNonRecent 65190
-#define dxSkinsStrs_sdxBarsPopupMenuDropDownButtonLabel 65191
-#define dxSkinsStrs_sdxBarsPopupMenuDropDownButtonArrow 65192
-#define dxSkinsStrs_sdxTextColorNormal 65193
-#define dxSkinsStrs_sdxTextColorDisabled 65194
-#define dxSkinsStrs_sdxTextColorHot 65195
-#define dxSkinsStrs_sdxTextColorSelected 65196
-#define dxSkinsStrs_sdxTextInactiveColor 65197
-#define dxSkinsStrs_sdxRibbonAppButtonRightIndent 65198
-#define dxSkinsStrs_sdxRibbonApplicationButton 65199
-#define dxSkinsStrs_sdxBarsBarCustomize 65200
-#define dxSkinsStrs_sdxBarsBarCustomizeVertical 65201
-#define dxSkinsStrs_sdxBarsBarFinger 65202
-#define dxSkinsStrs_sdxBarsBarFingerVertical 65203
-#define dxSkinsStrs_sdxBarsBarSeparator 65204
-#define dxSkinsStrs_sdxBarsBarVertical 65205
-#define dxSkinsStrs_sdxBarsBarVerticalSeparator 65206
-#define dxSkinsStrs_sdxBarsDock 65207
-#define dxSkinsStrs_sdxBarsFloatBar 65208
-#define dxSkinsStrs_sdxBarsLinkStatic 65209
-#define dxSkinsStrs_sdxBarsLinkSelected 65210
-#define dxSkinsStrs_sdxBarsMainMenu 65211
-#define dxSkinsStrs_sdxBarsMainMenuCustomize 65212
-#define dxSkinsStrs_sdxBarsMainMenuDrag 65213
-#define dxSkinsStrs_sdxBarsMainMenuLinkSelected 65214
-#define dxSkinsStrs_sdxBarsMainMenuVertical 65215
-#define dxSkinsStrs_sdxSkinGroupForm 65216
-#define dxSkinsStrs_sdxSkinGroupGrid 65217
-#define dxSkinsStrs_sdxSkinGroupNavBar 65218
-#define dxSkinsStrs_sdxSkinGroupNavPane 65219
-#define dxSkinsStrs_sdxSkinGroupRibbon 65220
-#define dxSkinsStrs_sdxSkinGroupScheduler 65221
-#define dxSkinsStrs_sdxSkinGroupTabs 65222
-#define dxSkinsStrs_sdxSkinGroupVGrid 65223
-#define dxSkinsStrs_sdxComboButtonGlyph 65224
-#define dxSkinsStrs_sdxSpinUpGlyph 65225
-#define dxSkinsStrs_sdxSpinDownGlyph 65226
-#define dxSkinsStrs_sdxSpinLeftGlyph 65227
-#define dxSkinsStrs_sdxSpinRightGlyph 65228
-#define dxSkinsStrs_sdxEditorButton 65229
-#define dxSkinsStrs_sdxCloseButton 65230
-#define dxSkinsStrs_sdxBarsBar 65231
-#define dxSkinsStrs_sdxSkinsLayoutControlColor 65232
-#define dxSkinsStrs_sdxSkinsSchedulerNavigatorColor 65233
-#define dxSkinsStrs_sdxSkinsSelectionColor 65234
-#define dxSkinsStrs_sdxSkinsSelectionTextColor 65235
-#define dxSkinsStrs_sdxSkinsTabTextColor 65236
-#define dxSkinsStrs_sdxSkinsTabTextColorActive 65237
-#define dxSkinsStrs_sdxSkinsEditorBackgroundColor 65238
-#define dxSkinsStrs_sdxSkinsEditorBackgroundDisabledColor 65239
-#define dxSkinsStrs_sdxSkinsEditorTextColor 65240
-#define dxSkinsStrs_sdxSkinsEditorTextDisabledColor 65241
-#define dxSkinsStrs_sdxCaptionFontDelta 65242
-#define dxSkinsStrs_sdxSkinsDCHiddenBarTextColor 65243
-#define dxSkinsStrs_sdxSkinGroupBars 65244
-#define dxSkinsStrs_sdxSkinGroupCommon 65245
-#define dxSkinsStrs_sdxSkinGroupDocking 65246
-#define dxSkinsStrs_sdxSkinGroupEditors 65247
-#define WinHelpViewer_hNoKeyword 65248
-#define dxGDIPlusAPI_scxGdipInvalidOperation 65249
-#define dxSkinsStrs_sdxResourceType 65250
-#define dxSkinsStrs_sdxSkinInvalidStreamFormat 65251
-#define dxSkinsStrs_sdxOldFormat 65252
-#define dxSkinsStrs_sdxSchedulerSeparatorColor 65253
-#define dxSkinsStrs_sdxSkinsBarDisabledTextColor 65254
-#define dxSkinsStrs_sdxSkinsButtonDisabledTextColor 65255
-#define dxSkinsStrs_sdxSkinsContainerBorderColor 65256
-#define dxSkinsStrs_sdxSkinsContainerHighlightBorderColor 65257
-#define dxSkinsStrs_sdxSkinsContentColor 65258
-#define dxSkinsStrs_sdxSkinsContentEvenColor 65259
-#define dxSkinsStrs_sdxSkinsContentOddColor 65260
-#define dxSkinsStrs_sdxSkinsContentTextColor 65261
-#define dxSkinsStrs_sdxSkinsHeaderBackgroundColor 65262
-#define dxSkinsStrs_sdxSkinsHeaderBackgroundTextColor 65263
-#define ExtCtrls_clNameHighlight 65264
-#define ExtCtrls_clNameHighlightText 65265
-#define ExtCtrls_clNameInactiveBorder 65266
-#define ExtCtrls_clNameInactiveCaption 65267
-#define ExtCtrls_clNameInactiveCaptionText 65268
-#define ExtCtrls_clNameInfoBk 65269
-#define ExtCtrls_clNameInfoText 65270
-#define ExtCtrls_clNameMenu 65271
-#define ExtCtrls_clNameMenuText 65272
-#define ExtCtrls_clNameNone 65273
-#define ExtCtrls_clNameScrollBar 65274
-#define ExtCtrls_clName3DDkShadow 65275
-#define ExtCtrls_clName3DLight 65276
-#define ExtCtrls_clNameWindow 65277
-#define ExtCtrls_clNameWindowFrame 65278
-#define ExtCtrls_clNameWindowText 65279
-#define ExtCtrls_clNameWhite 65280
-#define ExtCtrls_clNameMoneyGreen 65281
-#define ExtCtrls_clNameSkyBlue 65282
-#define ExtCtrls_clNameCream 65283
-#define ExtCtrls_clNameMedGray 65284
-#define ExtCtrls_clNameActiveBorder 65285
-#define ExtCtrls_clNameActiveCaption 65286
-#define ExtCtrls_clNameAppWorkSpace 65287
-#define ExtCtrls_clNameBackground 65288
-#define ExtCtrls_clNameBtnFace 65289
-#define ExtCtrls_clNameBtnHighlight 65290
-#define ExtCtrls_clNameBtnShadow 65291
-#define ExtCtrls_clNameBtnText 65292
-#define ExtCtrls_clNameCaptionText 65293
-#define ExtCtrls_clNameDefault 65294
-#define ExtCtrls_clNameGrayText 65295
-#define HelpIntfs_hNoTopics 65296
-#define ExtCtrls_clNameBlack 65297
-#define ExtCtrls_clNameMaroon 65298
-#define ExtCtrls_clNameGreen 65299
-#define ExtCtrls_clNameOlive 65300
-#define ExtCtrls_clNameNavy 65301
-#define ExtCtrls_clNamePurple 65302
-#define ExtCtrls_clNameTeal 65303
-#define ExtCtrls_clNameGray 65304
-#define ExtCtrls_clNameSilver 65305
-#define ExtCtrls_clNameRed 65306
-#define ExtCtrls_clNameLime 65307
-#define ExtCtrls_clNameYellow 65308
-#define ExtCtrls_clNameBlue 65309
-#define ExtCtrls_clNameFuchsia 65310
-#define ExtCtrls_clNameAqua 65311
-#define Consts_SmkcCtrl 65312
-#define Consts_SmkcAlt 65313
-#define Consts_SInsertLineError 65314
-#define Consts_SInvalidClipFmt 65315
-#define Consts_SIconToClipboard 65316
-#define Consts_SCannotOpenClipboard 65317
-#define Consts_SDuplicateMenus 65318
-#define Consts_SDockedCtlNeedsName 65319
-#define Consts_SDockTreeRemoveError 65320
-#define Consts_SDockZoneNotFound 65321
-#define Consts_SDockZoneHasNoCtl 65322
-#define Consts_SErrorSettingCount 65323
-#define Consts_SListBoxMustBeVirtual 65324
-#define HelpIntfs_hNoTableOfContents 65325
-#define HelpIntfs_hNothingFound 65326
-#define HelpIntfs_hNoContext 65327
-#define Consts_SmkcBkSp 65328
-#define Consts_SmkcTab 65329
-#define Consts_SmkcEsc 65330
-#define Consts_SmkcEnter 65331
-#define Consts_SmkcSpace 65332
-#define Consts_SmkcPgUp 65333
-#define Consts_SmkcPgDn 65334
-#define Consts_SmkcEnd 65335
-#define Consts_SmkcHome 65336
-#define Consts_SmkcLeft 65337
-#define Consts_SmkcUp 65338
-#define Consts_SmkcRight 65339
-#define Consts_SmkcDown 65340
-#define Consts_SmkcIns 65341
-#define Consts_SmkcDel 65342
-#define Consts_SmkcShift 65343
-#define Consts_SVBitmaps 65344
-#define Consts_SMsgDlgWarning 65345
-#define Consts_SMsgDlgError 65346
-#define Consts_SMsgDlgInformation 65347
-#define Consts_SMsgDlgConfirm 65348
-#define Consts_SMsgDlgYes 65349
-#define Consts_SMsgDlgNo 65350
-#define Consts_SMsgDlgOK 65351
-#define Consts_SMsgDlgCancel 65352
-#define Consts_SMsgDlgHelp 65353
-#define Consts_SMsgDlgAbort 65354
-#define Consts_SMsgDlgRetry 65355
-#define Consts_SMsgDlgIgnore 65356
-#define Consts_SMsgDlgAll 65357
-#define Consts_SMsgDlgNoToAll 65358
-#define Consts_SMsgDlgYesToAll 65359
-#define Consts_SNoMDIForm 65360
-#define Consts_SControlParentSetToSelf 65361
-#define Consts_SOKButton 65362
-#define Consts_SCancelButton 65363
-#define Consts_SYesButton 65364
-#define Consts_SNoButton 65365
-#define Consts_SHelpButton 65366
-#define Consts_SCloseButton 65367
-#define Consts_SIgnoreButton 65368
-#define Consts_SRetryButton 65369
-#define Consts_SAbortButton 65370
-#define Consts_SAllButton 65371
-#define Consts_SCannotDragForm 65372
-#define Consts_SVMetafiles 65373
-#define Consts_SVEnhMetafiles 65374
-#define Consts_SVIcons 65375
-#define Consts_SImageIndexError 65376
-#define Consts_SImageReadFail 65377
-#define Consts_SImageWriteFail 65378
-#define Consts_SWindowDCError 65379
-#define Consts_SWindowClass 65380
-#define Consts_SCannotFocus 65381
-#define Consts_SParentRequired 65382
-#define Consts_SMDIChildNotVisible 65383
-#define Consts_SVisibleChanged 65384
-#define Consts_SCannotShowModal 65385
-#define Consts_SScrollBarRange 65386
-#define Consts_SMenuIndexError 65387
-#define Consts_SMenuReinserted 65388
-#define Consts_SMenuNotFound 65389
-#define Consts_SNoTimers 65390
-#define Consts_SGroupIndexTooLow 65391
-#define RTLConsts_SSeekNotImplemented 65392
-#define RTLConsts_SSortedListError 65393
-#define RTLConsts_SUnknownGroup 65394
-#define RTLConsts_SUnknownProperty 65395
-#define RTLConsts_SWriteError 65396
-#define Consts_SInvalidBitmap 65397
-#define Consts_SInvalidIcon 65398
-#define Consts_SInvalidMetafile 65399
-#define Consts_SInvalidPixelFormat 65400
-#define Consts_SScanLine 65401
-#define Consts_SChangeIconSize 65402
-#define Consts_SUnknownClipboardFormat 65403
-#define Consts_SOutOfResources 65404
-#define Consts_SNoCanvasHandle 65405
-#define Consts_SInvalidImageSize 65406
-#define Consts_SInvalidImageList 65407
-#define RTLConsts_SFOpenErrorEx 65408
-#define RTLConsts_SInvalidImage 65409
-#define RTLConsts_SInvalidName 65410
-#define RTLConsts_SInvalidProperty 65411
-#define RTLConsts_SInvalidPropertyElement 65412
-#define RTLConsts_SInvalidPropertyPath 65413
-#define RTLConsts_SInvalidPropertyType 65414
-#define RTLConsts_SInvalidPropertyValue 65415
-#define RTLConsts_SListCapacityError 65416
-#define RTLConsts_SListCountError 65417
-#define RTLConsts_SListIndexError 65418
-#define RTLConsts_SMemoryStreamError 65419
-#define RTLConsts_SPropertyException 65420
-#define RTLConsts_SReadError 65421
-#define RTLConsts_SReadOnlyProperty 65422
-#define RTLConsts_SResNotFound 65423
-#define SysConst_SLongDayNameTue 65424
-#define SysConst_SLongDayNameWed 65425
-#define SysConst_SLongDayNameThu 65426
-#define SysConst_SLongDayNameFri 65427
-#define SysConst_SLongDayNameSat 65428
-#define RTLConsts_SAncestorNotFound 65429
-#define RTLConsts_SAssignError 65430
-#define RTLConsts_SBitsIndexError 65431
-#define RTLConsts_SCantWriteResourceStreamError 65432
-#define RTLConsts_SCheckSynchronizeError 65433
-#define RTLConsts_SClassNotFound 65434
-#define RTLConsts_SDuplicateClass 65435
-#define RTLConsts_SDuplicateItem 65436
-#define RTLConsts_SDuplicateName 65437
-#define RTLConsts_SDuplicateString 65438
-#define RTLConsts_SFCreateErrorEx 65439
-#define SysConst_SLongMonthNameJun 65440
-#define SysConst_SLongMonthNameJul 65441
-#define SysConst_SLongMonthNameAug 65442
-#define SysConst_SLongMonthNameSep 65443
-#define SysConst_SLongMonthNameOct 65444
-#define SysConst_SLongMonthNameNov 65445
-#define SysConst_SLongMonthNameDec 65446
-#define SysConst_SShortDayNameSun 65447
-#define SysConst_SShortDayNameMon 65448
-#define SysConst_SShortDayNameTue 65449
-#define SysConst_SShortDayNameWed 65450
-#define SysConst_SShortDayNameThu 65451
-#define SysConst_SShortDayNameFri 65452
-#define SysConst_SShortDayNameSat 65453
-#define SysConst_SLongDayNameSun 65454
-#define SysConst_SLongDayNameMon 65455
-#define SysConst_SShortMonthNameFeb 65456
-#define SysConst_SShortMonthNameMar 65457
-#define SysConst_SShortMonthNameApr 65458
-#define SysConst_SShortMonthNameMay 65459
-#define SysConst_SShortMonthNameJun 65460
-#define SysConst_SShortMonthNameJul 65461
-#define SysConst_SShortMonthNameAug 65462
-#define SysConst_SShortMonthNameSep 65463
-#define SysConst_SShortMonthNameOct 65464
-#define SysConst_SShortMonthNameNov 65465
-#define SysConst_SShortMonthNameDec 65466
-#define SysConst_SLongMonthNameJan 65467
-#define SysConst_SLongMonthNameFeb 65468
-#define SysConst_SLongMonthNameMar 65469
-#define SysConst_SLongMonthNameApr 65470
-#define SysConst_SLongMonthNameMay 65471
-#define SysConst_SVarTypeConvertOverflow 65472
-#define SysConst_SVarOverflow 65473
-#define SysConst_SVarInvalid 65474
-#define SysConst_SVarBadType 65475
-#define SysConst_SVarNotImplemented 65476
-#define SysConst_SVarUnexpected 65477
-#define SysConst_SExternalException 65478
-#define SysConst_SAssertionFailed 65479
-#define SysConst_SIntfCastError 65480
-#define SysConst_SSafecallException 65481
-#define SysConst_SAssertError 65482
-#define SysConst_SAbstractError 65483
-#define SysConst_SModuleAccessViolation 65484
-#define SysConst_SOSError 65485
-#define SysConst_SUnkOSError 65486
-#define SysConst_SShortMonthNameJan 65487
-#define SysConst_SDispatchError 65488
-#define SysConst_SReadAccess 65489
-#define SysConst_SWriteAccess 65490
-#define SysConst_SFormatTooLong 65491
-#define SysConst_SVarArrayCreate 65492
-#define SysConst_SVarArrayBounds 65493
-#define SysConst_SVarArrayLocked 65494
-#define SysConst_SInvalidVarCast 65495
-#define SysConst_SInvalidVarOp 65496
-#define SysConst_SInvalidVarNullOp 65497
-#define SysConst_SInvalidVarOpWithHResultWithPrefix 65498
-#define SysConst_SVarTypeOutOfRangeWithPrefix 65499
-#define SysConst_SVarTypeAlreadyUsedWithPrefix 65500
-#define SysConst_SVarTypeNotUsableWithPrefix 65501
-#define SysConst_SVarTypeTooManyCustom 65502
-#define SysConst_SVarTypeCouldNotConvert 65503
-#define SysConst_SInvalidOp 65504
-#define SysConst_SZeroDivide 65505
-#define SysConst_SOverflow 65506
-#define SysConst_SUnderflow 65507
-#define SysConst_SInvalidPointer 65508
-#define SysConst_SInvalidCast 65509
-#define SysConst_SAccessViolationArg3 65510
-#define SysConst_SAccessViolationNoArg 65511
-#define SysConst_SStackOverflow 65512
-#define SysConst_SControlC 65513
-#define SysConst_SPrivilege 65514
-#define SysConst_SOperationAborted 65515
-#define SysConst_SException 65516
-#define SysConst_SExceptTitle 65517
-#define SysConst_SInvalidFormat 65518
-#define SysConst_SArgumentMissing 65519
+#define cxExtEditConsts_cxSEditRichEditLoadFail 64688
+#define cxExtEditConsts_cxSEditRichEditSaveFail 64689
+#define cxExtEditConsts_cxSEditRichEditSelectionSaveFail 64690
+#define cxExtEditConsts_cxSEditRichEditOleInterfaceFail 64691
+#define cxExtEditConsts_cxSEditRichEditCallBackFail 64692
+#define cxExtEditConsts_cxSEditRichEditLinkFail 64693
+#define cxExtEditConsts_scxSEditRepositoryRichEditItem 64694
+#define cxExtEditConsts_cxSEditRichEditUndoCaption 64695
+#define cxExtEditConsts_cxSEditRichEditRedoCaption 64696
+#define cxExtEditConsts_cxSEditRichEditCutCaption 64697
+#define cxExtEditConsts_cxSEditRichEditCopyCaption 64698
+#define cxExtEditConsts_cxSEditRichEditPasteCaption 64699
+#define cxExtEditConsts_cxSEditRichEditDeleteCaption 64700
+#define cxExtEditConsts_cxSEditRichEditSelectAllCaption 64701
+#define cxExtEditConsts_scxHotZoneStyleMediaPlayer9 64704
+#define cxExtEditConsts_scxHotZoneStyleMediaPlayer8 64705
+#define cxExtEditConsts_scxHotZoneStyleXPTaskBar 64706
+#define cxExtEditConsts_scxHotZoneStyleSimple 64707
+#define cxExtEditConsts_scxLoadingFonts 64708
+#define cxExtEditConsts_cxSEditCheckGroupCaptionStateDelimiter 64709
+#define cxExtEditConsts_cxSEditCheckGroupFilterColumnSeparator 64710
+#define cxExtEditConsts_cxSEditCheckGroupChecked 64711
+#define cxExtEditConsts_cxSEditCheckGroupGrayed 64712
+#define cxExtEditConsts_cxSEditCheckGroupUnchecked 64713
+#define cxExtEditConsts_cxSCheckComboBoxStatesItemsPropertyDlgCaption 64714
+#define cxExtEditConsts_cxSCheckGroupStatesItemsPropertyDlgCaption 64715
+#define cxExtEditConsts_cxSCheckComboBoxEmptySelectionText 64716
+#define cxExtEditConsts_cxSColorComboBoxDefaultDescription 64717
+#define cxExtEditConsts_cxSEditRichEditLibraryError 64718
+#define cxExtEditConsts_cxSEditRichEditLineInsertionError 64719
+#define cxPCConsts_scxPCStyleNameError 64720
+#define cxPCConsts_scxPCTabCountEqualsZero 64721
+#define cxPCConsts_scxPCTabIndexError 64722
+#define cxPCConsts_scxPCTabVisibleIndexOutsOfBounds 64723
+#define cxPCConsts_scxPCVisibleTabListEmpty 64724
+#define cxPCConsts_scxPCAllowRotateError 64725
+#define cxExtEditConsts_scxSEditRepositoryColorComboBoxItem 64726
+#define cxExtEditConsts_scxSEditRepositoryFontNameComboBoxItem 64727
+#define cxExtEditConsts_scxSEditRepositoryLabelItem 64728
+#define cxExtEditConsts_scxSEditRepositoryProgressBarItem 64729
+#define cxExtEditConsts_scxSEditRepositoryTrackBarItem 64730
+#define cxExtEditConsts_scxSEditRepositorySpinButtonItem 64731
+#define cxExtEditConsts_scxSEditRepositoryCheckComboBox 64732
+#define cxExtEditConsts_scxSEditRepositoryShellComboBoxItem 64733
+#define cxExtEditConsts_scxSEditRepositoryCheckGroupItem 64734
+#define cxExtEditConsts_scxUDAssociated 64735
+#define cxFilterControlStrs_cxSFilterControlDialogNewFile 64736
+#define cxFilterControlStrs_cxSFilterControlDialogOpenDialogCaption 64737
+#define cxFilterControlStrs_cxSFilterControlDialogSaveDialogCaption 64738
+#define cxFilterControlStrs_cxSFilterControlDialogActionSaveCaption 64739
+#define cxFilterControlStrs_cxSFilterControlDialogActionOpenCaption 64740
+#define cxFilterControlStrs_cxSFilterControlDialogActionApplyCaption 64741
+#define cxFilterControlStrs_cxSFilterControlDialogActionOkCaption 64742
+#define cxFilterControlStrs_cxSFilterControlDialogActionCancelCaption 64743
+#define cxFilterControlStrs_cxSFilterControlDialogFileExt 64744
+#define cxFilterControlStrs_cxSFilterControlDialogFileFilter 64745
+#define cxPCConsts_scxPCImageListIndexError 64746
+#define cxPCConsts_scxPCNoBaseImages 64747
+#define cxPCConsts_scxPCNoRegisteredStyles 64748
+#define cxPCConsts_scxPCPageIndexError 64749
+#define cxPCConsts_scxPCPainterClassError 64750
+#define cxPCConsts_scxPCStandardStyleError 64751
+#define cxFilterControlStrs_cxSFilterRemoveRow 64752
+#define cxFilterControlStrs_cxSFilterClearAll 64753
+#define cxFilterControlStrs_cxSFilterFooterAddCondition 64754
+#define cxFilterControlStrs_cxSFilterGroupCaption 64755
+#define cxFilterControlStrs_cxSFilterRootGroupCaption 64756
+#define cxFilterControlStrs_cxSFilterControlNullString 64757
+#define cxFilterControlStrs_cxSFilterErrorBuilding 64758
+#define cxFilterControlStrs_cxSFilterDialogCaption 64759
+#define cxFilterControlStrs_cxSFilterDialogInvalidValue 64760
+#define cxFilterControlStrs_cxSFilterDialogUse 64761
+#define cxFilterControlStrs_cxSFilterDialogSingleCharacter 64762
+#define cxFilterControlStrs_cxSFilterDialogCharactersSeries 64763
+#define cxFilterControlStrs_cxSFilterDialogOperationAnd 64764
+#define cxFilterControlStrs_cxSFilterDialogOperationOr 64765
+#define cxFilterControlStrs_cxSFilterDialogRows 64766
+#define cxFilterControlStrs_cxSFilterControlDialogCaption 64767
+#define cxFilterConsts_cxSFilterOperatorDoesNotBeginWith 64768
+#define cxFilterConsts_cxSFilterOperatorEndsWith 64769
+#define cxFilterConsts_cxSFilterOperatorDoesNotEndWith 64770
+#define cxFilterConsts_cxSFilterOperatorContains 64771
+#define cxFilterConsts_cxSFilterOperatorDoesNotContain 64772
+#define cxFilterConsts_cxSFilterBoxAllCaption 64773
+#define cxFilterConsts_cxSFilterBoxCustomCaption 64774
+#define cxFilterConsts_cxSFilterBoxBlanksCaption 64775
+#define cxFilterConsts_cxSFilterBoxNonBlanksCaption 64776
+#define cxFilterControlStrs_cxSFilterBoolOperatorAnd 64777
+#define cxFilterControlStrs_cxSFilterBoolOperatorOr 64778
+#define cxFilterControlStrs_cxSFilterBoolOperatorNotAnd 64779
+#define cxFilterControlStrs_cxSFilterBoolOperatorNotOr 64780
+#define cxFilterControlStrs_cxSFilterRootButtonCaption 64781
+#define cxFilterControlStrs_cxSFilterAddCondition 64782
+#define cxFilterControlStrs_cxSFilterAddGroup 64783
+#define cxFilterConsts_cxSFilterOperatorThisYear 64784
+#define cxFilterConsts_cxSFilterOperatorNext7Days 64785
+#define cxFilterConsts_cxSFilterOperatorNextWeek 64786
+#define cxFilterConsts_cxSFilterOperatorNext14Days 64787
+#define cxFilterConsts_cxSFilterOperatorNextTwoWeeks 64788
+#define cxFilterConsts_cxSFilterOperatorNext30Days 64789
+#define cxFilterConsts_cxSFilterOperatorNextMonth 64790
+#define cxFilterConsts_cxSFilterOperatorNextYear 64791
+#define cxFilterConsts_cxSFilterOperatorFuture 64792
+#define cxFilterConsts_cxSFilterAndCaption 64793
+#define cxFilterConsts_cxSFilterOrCaption 64794
+#define cxFilterConsts_cxSFilterNotCaption 64795
+#define cxFilterConsts_cxSFilterBlankCaption 64796
+#define cxFilterConsts_cxSFilterOperatorIsNull 64797
+#define cxFilterConsts_cxSFilterOperatorIsNotNull 64798
+#define cxFilterConsts_cxSFilterOperatorBeginsWith 64799
+#define cxFilterConsts_cxSFilterOperatorNotBetween 64800
+#define cxFilterConsts_cxSFilterOperatorInList 64801
+#define cxFilterConsts_cxSFilterOperatorNotInList 64802
+#define cxFilterConsts_cxSFilterOperatorYesterday 64803
+#define cxFilterConsts_cxSFilterOperatorToday 64804
+#define cxFilterConsts_cxSFilterOperatorTomorrow 64805
+#define cxFilterConsts_cxSFilterOperatorLast7Days 64806
+#define cxFilterConsts_cxSFilterOperatorLastWeek 64807
+#define cxFilterConsts_cxSFilterOperatorLast14Days 64808
+#define cxFilterConsts_cxSFilterOperatorLastTwoWeeks 64809
+#define cxFilterConsts_cxSFilterOperatorLast30Days 64810
+#define cxFilterConsts_cxSFilterOperatorLastMonth 64811
+#define cxFilterConsts_cxSFilterOperatorLastYear 64812
+#define cxFilterConsts_cxSFilterOperatorPast 64813
+#define cxFilterConsts_cxSFilterOperatorThisWeek 64814
+#define cxFilterConsts_cxSFilterOperatorThisMonth 64815
+#define cxEditConsts_scxMaskEditRegExprError 64816
+#define cxEditConsts_scxMaskEditInvalidEditValue 64817
+#define cxEditConsts_scxMaskEditNoMask 64818
+#define cxEditConsts_scxMaskEditIllegalFileFormat 64819
+#define cxEditConsts_scxMaskEditEmptyMaskCollectionFile 64820
+#define cxEditConsts_scxMaskEditMaskCollectionFiles 64821
+#define cxEditConsts_cxSSpinEditInvalidNumericValue 64822
+#define cxFilterConsts_cxSFilterOperatorEqual 64823
+#define cxFilterConsts_cxSFilterOperatorNotEqual 64824
+#define cxFilterConsts_cxSFilterOperatorLess 64825
+#define cxFilterConsts_cxSFilterOperatorLessEqual 64826
+#define cxFilterConsts_cxSFilterOperatorGreater 64827
+#define cxFilterConsts_cxSFilterOperatorGreaterEqual 64828
+#define cxFilterConsts_cxSFilterOperatorLike 64829
+#define cxFilterConsts_cxSFilterOperatorNotLike 64830
+#define cxFilterConsts_cxSFilterOperatorBetween 64831
+#define cxEditConsts_scxRegExprCantCreateEmptyBlock 64832
+#define cxEditConsts_scxRegExprIllegalSymbol 64833
+#define cxEditConsts_scxRegExprIllegalQuantifier 64834
+#define cxEditConsts_scxRegExprNotSupportQuantifier 64835
+#define cxEditConsts_scxRegExprIllegalIntegerValue 64836
+#define cxEditConsts_scxRegExprTooBigReferenceNumber 64837
+#define cxEditConsts_scxRegExprCantCreateEmptyEnum 64838
+#define cxEditConsts_scxRegExprSubrangeOrder 64839
+#define cxEditConsts_scxRegExprHexNumberExpected0 64840
+#define cxEditConsts_scxRegExprHexNumberExpected 64841
+#define cxEditConsts_scxRegExprMissing 64842
+#define cxEditConsts_scxRegExprUnnecessary 64843
+#define cxEditConsts_scxRegExprIncorrectSpace 64844
+#define cxEditConsts_scxRegExprNotCompiled 64845
+#define cxEditConsts_scxRegExprIncorrectParameterQuantifier 64846
+#define cxEditConsts_scxRegExprCantUseParameterQuantifier 64847
+#define cxEditConsts_scxSEditRepositoryLookupComboBoxItem 64848
+#define cxEditConsts_scxSEditRepositoryMaskItem 64849
+#define cxEditConsts_scxSEditRepositoryMemoItem 64850
+#define cxEditConsts_scxSEditRepositoryMRUItem 64851
+#define cxEditConsts_scxSEditRepositoryPopupItem 64852
+#define cxEditConsts_scxSEditRepositorySpinItem 64853
+#define cxEditConsts_scxSEditRepositoryRadioGroupItem 64854
+#define cxEditConsts_scxSEditRepositoryTextItem 64855
+#define cxEditConsts_scxSEditRepositoryTimeItem 64856
+#define cxEditConsts_scxRegExprLine 64857
+#define cxEditConsts_scxRegExprChar 64858
+#define cxEditConsts_scxRegExprNotAssignedSourceStream 64859
+#define cxEditConsts_scxRegExprEmptySourceStream 64860
+#define cxEditConsts_scxRegExprCantUsePlusQuantifier 64861
+#define cxEditConsts_scxRegExprCantUseStarQuantifier 64862
+#define cxEditConsts_scxRegExprCantCreateEmptyAlt 64863
+#define cxEditConsts_cxNavigatorHint_Cancel 64864
+#define cxEditConsts_cxNavigatorHint_Refresh 64865
+#define cxEditConsts_cxNavigatorHint_SaveBookmark 64866
+#define cxEditConsts_cxNavigatorHint_GotoBookmark 64867
+#define cxEditConsts_cxNavigatorHint_Filter 64868
+#define cxEditConsts_cxNavigator_DeleteRecordQuestion 64869
+#define cxEditConsts_scxSEditRepositoryBlobItem 64870
+#define cxEditConsts_scxSEditRepositoryButtonItem 64871
+#define cxEditConsts_scxSEditRepositoryCalcItem 64872
+#define cxEditConsts_scxSEditRepositoryCheckBoxItem 64873
+#define cxEditConsts_scxSEditRepositoryComboBoxItem 64874
+#define cxEditConsts_scxSEditRepositoryCurrencyItem 64875
+#define cxEditConsts_scxSEditRepositoryDateItem 64876
+#define cxEditConsts_scxSEditRepositoryHyperLinkItem 64877
+#define cxEditConsts_scxSEditRepositoryImageComboBoxItem 64878
+#define cxEditConsts_scxSEditRepositoryImageItem 64879
+#define cxEditConsts_cxSDatePopupToday 64880
+#define cxEditConsts_cxSDateError 64881
+#define cxEditConsts_scxSCalcError 64882
+#define cxEditConsts_scxSHyperLinkPrefix 64883
+#define cxEditConsts_scxSHyperLinkDoubleSlash 64884
+#define cxEditConsts_cxNavigatorHint_First 64885
+#define cxEditConsts_cxNavigatorHint_Prior 64886
+#define cxEditConsts_cxNavigatorHint_PriorPage 64887
+#define cxEditConsts_cxNavigatorHint_Next 64888
+#define cxEditConsts_cxNavigatorHint_NextPage 64889
+#define cxEditConsts_cxNavigatorHint_Last 64890
+#define cxEditConsts_cxNavigatorHint_Insert 64891
+#define cxEditConsts_cxNavigatorHint_Append 64892
+#define cxEditConsts_cxNavigatorHint_Delete 64893
+#define cxEditConsts_cxNavigatorHint_Edit 64894
+#define cxEditConsts_cxNavigatorHint_Post 64895
+#define cxEditConsts_cxSBlobButtonOK 64896
+#define cxEditConsts_cxSBlobButtonCancel 64897
+#define cxEditConsts_cxSBlobButtonClose 64898
+#define cxEditConsts_cxSBlobMemo 64899
+#define cxEditConsts_cxSBlobMemoEmpty 64900
+#define cxEditConsts_cxSBlobPicture 64901
+#define cxEditConsts_cxSBlobPictureEmpty 64902
+#define cxEditConsts_cxSMenuItemCaptionCut 64903
+#define cxEditConsts_cxSMenuItemCaptionCopy 64904
+#define cxEditConsts_cxSMenuItemCaptionPaste 64905
+#define cxEditConsts_cxSMenuItemCaptionDelete 64906
+#define cxEditConsts_cxSMenuItemCaptionLoad 64907
+#define cxEditConsts_cxSMenuItemCaptionSave 64908
+#define cxEditConsts_cxSDatePopupClear 64909
+#define cxEditConsts_cxSDatePopupNow 64910
+#define cxEditConsts_cxSDatePopupOK 64911
+#define cxEditConsts_cxSEditButtonCancel 64912
+#define cxEditConsts_cxSEditButtonOK 64913
+#define cxEditConsts_cxSEditDateConvertError 64914
+#define cxEditConsts_cxSEditInvalidRepositoryItem 64915
+#define cxEditConsts_cxSEditNumericValueConvertError 64916
+#define cxEditConsts_cxSEditPopupCircularReferencingError 64917
+#define cxEditConsts_cxSEditPostError 64918
+#define cxEditConsts_cxSEditTimeConvertError 64919
+#define cxEditConsts_cxSEditValidateErrorText 64920
+#define cxEditConsts_cxSEditValueOutOfBounds 64921
+#define cxEditConsts_cxSEditCheckBoxChecked 64922
+#define cxEditConsts_cxSEditCheckBoxGrayed 64923
+#define cxEditConsts_cxSEditCheckBoxUnchecked 64924
+#define cxEditConsts_cxSRadioGroupDefaultCaption 64925
+#define cxEditConsts_cxSTextTrue 64926
+#define cxEditConsts_cxSTextFalse 64927
+#define cxLibraryStrs_cxSDateMonday 64928
+#define cxLibraryStrs_cxSDateTuesday 64929
+#define cxLibraryStrs_cxSDateWednesday 64930
+#define cxLibraryStrs_cxSDateThursday 64931
+#define cxLibraryStrs_cxSDateFriday 64932
+#define cxLibraryStrs_cxSDateSaturday 64933
+#define cxLibraryStrs_cxSDateFirst 64934
+#define cxLibraryStrs_cxSDateSecond 64935
+#define cxLibraryStrs_cxSDateThird 64936
+#define cxLibraryStrs_cxSDateFourth 64937
+#define cxLibraryStrs_cxSDateFifth 64938
+#define cxLibraryStrs_cxSDateSixth 64939
+#define cxLibraryStrs_cxSDateSeventh 64940
+#define cxLibraryStrs_cxSDateBOM 64941
+#define cxLibraryStrs_cxSDateEOM 64942
+#define cxLibraryStrs_cxSDateNow 64943
+#define cxDataConsts_cxSDataItemIndexError 64944
+#define cxDataConsts_cxSDataProviderModeError 64945
+#define cxDataConsts_cxSDataInvalidStreamFormat 64946
+#define cxDataConsts_cxSDataRowIndexError 64947
+#define cxDataConsts_cxSDataCustomDataSourceInvalidCompare 64948
+#define cxDataConsts_cxSDBDetailFilterControllerNotFound 64949
+#define cxDataConsts_cxSDBNotInGridMode 64950
+#define cxDataConsts_cxSDBKeyFieldNotFound 64951
+#define cxLibraryStrs_scxCantCreateRegistryKey 64952
+#define cxLibraryStrs_scxCantOpenRegistryKey 64953
+#define cxLibraryStrs_scxErrorStoreObject 64954
+#define cxLibraryStrs_scxConverterCantCreateStyleRepository 64955
+#define cxLibraryStrs_cxSDateToday 64956
+#define cxLibraryStrs_cxSDateYesterday 64957
+#define cxLibraryStrs_cxSDateTomorrow 64958
+#define cxLibraryStrs_cxSDateSunday 64959
+#define dxSkinsStrs_sdxSmallFormButtonClose 64960
+#define dxSkinsStrs_sdxStatusBar 64961
+#define dxSkinsStrs_sdxBorders 64962
+#define dxSkinsStrs_sdxLeft 64963
+#define dxSkinsStrs_sdxTop 64964
+#define dxSkinsStrs_sdxRight 64965
+#define dxSkinsStrs_sdxBottom 64966
+#define DBConsts_SBcdOverflow 64967
+#define DBConsts_SInvalidBcdValue 64968
+#define DBConsts_SInvalidFormatType 64969
+#define DBConsts_SCouldNotParseTimeStamp 64970
+#define DBConsts_SInvalidSqlTimeStamp 64971
+#define cxDataConsts_cxSDataReadError 64972
+#define cxDataConsts_cxSDataWriteError 64973
+#define cxDataConsts_cxSDataItemExistError 64974
+#define cxDataConsts_cxSDataRecordIndexError 64975
+#define dxSkinsStrs_sdxVGridRowHeader 64976
+#define dxSkinsStrs_sdxTextShadowColor 64977
+#define dxSkinsStrs_sdxFormFrameLeft 64978
+#define dxSkinsStrs_sdxFormCaption 64979
+#define dxSkinsStrs_sdxFormContent 64980
+#define dxSkinsStrs_sdxFormFrameRight 64981
+#define dxSkinsStrs_sdxFormFrameBottom 64982
+#define dxSkinsStrs_sdxSmallFormFrameLeft 64983
+#define dxSkinsStrs_sdxSmallFormCaption 64984
+#define dxSkinsStrs_sdxSmallFormFrameRight 64985
+#define dxSkinsStrs_sdxSmallFormFrameBottom 64986
+#define dxSkinsStrs_sdxFormButtonClose 64987
+#define dxSkinsStrs_sdxFormButtonHelp 64988
+#define dxSkinsStrs_sdxFormButtonMaximize 64989
+#define dxSkinsStrs_sdxFormButtonMinimize 64990
+#define dxSkinsStrs_sdxFormButtonRestore 64991
+#define dxSkinsStrs_sdxFooterCell 64992
+#define dxSkinsStrs_sdxFooterPanel 64993
+#define dxSkinsStrs_sdxGridLine 64994
+#define dxSkinsStrs_sdxGroupByBox 64995
+#define dxSkinsStrs_sdxGroupRow 64996
+#define dxSkinsStrs_sdxHeader 64997
+#define dxSkinsStrs_sdxHeaderLeft 64998
+#define dxSkinsStrs_sdxHeaderRight 64999
+#define dxSkinsStrs_sdxHeaderSpecial 65000
+#define dxSkinsStrs_sdxIndicatorImages 65001
+#define dxSkinsStrs_sdxGridFixedLine 65002
+#define dxSkinsStrs_sdxPlusMinus 65003
+#define dxSkinsStrs_sdxPlusMinusEx 65004
+#define dxSkinsStrs_sdxVGridBandLine 65005
+#define dxSkinsStrs_sdxVGridLine 65006
+#define dxSkinsStrs_sdxVGridRow 65007
+#define dxSkinsStrs_sdxPageControlHeaderLeft 65008
+#define dxSkinsStrs_sdxPageControlHeaderRight 65009
+#define dxSkinsStrs_sdxPageControlHeaderTop 65010
+#define dxSkinsStrs_sdxPageControlHorz 65011
+#define dxSkinsStrs_sdxPageControlPane 65012
+#define dxSkinsStrs_sdxPageControlVert 65013
+#define dxSkinsStrs_sdxHeaderDownGrow 65014
+#define dxSkinsStrs_sdxRowIndentFar 65015
+#define dxSkinsStrs_sdxRowIndentNear 65016
+#define dxSkinsStrs_sdxSelectedHeaderDownGrow 65017
+#define dxSkinsStrs_sdxSelectedHeaderHGrow 65018
+#define dxSkinsStrs_sdxSelectedHeaderUpGrow 65019
+#define dxSkinsStrs_sdxCardSeparator 65020
+#define dxSkinsStrs_sdxFilterButton 65021
+#define dxSkinsStrs_sdxFilterButtonActive 65022
+#define dxSkinsStrs_sdxFilterPanel 65023
+#define dxSkinsStrs_sdxSizeGrip 65024
+#define dxSkinsStrs_sdxSplitterHorz 65025
+#define dxSkinsStrs_sdxSplitterVert 65026
+#define dxSkinsStrs_sdxScreenTipItem 65027
+#define dxSkinsStrs_sdxScreenTipSeparator 65028
+#define dxSkinsStrs_sdxScreenTipTitleItem 65029
+#define dxSkinsStrs_sdxScreenTipWindow 65030
+#define dxSkinsStrs_sdxTrackBarThumb 65031
+#define dxSkinsStrs_sdxTrackBarThumbBoth 65032
+#define dxSkinsStrs_sdxTrackBarThumbUp 65033
+#define dxSkinsStrs_sdxTrackBarThumbVert 65034
+#define dxSkinsStrs_sdxTrackBarThumbVertBoth 65035
+#define dxSkinsStrs_sdxTrackBarThumbVertUp 65036
+#define dxSkinsStrs_sdxTrackBarTrack 65037
+#define dxSkinsStrs_sdxTrackBarTrackVert 65038
+#define dxSkinsStrs_sdxPageControlHeaderBottom 65039
+#define dxSkinsStrs_sdxButton 65040
+#define dxSkinsStrs_sdxCheckbox 65041
+#define dxSkinsStrs_sdxClock 65042
+#define dxSkinsStrs_sdxClockGlass 65043
+#define dxSkinsStrs_sdxNavigatorGlyphs 65044
+#define dxSkinsStrs_sdxNavigatorGlyphsVert 65045
+#define dxSkinsStrs_sdxProgressBorder 65046
+#define dxSkinsStrs_sdxProgressBorderVert 65047
+#define dxSkinsStrs_sdxProgressChunk 65048
+#define dxSkinsStrs_sdxProgressChunkVert 65049
+#define dxSkinsStrs_sdxRadioGroup 65050
+#define dxSkinsStrs_sdxScrollButton 65051
+#define dxSkinsStrs_sdxScrollContentHorz 65052
+#define dxSkinsStrs_sdxScrollContentVert 65053
+#define dxSkinsStrs_sdxScrollThumbButtonHorz 65054
+#define dxSkinsStrs_sdxScrollThumbButtonVert 65055
+#define dxSkinsStrs_sdxDockCtrlTabHeader 65056
+#define dxSkinsStrs_sdxDockCtrlTabHeaderAutoHideBar 65057
+#define dxSkinsStrs_sdxDockCtrlTabHeaderBackground 65058
+#define dxSkinsStrs_sdxDockCtrlTabHeaderLine 65059
+#define dxSkinsStrs_sdxDockCtrlWindowButton 65060
+#define dxSkinsStrs_sdxDockCtrlWindowGlyphs 65061
+#define dxSkinsStrs_sdxGroupPanel 65062
+#define dxSkinsStrs_sdxGroupPanelBottom 65063
+#define dxSkinsStrs_sdxGroupPanelCaptionBottom 65064
+#define dxSkinsStrs_sdxGroupPanelCaptionLeft 65065
+#define dxSkinsStrs_sdxGroupPanelCaptionRight 65066
+#define dxSkinsStrs_sdxGroupPanelCaptionTop 65067
+#define dxSkinsStrs_sdxGroupPanelLeft 65068
+#define dxSkinsStrs_sdxGroupPanelNoBorder 65069
+#define dxSkinsStrs_sdxGroupPanelRight 65070
+#define dxSkinsStrs_sdxGroupPanelTop 65071
+#define dxSkinsStrs_sdxSchedulerNavButtonPrevArrow 65072
+#define dxSkinsStrs_sdxSchedulerTimeGridCurrentTimeIndicator 65073
+#define dxSkinsStrs_sdxSchedulerTimeGridHeader 65074
+#define dxSkinsStrs_sdxSchedulerTimeGridHeaderSelected 65075
+#define dxSkinsStrs_sdxSchedulerTimeLine 65076
+#define dxSkinsStrs_sdxSchedulerTimeRuler 65077
+#define dxSkinsStrs_sdxDCActiveTabHeaderDownGrow 65078
+#define dxSkinsStrs_sdxDCActiveTabHeaderHGrow 65079
+#define dxSkinsStrs_sdxDCActiveTabHeaderUpGrow 65080
+#define dxSkinsStrs_sdxDockCtrlAutoHideBar 65081
+#define dxSkinsStrs_sdxDockCtrlAutoHideBarBottom 65082
+#define dxSkinsStrs_sdxDockCtrlAutoHideBarLeft 65083
+#define dxSkinsStrs_sdxDockCtrlAutoHideBarRight 65084
+#define dxSkinsStrs_sdxDockCtrlBorder 65085
+#define dxSkinsStrs_sdxDockCtrlCaption 65086
+#define dxSkinsStrs_sdxDockCtrlInactiveCaptionTextColor 65087
+#define dxSkinsStrs_sdxNavPaneScrollDownBtn 65088
+#define dxSkinsStrs_sdxNavPaneScrollUpBtn 65089
+#define dxSkinsStrs_sdxNavPaneSplitter 65090
+#define dxSkinsStrs_sdxSchedulerAllDayArea 65091
+#define dxSkinsStrs_sdxSchedulerAllDayAreaSelected 65092
+#define dxSkinsStrs_sdxSchedulerAppointment 65093
+#define dxSkinsStrs_sdxSchedulerAppointmentBorderSize 65094
+#define dxSkinsStrs_sdxSchedulerAppointmentBottomShadow 65095
+#define dxSkinsStrs_sdxSchedulerAppointmentMask 65096
+#define dxSkinsStrs_sdxSchedulerAppointmentRight 65097
+#define dxSkinsStrs_sdxSchedulerAppointmentRightShadow 65098
+#define dxSkinsStrs_sdxSchedulerCurrentTimeIndicator 65099
+#define dxSkinsStrs_sdxSchedulerMoreButton 65100
+#define dxSkinsStrs_sdxSchedulerNavButtonNext 65101
+#define dxSkinsStrs_sdxSchedulerNavButtonNextArrow 65102
+#define dxSkinsStrs_sdxSchedulerNavButtonPrev 65103
+#define dxSkinsStrs_sdxNavPaneCaptionFontSize 65104
+#define dxSkinsStrs_sdxNavPaneCaptionHeight 65105
+#define dxSkinsStrs_sdxNavPaneCollapseButton 65106
+#define dxSkinsStrs_sdxNavPaneCollapsedGroupClient 65107
+#define dxSkinsStrs_sdxNavPaneExpandButton 65108
+#define dxSkinsStrs_sdxNavPaneFormBorder 65109
+#define dxSkinsStrs_sdxNavPaneFormSizeGrip 65110
+#define dxSkinsStrs_sdxNavPaneGroupButton 65111
+#define dxSkinsStrs_sdxNavPaneGroupButtonSelected 65112
+#define dxSkinsStrs_sdxNavPaneGroupCaption 65113
+#define dxSkinsStrs_sdxNavPaneGroupClient 65114
+#define dxSkinsStrs_sdxNavPaneItem 65115
+#define dxSkinsStrs_sdxNavPaneItemSelected 65116
+#define dxSkinsStrs_sdxNavPaneOverflowPanel 65117
+#define dxSkinsStrs_sdxNavPaneOverflowPanelExpandItem 65118
+#define dxSkinsStrs_sdxNavPaneOverflowPanelItem 65119
+#define dxSkinsStrs_sdxRibbonStatusBarButton 65120
+#define dxSkinsStrs_sdxRibbonStatusBarSeparator 65121
+#define dxSkinsStrs_sdxRibbonTabGroup 65122
+#define dxSkinsStrs_sdxRibbonTabGroupHeader 65123
+#define dxSkinsStrs_sdxRibbonTabGroupLeftScroll 65124
+#define dxSkinsStrs_sdxRibbonTabGroupRightScroll 65125
+#define dxSkinsStrs_sdxRibbonTabHeaderDownGrowIndent 65126
+#define dxSkinsStrs_sdxRibbonTabHeaderPage 65127
+#define dxSkinsStrs_sdxRibbonTabPanel 65128
+#define dxSkinsStrs_sdxRibbonTabPanelGroupButton 65129
+#define dxSkinsStrs_sdxNavBarBackground 65130
+#define dxSkinsStrs_sdxNavBarGroupClient 65131
+#define dxSkinsStrs_sdxNavBarGroupCloseButton 65132
+#define dxSkinsStrs_sdxNavBarGroupHeader 65133
+#define dxSkinsStrs_sdxNavBarGroupOpenButton 65134
+#define dxSkinsStrs_sdxNavBarItem 65135
+#define dxSkinsStrs_sdxRibbonLargeButton 65136
+#define dxSkinsStrs_sdxRibbonLargeSplitButtonBottom 65137
+#define dxSkinsStrs_sdxRibbonLargeSplitButtonTop 65138
+#define dxSkinsStrs_sdxRibbonQATCustomizeButtonOutsideQAT 65139
+#define dxSkinsStrs_sdxRibbonQATIndentBeforeCustomizeItem 65140
+#define dxSkinsStrs_sdxRibbonQuickAccessToolbarOffset 65141
+#define dxSkinsStrs_sdxRibbonQuickToolbarAbove 65142
+#define dxSkinsStrs_sdxRibbonQuickToolbarBelow 65143
+#define dxSkinsStrs_sdxRibbonQuickToolbarButtonGlyph 65144
+#define dxSkinsStrs_sdxRibbonQuickToolbarDropDown 65145
+#define dxSkinsStrs_sdxRibbonQuickToolbarGlyph 65146
+#define dxSkinsStrs_sdxRibbonQuickToolbarInCaption 65147
+#define dxSkinsStrs_sdxRibbonSmallButton 65148
+#define dxSkinsStrs_sdxRibbonSplitButtonLeft 65149
+#define dxSkinsStrs_sdxRibbonSplitButtonRight 65150
+#define dxSkinsStrs_sdxRibbonStatusBarBackground 65151
+#define dxSkinsStrs_sdxRibbonDialogFrameRight 65152
+#define dxSkinsStrs_sdxRibbonDocumentNameTextColor 65153
+#define dxSkinsStrs_sdxRibbonExtraPaneColor 65154
+#define dxSkinsStrs_sdxRibbonFormBottom 65155
+#define dxSkinsStrs_sdxRibbonFormCaption 65156
+#define dxSkinsStrs_sdxRibbonFormFrameLeft 65157
+#define dxSkinsStrs_sdxRibbonFormFrameRight 65158
+#define dxSkinsStrs_sdxRibbonGalleryBackground 65159
+#define dxSkinsStrs_sdxRibbonGalleryButtonDown 65160
+#define dxSkinsStrs_sdxRibbonGalleryButtonDropDown 65161
+#define dxSkinsStrs_sdxRibbonGalleryButtonUp 65162
+#define dxSkinsStrs_sdxRibbonGalleryGroupCaption 65163
+#define dxSkinsStrs_sdxRibbonGalleryPane 65164
+#define dxSkinsStrs_sdxRibbonGallerySizeGrips 65165
+#define dxSkinsStrs_sdxRibbonGallerySizingPanel 65166
+#define dxSkinsStrs_sdxRibbonHeaderBackground 65167
+#define dxSkinsStrs_sdxTextColorHot 65168
+#define dxSkinsStrs_sdxTextColorSelected 65169
+#define dxSkinsStrs_sdxTextInactiveColor 65170
+#define dxSkinsStrs_sdxRibbonAppButtonRightIndent 65171
+#define dxSkinsStrs_sdxRibbonApplicationButton 65172
+#define dxSkinsStrs_sdxRibbonAppMenuFooterBackground 65173
+#define dxSkinsStrs_sdxRibbonAppMenuHeaderBackground 65174
+#define dxSkinsStrs_sdxRibbonButtonArrow 65175
+#define dxSkinsStrs_sdxRibbonButtonDisabledText 65176
+#define dxSkinsStrs_sdxRibbonButtonGroup 65177
+#define dxSkinsStrs_sdxRibbonButtonGroupButton 65178
+#define dxSkinsStrs_sdxRibbonButtonGroupSeparator 65179
+#define dxSkinsStrs_sdxRibbonCollapsedToolBarBackground 65180
+#define dxSkinsStrs_sdxRibbonCollapsedToolBarGlyphBackground 65181
+#define dxSkinsStrs_sdxRibbonDialogFrameBottom 65182
+#define dxSkinsStrs_sdxRibbonDialogFrameLeft 65183
+#define dxSkinsStrs_sdxBarsMainMenu 65184
+#define dxSkinsStrs_sdxBarsMainMenuCustomize 65185
+#define dxSkinsStrs_sdxBarsMainMenuDrag 65186
+#define dxSkinsStrs_sdxBarsMainMenuLinkSelected 65187
+#define dxSkinsStrs_sdxBarsMainMenuVertical 65188
+#define dxSkinsStrs_sdxBarsPopupMenu 65189
+#define dxSkinsStrs_sdxBarsPopupMenuCheck 65190
+#define dxSkinsStrs_sdxBarsPopupMenuExpandButton 65191
+#define dxSkinsStrs_sdxBarsPopupMenuLinkSelected 65192
+#define dxSkinsStrs_sdxBarsPopupMenuSeparator 65193
+#define dxSkinsStrs_sdxBarsPopupMenuSideStrip 65194
+#define dxSkinsStrs_sdxBarsPopupMenuSideStripNonRecent 65195
+#define dxSkinsStrs_sdxBarsPopupMenuDropDownButtonLabel 65196
+#define dxSkinsStrs_sdxBarsPopupMenuDropDownButtonArrow 65197
+#define dxSkinsStrs_sdxTextColorNormal 65198
+#define dxSkinsStrs_sdxTextColorDisabled 65199
+#define dxSkinsStrs_sdxSpinLeftGlyph 65200
+#define dxSkinsStrs_sdxSpinRightGlyph 65201
+#define dxSkinsStrs_sdxEditorButton 65202
+#define dxSkinsStrs_sdxCloseButton 65203
+#define dxSkinsStrs_sdxBarsBar 65204
+#define dxSkinsStrs_sdxBarsBarCustomize 65205
+#define dxSkinsStrs_sdxBarsBarCustomizeVertical 65206
+#define dxSkinsStrs_sdxBarsBarFinger 65207
+#define dxSkinsStrs_sdxBarsBarFingerVertical 65208
+#define dxSkinsStrs_sdxBarsBarSeparator 65209
+#define dxSkinsStrs_sdxBarsBarVertical 65210
+#define dxSkinsStrs_sdxBarsBarVerticalSeparator 65211
+#define dxSkinsStrs_sdxBarsDock 65212
+#define dxSkinsStrs_sdxBarsFloatBar 65213
+#define dxSkinsStrs_sdxBarsLinkStatic 65214
+#define dxSkinsStrs_sdxBarsLinkSelected 65215
+#define dxSkinsStrs_sdxSkinsDCHiddenBarTextColor 65216
+#define dxSkinsStrs_sdxSkinGroupBars 65217
+#define dxSkinsStrs_sdxSkinGroupCommon 65218
+#define dxSkinsStrs_sdxSkinGroupDocking 65219
+#define dxSkinsStrs_sdxSkinGroupEditors 65220
+#define dxSkinsStrs_sdxSkinGroupForm 65221
+#define dxSkinsStrs_sdxSkinGroupGrid 65222
+#define dxSkinsStrs_sdxSkinGroupNavBar 65223
+#define dxSkinsStrs_sdxSkinGroupNavPane 65224
+#define dxSkinsStrs_sdxSkinGroupRibbon 65225
+#define dxSkinsStrs_sdxSkinGroupScheduler 65226
+#define dxSkinsStrs_sdxSkinGroupTabs 65227
+#define dxSkinsStrs_sdxSkinGroupVGrid 65228
+#define dxSkinsStrs_sdxComboButtonGlyph 65229
+#define dxSkinsStrs_sdxSpinUpGlyph 65230
+#define dxSkinsStrs_sdxSpinDownGlyph 65231
+#define dxSkinsStrs_sdxSkinsContentEvenColor 65232
+#define dxSkinsStrs_sdxSkinsContentOddColor 65233
+#define dxSkinsStrs_sdxSkinsContentTextColor 65234
+#define dxSkinsStrs_sdxSkinsHeaderBackgroundColor 65235
+#define dxSkinsStrs_sdxSkinsHeaderBackgroundTextColor 65236
+#define dxSkinsStrs_sdxSkinsLayoutControlColor 65237
+#define dxSkinsStrs_sdxSkinsSchedulerNavigatorColor 65238
+#define dxSkinsStrs_sdxSkinsSelectionColor 65239
+#define dxSkinsStrs_sdxSkinsSelectionTextColor 65240
+#define dxSkinsStrs_sdxSkinsTabTextColor 65241
+#define dxSkinsStrs_sdxSkinsTabTextColorActive 65242
+#define dxSkinsStrs_sdxSkinsEditorBackgroundColor 65243
+#define dxSkinsStrs_sdxSkinsEditorBackgroundDisabledColor 65244
+#define dxSkinsStrs_sdxSkinsEditorTextColor 65245
+#define dxSkinsStrs_sdxSkinsEditorTextDisabledColor 65246
+#define dxSkinsStrs_sdxCaptionFontDelta 65247
+#define ExtCtrls_clName3DDkShadow 65248
+#define ExtCtrls_clName3DLight 65249
+#define ExtCtrls_clNameWindow 65250
+#define ExtCtrls_clNameWindowFrame 65251
+#define ExtCtrls_clNameWindowText 65252
+#define WinHelpViewer_hNoKeyword 65253
+#define dxGDIPlusAPI_scxGdipInvalidOperation 65254
+#define dxSkinsStrs_sdxResourceType 65255
+#define dxSkinsStrs_sdxSkinInvalidStreamFormat 65256
+#define dxSkinsStrs_sdxOldFormat 65257
+#define dxSkinsStrs_sdxSchedulerSeparatorColor 65258
+#define dxSkinsStrs_sdxSkinsBarDisabledTextColor 65259
+#define dxSkinsStrs_sdxSkinsButtonDisabledTextColor 65260
+#define dxSkinsStrs_sdxSkinsContainerBorderColor 65261
+#define dxSkinsStrs_sdxSkinsContainerHighlightBorderColor 65262
+#define dxSkinsStrs_sdxSkinsContentColor 65263
+#define ExtCtrls_clNameBtnShadow 65264
+#define ExtCtrls_clNameBtnText 65265
+#define ExtCtrls_clNameCaptionText 65266
+#define ExtCtrls_clNameDefault 65267
+#define ExtCtrls_clNameGrayText 65268
+#define ExtCtrls_clNameHighlight 65269
+#define ExtCtrls_clNameHighlightText 65270
+#define ExtCtrls_clNameInactiveBorder 65271
+#define ExtCtrls_clNameInactiveCaption 65272
+#define ExtCtrls_clNameInactiveCaptionText 65273
+#define ExtCtrls_clNameInfoBk 65274
+#define ExtCtrls_clNameInfoText 65275
+#define ExtCtrls_clNameMenu 65276
+#define ExtCtrls_clNameMenuText 65277
+#define ExtCtrls_clNameNone 65278
+#define ExtCtrls_clNameScrollBar 65279
+#define ExtCtrls_clNameLime 65280
+#define ExtCtrls_clNameYellow 65281
+#define ExtCtrls_clNameBlue 65282
+#define ExtCtrls_clNameFuchsia 65283
+#define ExtCtrls_clNameAqua 65284
+#define ExtCtrls_clNameWhite 65285
+#define ExtCtrls_clNameMoneyGreen 65286
+#define ExtCtrls_clNameSkyBlue 65287
+#define ExtCtrls_clNameCream 65288
+#define ExtCtrls_clNameMedGray 65289
+#define ExtCtrls_clNameActiveBorder 65290
+#define ExtCtrls_clNameActiveCaption 65291
+#define ExtCtrls_clNameAppWorkSpace 65292
+#define ExtCtrls_clNameBackground 65293
+#define ExtCtrls_clNameBtnFace 65294
+#define ExtCtrls_clNameBtnHighlight 65295
+#define Consts_SErrorSettingCount 65296
+#define Consts_SListBoxMustBeVirtual 65297
+#define HelpIntfs_hNoTableOfContents 65298
+#define HelpIntfs_hNothingFound 65299
+#define HelpIntfs_hNoContext 65300
+#define HelpIntfs_hNoTopics 65301
+#define ExtCtrls_clNameBlack 65302
+#define ExtCtrls_clNameMaroon 65303
+#define ExtCtrls_clNameGreen 65304
+#define ExtCtrls_clNameOlive 65305
+#define ExtCtrls_clNameNavy 65306
+#define ExtCtrls_clNamePurple 65307
+#define ExtCtrls_clNameTeal 65308
+#define ExtCtrls_clNameGray 65309
+#define ExtCtrls_clNameSilver 65310
+#define ExtCtrls_clNameRed 65311
+#define Consts_SmkcDown 65312
+#define Consts_SmkcIns 65313
+#define Consts_SmkcDel 65314
+#define Consts_SmkcShift 65315
+#define Consts_SmkcCtrl 65316
+#define Consts_SmkcAlt 65317
+#define Consts_SInsertLineError 65318
+#define Consts_SInvalidClipFmt 65319
+#define Consts_SIconToClipboard 65320
+#define Consts_SCannotOpenClipboard 65321
+#define Consts_SInvalidMemoSize 65322
+#define Consts_SDuplicateMenus 65323
+#define Consts_SDockedCtlNeedsName 65324
+#define Consts_SDockTreeRemoveError 65325
+#define Consts_SDockZoneNotFound 65326
+#define Consts_SDockZoneHasNoCtl 65327
+#define Consts_SMsgDlgIgnore 65328
+#define Consts_SMsgDlgAll 65329
+#define Consts_SMsgDlgNoToAll 65330
+#define Consts_SMsgDlgYesToAll 65331
+#define Consts_SmkcBkSp 65332
+#define Consts_SmkcTab 65333
+#define Consts_SmkcEsc 65334
+#define Consts_SmkcEnter 65335
+#define Consts_SmkcSpace 65336
+#define Consts_SmkcPgUp 65337
+#define Consts_SmkcPgDn 65338
+#define Consts_SmkcEnd 65339
+#define Consts_SmkcHome 65340
+#define Consts_SmkcLeft 65341
+#define Consts_SmkcUp 65342
+#define Consts_SmkcRight 65343
+#define Consts_SCannotDragForm 65344
+#define Consts_SVMetafiles 65345
+#define Consts_SVEnhMetafiles 65346
+#define Consts_SVIcons 65347
+#define Consts_SVBitmaps 65348
+#define Consts_SMsgDlgWarning 65349
+#define Consts_SMsgDlgError 65350
+#define Consts_SMsgDlgInformation 65351
+#define Consts_SMsgDlgConfirm 65352
+#define Consts_SMsgDlgYes 65353
+#define Consts_SMsgDlgNo 65354
+#define Consts_SMsgDlgOK 65355
+#define Consts_SMsgDlgCancel 65356
+#define Consts_SMsgDlgHelp 65357
+#define Consts_SMsgDlgAbort 65358
+#define Consts_SMsgDlgRetry 65359
+#define Consts_SMenuReinserted 65360
+#define Consts_SMenuNotFound 65361
+#define Consts_SNoTimers 65362
+#define Consts_SGroupIndexTooLow 65363
+#define Consts_SNoMDIForm 65364
+#define Consts_SControlParentSetToSelf 65365
+#define Consts_SOKButton 65366
+#define Consts_SCancelButton 65367
+#define Consts_SYesButton 65368
+#define Consts_SNoButton 65369
+#define Consts_SHelpButton 65370
+#define Consts_SCloseButton 65371
+#define Consts_SIgnoreButton 65372
+#define Consts_SRetryButton 65373
+#define Consts_SAbortButton 65374
+#define Consts_SAllButton 65375
+#define Consts_SOutOfResources 65376
+#define Consts_SNoCanvasHandle 65377
+#define Consts_SInvalidImageSize 65378
+#define Consts_SInvalidImageList 65379
+#define Consts_SImageIndexError 65380
+#define Consts_SImageReadFail 65381
+#define Consts_SImageWriteFail 65382
+#define Consts_SWindowDCError 65383
+#define Consts_SWindowClass 65384
+#define Consts_SCannotFocus 65385
+#define Consts_SParentRequired 65386
+#define Consts_SMDIChildNotVisible 65387
+#define Consts_SVisibleChanged 65388
+#define Consts_SCannotShowModal 65389
+#define Consts_SScrollBarRange 65390
+#define Consts_SMenuIndexError 65391
+#define RTLConsts_SReadOnlyProperty 65392
+#define RTLConsts_SResNotFound 65393
+#define RTLConsts_SSeekNotImplemented 65394
+#define RTLConsts_SSortedListError 65395
+#define RTLConsts_SUnknownGroup 65396
+#define RTLConsts_SUnknownProperty 65397
+#define RTLConsts_SWriteError 65398
+#define RTLConsts_SMissingDateTimeField 65399
+#define RTLConsts_SInvalidDateTime 65400
+#define Consts_SInvalidBitmap 65401
+#define Consts_SInvalidIcon 65402
+#define Consts_SInvalidMetafile 65403
+#define Consts_SInvalidPixelFormat 65404
+#define Consts_SScanLine 65405
+#define Consts_SChangeIconSize 65406
+#define Consts_SUnknownClipboardFormat 65407
+#define RTLConsts_SDuplicateString 65408
+#define RTLConsts_SFCreateErrorEx 65409
+#define RTLConsts_SFOpenErrorEx 65410
+#define RTLConsts_SInvalidImage 65411
+#define RTLConsts_SInvalidName 65412
+#define RTLConsts_SInvalidProperty 65413
+#define RTLConsts_SInvalidPropertyElement 65414
+#define RTLConsts_SInvalidPropertyPath 65415
+#define RTLConsts_SInvalidPropertyType 65416
+#define RTLConsts_SInvalidPropertyValue 65417
+#define RTLConsts_SListCapacityError 65418
+#define RTLConsts_SListCountError 65419
+#define RTLConsts_SListIndexError 65420
+#define RTLConsts_SMemoryStreamError 65421
+#define RTLConsts_SPropertyException 65422
+#define RTLConsts_SReadError 65423
+#define SysConst_SLongDayNameSun 65424
+#define SysConst_SLongDayNameMon 65425
+#define SysConst_SLongDayNameTue 65426
+#define SysConst_SLongDayNameWed 65427
+#define SysConst_SLongDayNameThu 65428
+#define SysConst_SLongDayNameFri 65429
+#define SysConst_SLongDayNameSat 65430
+#define RTLConsts_SAncestorNotFound 65431
+#define RTLConsts_SAssignError 65432
+#define RTLConsts_SBitsIndexError 65433
+#define RTLConsts_SCantWriteResourceStreamError 65434
+#define RTLConsts_SCheckSynchronizeError 65435
+#define RTLConsts_SClassNotFound 65436
+#define RTLConsts_SDuplicateClass 65437
+#define RTLConsts_SDuplicateItem 65438
+#define RTLConsts_SDuplicateName 65439
+#define SysConst_SLongMonthNameApr 65440
+#define SysConst_SLongMonthNameMay 65441
+#define SysConst_SLongMonthNameJun 65442
+#define SysConst_SLongMonthNameJul 65443
+#define SysConst_SLongMonthNameAug 65444
+#define SysConst_SLongMonthNameSep 65445
+#define SysConst_SLongMonthNameOct 65446
+#define SysConst_SLongMonthNameNov 65447
+#define SysConst_SLongMonthNameDec 65448
+#define SysConst_SShortDayNameSun 65449
+#define SysConst_SShortDayNameMon 65450
+#define SysConst_SShortDayNameTue 65451
+#define SysConst_SShortDayNameWed 65452
+#define SysConst_SShortDayNameThu 65453
+#define SysConst_SShortDayNameFri 65454
+#define SysConst_SShortDayNameSat 65455
+#define SysConst_SUnkOSError 65456
+#define SysConst_SShortMonthNameJan 65457
+#define SysConst_SShortMonthNameFeb 65458
+#define SysConst_SShortMonthNameMar 65459
+#define SysConst_SShortMonthNameApr 65460
+#define SysConst_SShortMonthNameMay 65461
+#define SysConst_SShortMonthNameJun 65462
+#define SysConst_SShortMonthNameJul 65463
+#define SysConst_SShortMonthNameAug 65464
+#define SysConst_SShortMonthNameSep 65465
+#define SysConst_SShortMonthNameOct 65466
+#define SysConst_SShortMonthNameNov 65467
+#define SysConst_SShortMonthNameDec 65468
+#define SysConst_SLongMonthNameJan 65469
+#define SysConst_SLongMonthNameFeb 65470
+#define SysConst_SLongMonthNameMar 65471
+#define SysConst_SVarTypeTooManyCustom 65472
+#define SysConst_SVarTypeCouldNotConvert 65473
+#define SysConst_SVarTypeConvertOverflow 65474
+#define SysConst_SVarOverflow 65475
+#define SysConst_SVarInvalid 65476
+#define SysConst_SVarBadType 65477
+#define SysConst_SVarNotImplemented 65478
+#define SysConst_SVarUnexpected 65479
+#define SysConst_SExternalException 65480
+#define SysConst_SAssertionFailed 65481
+#define SysConst_SIntfCastError 65482
+#define SysConst_SSafecallException 65483
+#define SysConst_SAssertError 65484
+#define SysConst_SAbstractError 65485
+#define SysConst_SModuleAccessViolation 65486
+#define SysConst_SOSError 65487
+#define SysConst_SInvalidFormat 65488
+#define SysConst_SArgumentMissing 65489
+#define SysConst_SDispatchError 65490
+#define SysConst_SReadAccess 65491
+#define SysConst_SWriteAccess 65492
+#define SysConst_SFormatTooLong 65493
+#define SysConst_SVarArrayCreate 65494
+#define SysConst_SVarArrayBounds 65495
+#define SysConst_SVarArrayLocked 65496
+#define SysConst_SInvalidVarCast 65497
+#define SysConst_SInvalidVarOp 65498
+#define SysConst_SInvalidVarNullOp 65499
+#define SysConst_SInvalidVarOpWithHResultWithPrefix 65500
+#define SysConst_SVarTypeOutOfRangeWithPrefix 65501
+#define SysConst_SVarTypeAlreadyUsedWithPrefix 65502
+#define SysConst_SVarTypeNotUsableWithPrefix 65503
+#define SysConst_SRangeError 65504
+#define SysConst_SIntOverflow 65505
+#define SysConst_SInvalidOp 65506
+#define SysConst_SZeroDivide 65507
+#define SysConst_SOverflow 65508
+#define SysConst_SUnderflow 65509
+#define SysConst_SInvalidPointer 65510
+#define SysConst_SInvalidCast 65511
+#define SysConst_SAccessViolationArg3 65512
+#define SysConst_SAccessViolationNoArg 65513
+#define SysConst_SStackOverflow 65514
+#define SysConst_SControlC 65515
+#define SysConst_SPrivilege 65516
+#define SysConst_SOperationAborted 65517
+#define SysConst_SException 65518
+#define SysConst_SExceptTitle 65519
 #define SysConst_SInvalidInteger 65520
 #define SysConst_SInvalidFloat 65521
-#define SysConst_STimeEncodeError 65522
-#define SysConst_SDateEncodeError 65523
-#define SysConst_SOutOfMemory 65524
-#define SysConst_SInOutError 65525
-#define SysConst_SFileNotFound 65526
-#define SysConst_SInvalidFilename 65527
-#define SysConst_STooManyOpenFiles 65528
-#define SysConst_SAccessDenied 65529
-#define SysConst_SEndOfFile 65530
-#define SysConst_SDiskFull 65531
-#define SysConst_SInvalidInput 65532
-#define SysConst_SDivByZero 65533
-#define SysConst_SRangeError 65534
-#define SysConst_SIntOverflow 65535
+#define SysConst_SInvalidTime 65522
+#define SysConst_SInvalidDateTime 65523
+#define SysConst_STimeEncodeError 65524
+#define SysConst_SDateEncodeError 65525
+#define SysConst_SOutOfMemory 65526
+#define SysConst_SInOutError 65527
+#define SysConst_SFileNotFound 65528
+#define SysConst_SInvalidFilename 65529
+#define SysConst_STooManyOpenFiles 65530
+#define SysConst_SAccessDenied 65531
+#define SysConst_SEndOfFile 65532
+#define SysConst_SDiskFull 65533
+#define SysConst_SInvalidInput 65534
+#define SysConst_SDivByZero 65535
 STRINGTABLE
 BEGIN
+	cxExtEditConsts_cxSEditRichEditLoadFail,	"Failed to Load Stream"
+	cxExtEditConsts_cxSEditRichEditSaveFail,	"Failed to Save Stream"
+	cxExtEditConsts_cxSEditRichEditSelectionSaveFail,	"Failed to selection Save Stream"
+	cxExtEditConsts_cxSEditRichEditOleInterfaceFail,	"RichEdit: failed to get IRichEditOle interface"
+	cxExtEditConsts_cxSEditRichEditCallBackFail,	"RichEdit: failed to set callback"
 	cxExtEditConsts_cxSEditRichEditLinkFail,	"RichEdit: cannot link to an invalid source"
 	cxExtEditConsts_scxSEditRepositoryRichEditItem,	"RichEdit|RichEdit control"
 	cxExtEditConsts_cxSEditRichEditUndoCaption,	"&Undo"
@@ -860,6 +870,11 @@ BEGIN
 	cxExtEditConsts_cxSEditRichEditPasteCaption,	"&Paste"
 	cxExtEditConsts_cxSEditRichEditDeleteCaption,	"&Delete"
 	cxExtEditConsts_cxSEditRichEditSelectAllCaption,	"Select &All"
+	cxExtEditConsts_scxHotZoneStyleMediaPlayer9,	"MediaPlayer9"
+	cxExtEditConsts_scxHotZoneStyleMediaPlayer8,	"MediaPlayer8"
+	cxExtEditConsts_scxHotZoneStyleXPTaskBar,	"XPTaskBar"
+	cxExtEditConsts_scxHotZoneStyleSimple,	"Simple"
+	cxExtEditConsts_scxLoadingFonts,	"Loading ..."
 	cxExtEditConsts_cxSEditCheckGroupCaptionStateDelimiter,	": "
 	cxExtEditConsts_cxSEditCheckGroupFilterColumnSeparator,	"; "
 	cxExtEditConsts_cxSEditCheckGroupChecked,	"Checked"
@@ -871,11 +886,11 @@ BEGIN
 	cxExtEditConsts_cxSColorComboBoxDefaultDescription,	"Color not selected"
 	cxExtEditConsts_cxSEditRichEditLibraryError,	"Cannot load a RichEdit library"
 	cxExtEditConsts_cxSEditRichEditLineInsertionError,	"RichEdit line insertion error"
-	cxExtEditConsts_cxSEditRichEditLoadFail,	"Failed to Load Stream"
-	cxExtEditConsts_cxSEditRichEditSaveFail,	"Failed to Save Stream"
-	cxExtEditConsts_cxSEditRichEditSelectionSaveFail,	"Failed to selection Save Stream"
-	cxExtEditConsts_cxSEditRichEditOleInterfaceFail,	"RichEdit: failed to get IRichEditOle interface"
-	cxExtEditConsts_cxSEditRichEditCallBackFail,	"RichEdit: failed to set callback"
+	cxPCConsts_scxPCStyleNameError,	"%s is an unregistered style name"
+	cxPCConsts_scxPCTabCountEqualsZero,	"Tabs.Count = 0"
+	cxPCConsts_scxPCTabIndexError,	"Tab's index (%d) out of bounds"
+	cxPCConsts_scxPCTabVisibleIndexOutsOfBounds,	"TabVisibleIndex (%d) must be between 0 and %d"
+	cxPCConsts_scxPCVisibleTabListEmpty,	"There are no visible tabs"
 	cxPCConsts_scxPCAllowRotateError,	"%s style does not support rotation of tabs"
 	cxExtEditConsts_scxSEditRepositoryColorComboBoxItem,	"ColorComboBox |Represents a editor with color functionality"
 	cxExtEditConsts_scxSEditRepositoryFontNameComboBoxItem,	"FontNameComboBox |Represents a editor with font functionality"
@@ -887,11 +902,11 @@ BEGIN
 	cxExtEditConsts_scxSEditRepositoryShellComboBoxItem,	"ShellComboBox|Represents a combo box with a dropdown shell tree view"
 	cxExtEditConsts_scxSEditRepositoryCheckGroupItem,	"CheckGroup|Represents a group of check boxes"
 	cxExtEditConsts_scxUDAssociated,	" is already associated with "
-	cxExtEditConsts_scxHotZoneStyleMediaPlayer9,	"MediaPlayer9"
-	cxExtEditConsts_scxHotZoneStyleMediaPlayer8,	"MediaPlayer8"
-	cxExtEditConsts_scxHotZoneStyleXPTaskBar,	"XPTaskBar"
-	cxExtEditConsts_scxHotZoneStyleSimple,	"Simple"
-	cxExtEditConsts_scxLoadingFonts,	"Loading ..."
+	cxFilterControlStrs_cxSFilterControlDialogNewFile,	"untitled.flt"
+	cxFilterControlStrs_cxSFilterControlDialogOpenDialogCaption,	"Open an existing filter"
+	cxFilterControlStrs_cxSFilterControlDialogSaveDialogCaption,	"Save the active filter to file"
+	cxFilterControlStrs_cxSFilterControlDialogActionSaveCaption,	"&Save As..."
+	cxFilterControlStrs_cxSFilterControlDialogActionOpenCaption,	"&Open..."
 	cxFilterControlStrs_cxSFilterControlDialogActionApplyCaption,	"&Apply"
 	cxFilterControlStrs_cxSFilterControlDialogActionOkCaption,	"OK"
 	cxFilterControlStrs_cxSFilterControlDialogActionCancelCaption,	"Cancel"
@@ -903,11 +918,11 @@ BEGIN
 	cxPCConsts_scxPCPageIndexError,	"%d is an invalid PageIndex value.  PageIndex must be between 0 and %d"
 	cxPCConsts_scxPCPainterClassError,	"PCPainterClass is nil"
 	cxPCConsts_scxPCStandardStyleError,	"%s is an unsupported standard style"
-	cxPCConsts_scxPCStyleNameError,	"%s is an unregistered style name"
-	cxPCConsts_scxPCTabCountEqualsZero,	"Tabs.Count = 0"
-	cxPCConsts_scxPCTabIndexError,	"Tab's index (%d) out of bounds"
-	cxPCConsts_scxPCTabVisibleIndexOutsOfBounds,	"TabVisibleIndex (%d) must be between 0 and %d"
-	cxPCConsts_scxPCVisibleTabListEmpty,	"There are no visible tabs"
+	cxFilterControlStrs_cxSFilterRemoveRow,	"&Remove Row"
+	cxFilterControlStrs_cxSFilterClearAll,	"Clear &All"
+	cxFilterControlStrs_cxSFilterFooterAddCondition,	"press the button to add a new condition"
+	cxFilterControlStrs_cxSFilterGroupCaption,	"applies to the following conditions"
+	cxFilterControlStrs_cxSFilterRootGroupCaption,	"<root>"
 	cxFilterControlStrs_cxSFilterControlNullString,	"<empty>"
 	cxFilterControlStrs_cxSFilterErrorBuilding,	"Can't build filter from source"
 	cxFilterControlStrs_cxSFilterDialogCaption,	"Custom Filter"
@@ -919,11 +934,11 @@ BEGIN
 	cxFilterControlStrs_cxSFilterDialogOperationOr,	"OR"
 	cxFilterControlStrs_cxSFilterDialogRows,	"Show rows where:"
 	cxFilterControlStrs_cxSFilterControlDialogCaption,	"Filter builder"
-	cxFilterControlStrs_cxSFilterControlDialogNewFile,	"untitled.flt"
-	cxFilterControlStrs_cxSFilterControlDialogOpenDialogCaption,	"Open an existing filter"
-	cxFilterControlStrs_cxSFilterControlDialogSaveDialogCaption,	"Save the active filter to file"
-	cxFilterControlStrs_cxSFilterControlDialogActionSaveCaption,	"&Save As..."
-	cxFilterControlStrs_cxSFilterControlDialogActionOpenCaption,	"&Open..."
+	cxFilterConsts_cxSFilterOperatorDoesNotBeginWith,	"does not begin with"
+	cxFilterConsts_cxSFilterOperatorEndsWith,	"ends with"
+	cxFilterConsts_cxSFilterOperatorDoesNotEndWith,	"does not end with"
+	cxFilterConsts_cxSFilterOperatorContains,	"contains"
+	cxFilterConsts_cxSFilterOperatorDoesNotContain,	"does not contain"
 	cxFilterConsts_cxSFilterBoxAllCaption,	"(All)"
 	cxFilterConsts_cxSFilterBoxCustomCaption,	"(Custom...)"
 	cxFilterConsts_cxSFilterBoxBlanksCaption,	"(Blanks)"
@@ -935,11 +950,11 @@ BEGIN
 	cxFilterControlStrs_cxSFilterRootButtonCaption,	"Filter"
 	cxFilterControlStrs_cxSFilterAddCondition,	"Add &Condition"
 	cxFilterControlStrs_cxSFilterAddGroup,	"Add &Group"
-	cxFilterControlStrs_cxSFilterRemoveRow,	"&Remove Row"
-	cxFilterControlStrs_cxSFilterClearAll,	"Clear &All"
-	cxFilterControlStrs_cxSFilterFooterAddCondition,	"press the button to add a new condition"
-	cxFilterControlStrs_cxSFilterGroupCaption,	"applies to the following conditions"
-	cxFilterControlStrs_cxSFilterRootGroupCaption,	"<root>"
+	cxFilterConsts_cxSFilterOperatorThisYear,	"is this year"
+	cxFilterConsts_cxSFilterOperatorNext7Days,	"is next 7 days"
+	cxFilterConsts_cxSFilterOperatorNextWeek,	"is next week"
+	cxFilterConsts_cxSFilterOperatorNext14Days,	"is next 14 days"
+	cxFilterConsts_cxSFilterOperatorNextTwoWeeks,	"is next two weeks"
 	cxFilterConsts_cxSFilterOperatorNext30Days,	"is next 30 days"
 	cxFilterConsts_cxSFilterOperatorNextMonth,	"is next month"
 	cxFilterConsts_cxSFilterOperatorNextYear,	"is next year"
@@ -951,11 +966,11 @@ BEGIN
 	cxFilterConsts_cxSFilterOperatorIsNull,	"is blank"
 	cxFilterConsts_cxSFilterOperatorIsNotNull,	"is not blank"
 	cxFilterConsts_cxSFilterOperatorBeginsWith,	"begins with"
-	cxFilterConsts_cxSFilterOperatorDoesNotBeginWith,	"does not begin with"
-	cxFilterConsts_cxSFilterOperatorEndsWith,	"ends with"
-	cxFilterConsts_cxSFilterOperatorDoesNotEndWith,	"does not end with"
-	cxFilterConsts_cxSFilterOperatorContains,	"contains"
-	cxFilterConsts_cxSFilterOperatorDoesNotContain,	"does not contain"
+	cxFilterConsts_cxSFilterOperatorNotBetween,	"not between"
+	cxFilterConsts_cxSFilterOperatorInList,	"in"
+	cxFilterConsts_cxSFilterOperatorNotInList,	"not in"
+	cxFilterConsts_cxSFilterOperatorYesterday,	"is yesterday"
+	cxFilterConsts_cxSFilterOperatorToday,	"is today"
 	cxFilterConsts_cxSFilterOperatorTomorrow,	"is tomorrow"
 	cxFilterConsts_cxSFilterOperatorLast7Days,	"is last 7 days"
 	cxFilterConsts_cxSFilterOperatorLastWeek,	"is last week"
@@ -967,11 +982,11 @@ BEGIN
 	cxFilterConsts_cxSFilterOperatorPast,	"is past"
 	cxFilterConsts_cxSFilterOperatorThisWeek,	"is this week"
 	cxFilterConsts_cxSFilterOperatorThisMonth,	"is this month"
-	cxFilterConsts_cxSFilterOperatorThisYear,	"is this year"
-	cxFilterConsts_cxSFilterOperatorNext7Days,	"is next 7 days"
-	cxFilterConsts_cxSFilterOperatorNextWeek,	"is next week"
-	cxFilterConsts_cxSFilterOperatorNext14Days,	"is next 14 days"
-	cxFilterConsts_cxSFilterOperatorNextTwoWeeks,	"is next two weeks"
+	cxEditConsts_scxMaskEditRegExprError,	"Regular expression errors:"
+	cxEditConsts_scxMaskEditInvalidEditValue,	"The edit value is invalid"
+	cxEditConsts_scxMaskEditNoMask,	"None"
+	cxEditConsts_scxMaskEditIllegalFileFormat,	"Illegal file format"
+	cxEditConsts_scxMaskEditEmptyMaskCollectionFile,	"The mask collection file is empty"
 	cxEditConsts_scxMaskEditMaskCollectionFiles,	"Mask collection files"
 	cxEditConsts_cxSSpinEditInvalidNumericValue,	"Invalid numeric value"
 	cxFilterConsts_cxSFilterOperatorEqual,	"equals"
@@ -983,11 +998,11 @@ BEGIN
 	cxFilterConsts_cxSFilterOperatorLike,	"like"
 	cxFilterConsts_cxSFilterOperatorNotLike,	"not like"
 	cxFilterConsts_cxSFilterOperatorBetween,	"between"
-	cxFilterConsts_cxSFilterOperatorNotBetween,	"not between"
-	cxFilterConsts_cxSFilterOperatorInList,	"in"
-	cxFilterConsts_cxSFilterOperatorNotInList,	"not in"
-	cxFilterConsts_cxSFilterOperatorYesterday,	"is yesterday"
-	cxFilterConsts_cxSFilterOperatorToday,	"is today"
+	cxEditConsts_scxRegExprCantCreateEmptyBlock,	"The block should not be empty"
+	cxEditConsts_scxRegExprIllegalSymbol,	"Illegal '%s'"
+	cxEditConsts_scxRegExprIllegalQuantifier,	"Illegal quantifier '%s'"
+	cxEditConsts_scxRegExprNotSupportQuantifier,	"The parameter quantifiers are not supported"
+	cxEditConsts_scxRegExprIllegalIntegerValue,	"Illegal integer value"
 	cxEditConsts_scxRegExprTooBigReferenceNumber,	"Too big reference number"
 	cxEditConsts_scxRegExprCantCreateEmptyEnum,	"Can't create empty enumeration"
 	cxEditConsts_scxRegExprSubrangeOrder,	"The starting character of the subrange must be less than the finishing one"
@@ -999,11 +1014,11 @@ BEGIN
 	cxEditConsts_scxRegExprNotCompiled,	"Regular expression is not compiled"
 	cxEditConsts_scxRegExprIncorrectParameterQuantifier,	"Incorrect parameter quantifier"
 	cxEditConsts_scxRegExprCantUseParameterQuantifier,	"The parameter quantifier cannot be applied here"
-	cxEditConsts_scxMaskEditRegExprError,	"Regular expression errors:"
-	cxEditConsts_scxMaskEditInvalidEditValue,	"The edit value is invalid"
-	cxEditConsts_scxMaskEditNoMask,	"None"
-	cxEditConsts_scxMaskEditIllegalFileFormat,	"Illegal file format"
-	cxEditConsts_scxMaskEditEmptyMaskCollectionFile,	"The mask collection file is empty"
+	cxEditConsts_scxSEditRepositoryLookupComboBoxItem,	"LookupComboBox|Represents a lookup combo box control"
+	cxEditConsts_scxSEditRepositoryMaskItem,	"MaskEdit|Represents a generic masked edit control."
+	cxEditConsts_scxSEditRepositoryMemoItem,	"Memo|Represents an edit control that allows editing memo data"
+	cxEditConsts_scxSEditRepositoryMRUItem,	"MRUEdit|Represents a text editor displaying the list of most recently used items (MRU) within a dropdown window"
+	cxEditConsts_scxSEditRepositoryPopupItem,	"PopupEdit|Represents an edit control with a dropdown list"
 	cxEditConsts_scxSEditRepositorySpinItem,	"SpinEdit|Represents a spin editor"
 	cxEditConsts_scxSEditRepositoryRadioGroupItem,	"RadioGroup|Represents a group of radio buttons"
 	cxEditConsts_scxSEditRepositoryTextItem,	"TextEdit|Represents a single line text editor"
@@ -1015,11 +1030,11 @@ BEGIN
 	cxEditConsts_scxRegExprCantUsePlusQuantifier,	"The '+' quantifier cannot be applied here"
 	cxEditConsts_scxRegExprCantUseStarQuantifier,	"The '*' quantifier cannot be applied here"
 	cxEditConsts_scxRegExprCantCreateEmptyAlt,	"The alternative should not be empty"
-	cxEditConsts_scxRegExprCantCreateEmptyBlock,	"The block should not be empty"
-	cxEditConsts_scxRegExprIllegalSymbol,	"Illegal '%s'"
-	cxEditConsts_scxRegExprIllegalQuantifier,	"Illegal quantifier '%s'"
-	cxEditConsts_scxRegExprNotSupportQuantifier,	"The parameter quantifiers are not supported"
-	cxEditConsts_scxRegExprIllegalIntegerValue,	"Illegal integer value"
+	cxEditConsts_cxNavigatorHint_Cancel,	"Cancel edit"
+	cxEditConsts_cxNavigatorHint_Refresh,	"Refresh data"
+	cxEditConsts_cxNavigatorHint_SaveBookmark,	"Save Bookmark"
+	cxEditConsts_cxNavigatorHint_GotoBookmark,	"Goto Bookmark"
+	cxEditConsts_cxNavigatorHint_Filter,	"Filter data"
 	cxEditConsts_cxNavigator_DeleteRecordQuestion,	"Delete record?"
 	cxEditConsts_scxSEditRepositoryBlobItem,	"BlobEdit|Represents the BLOB editor"
 	cxEditConsts_scxSEditRepositoryButtonItem,	"ButtonEdit|Represents an edit control with embedded buttons"
@@ -1031,11 +1046,11 @@ BEGIN
 	cxEditConsts_scxSEditRepositoryHyperLinkItem,	"HyperLink|Represents a text editor with hyperlink functionality"
 	cxEditConsts_scxSEditRepositoryImageComboBoxItem,	"ImageComboBox|Represents an editor displaying the list of images and text strings within the dropdown window"
 	cxEditConsts_scxSEditRepositoryImageItem,	"Image|Represents an image editor"
-	cxEditConsts_scxSEditRepositoryLookupComboBoxItem,	"LookupComboBox|Represents a lookup combo box control"
-	cxEditConsts_scxSEditRepositoryMaskItem,	"MaskEdit|Represents a generic masked edit control."
-	cxEditConsts_scxSEditRepositoryMemoItem,	"Memo|Represents an edit control that allows editing memo data"
-	cxEditConsts_scxSEditRepositoryMRUItem,	"MRUEdit|Represents a text editor displaying the list of most recently used items (MRU) within a dropdown window"
-	cxEditConsts_scxSEditRepositoryPopupItem,	"PopupEdit|Represents an edit control with a dropdown list"
+	cxEditConsts_cxSDatePopupToday,	"Today"
+	cxEditConsts_cxSDateError,	"Invalid Date"
+	cxEditConsts_scxSCalcError,	"Error"
+	cxEditConsts_scxSHyperLinkPrefix,	"http://"
+	cxEditConsts_scxSHyperLinkDoubleSlash,	"//"
 	cxEditConsts_cxNavigatorHint_First,	"First record"
 	cxEditConsts_cxNavigatorHint_Prior,	"Prior record"
 	cxEditConsts_cxNavigatorHint_PriorPage,	"Prior page"
@@ -1047,11 +1062,11 @@ BEGIN
 	cxEditConsts_cxNavigatorHint_Delete,	"Delete record"
 	cxEditConsts_cxNavigatorHint_Edit,	"Edit record"
 	cxEditConsts_cxNavigatorHint_Post,	"Post edit"
-	cxEditConsts_cxNavigatorHint_Cancel,	"Cancel edit"
-	cxEditConsts_cxNavigatorHint_Refresh,	"Refresh data"
-	cxEditConsts_cxNavigatorHint_SaveBookmark,	"Save Bookmark"
-	cxEditConsts_cxNavigatorHint_GotoBookmark,	"Goto Bookmark"
-	cxEditConsts_cxNavigatorHint_Filter,	"Filter data"
+	cxEditConsts_cxSBlobButtonOK,	"&OK"
+	cxEditConsts_cxSBlobButtonCancel,	"&Cancel"
+	cxEditConsts_cxSBlobButtonClose,	"&Close"
+	cxEditConsts_cxSBlobMemo,	"(MEMO)"
+	cxEditConsts_cxSBlobMemoEmpty,	"(memo)"
 	cxEditConsts_cxSBlobPicture,	"(PICTURE)"
 	cxEditConsts_cxSBlobPictureEmpty,	"(picture)"
 	cxEditConsts_cxSMenuItemCaptionCut,	"Cu&t"
@@ -1063,11 +1078,11 @@ BEGIN
 	cxEditConsts_cxSDatePopupClear,	"Clear"
 	cxEditConsts_cxSDatePopupNow,	"Now"
 	cxEditConsts_cxSDatePopupOK,	"OK"
-	cxEditConsts_cxSDatePopupToday,	"Today"
-	cxEditConsts_cxSDateError,	"Invalid Date"
-	cxEditConsts_scxSCalcError,	"Error"
-	cxEditConsts_scxSHyperLinkPrefix,	"http://"
-	cxEditConsts_scxSHyperLinkDoubleSlash,	"//"
+	cxEditConsts_cxSEditButtonCancel,	"Cancel"
+	cxEditConsts_cxSEditButtonOK,	"OK"
+	cxEditConsts_cxSEditDateConvertError,	"Could not convert to date"
+	cxEditConsts_cxSEditInvalidRepositoryItem,	"The repository item is not acceptable"
+	cxEditConsts_cxSEditNumericValueConvertError,	"Could not convert to numeric value"
 	cxEditConsts_cxSEditPopupCircularReferencingError,	"Circular referencing is not allowed"
 	cxEditConsts_cxSEditPostError,	"An error occured during posting edit value"
 	cxEditConsts_cxSEditTimeConvertError,	"Could not convert to time"
@@ -1079,11 +1094,11 @@ BEGIN
 	cxEditConsts_cxSRadioGroupDefaultCaption,	""
 	cxEditConsts_cxSTextTrue,	"True"
 	cxEditConsts_cxSTextFalse,	"False"
-	cxEditConsts_cxSBlobButtonOK,	"&OK"
-	cxEditConsts_cxSBlobButtonCancel,	"&Cancel"
-	cxEditConsts_cxSBlobButtonClose,	"&Close"
-	cxEditConsts_cxSBlobMemo,	"(MEMO)"
-	cxEditConsts_cxSBlobMemoEmpty,	"(memo)"
+	cxLibraryStrs_cxSDateMonday,	"Monday"
+	cxLibraryStrs_cxSDateTuesday,	"Tuesday"
+	cxLibraryStrs_cxSDateWednesday,	"Wednesday"
+	cxLibraryStrs_cxSDateThursday,	"Thursday"
+	cxLibraryStrs_cxSDateFriday,	"Friday"
 	cxLibraryStrs_cxSDateSaturday,	"Saturday"
 	cxLibraryStrs_cxSDateFirst,	"first"
 	cxLibraryStrs_cxSDateSecond,	"second"
@@ -1095,11 +1110,11 @@ BEGIN
 	cxLibraryStrs_cxSDateBOM,	"bom"
 	cxLibraryStrs_cxSDateEOM,	"eom"
 	cxLibraryStrs_cxSDateNow,	"now"
-	cxEditConsts_cxSEditButtonCancel,	"Cancel"
-	cxEditConsts_cxSEditButtonOK,	"OK"
-	cxEditConsts_cxSEditDateConvertError,	"Could not convert to date"
-	cxEditConsts_cxSEditInvalidRepositoryItem,	"The repository item is not acceptable"
-	cxEditConsts_cxSEditNumericValueConvertError,	"Could not convert to numeric value"
+	cxDataConsts_cxSDataItemIndexError,	"ItemIndex out of range"
+	cxDataConsts_cxSDataProviderModeError,	"This operation is not supported in provider mode"
+	cxDataConsts_cxSDataInvalidStreamFormat,	"Invalid stream format"
+	cxDataConsts_cxSDataRowIndexError,	"RowIndex out of range"
+	cxDataConsts_cxSDataCustomDataSourceInvalidCompare,	"GetInfoForCompare not implemented"
 	cxDataConsts_cxSDBDetailFilterControllerNotFound,	"DetailFilterController not found"
 	cxDataConsts_cxSDBNotInGridMode,	"DataController not in GridMode"
 	cxDataConsts_cxSDBKeyFieldNotFound,	"Key Field not found"
@@ -1111,11 +1126,11 @@ BEGIN
 	cxLibraryStrs_cxSDateYesterday,	"yesterday"
 	cxLibraryStrs_cxSDateTomorrow,	"tomorrow"
 	cxLibraryStrs_cxSDateSunday,	"Sunday"
-	cxLibraryStrs_cxSDateMonday,	"Monday"
-	cxLibraryStrs_cxSDateTuesday,	"Tuesday"
-	cxLibraryStrs_cxSDateWednesday,	"Wednesday"
-	cxLibraryStrs_cxSDateThursday,	"Thursday"
-	cxLibraryStrs_cxSDateFriday,	"Friday"
+	dxSkinsStrs_sdxSmallFormButtonClose,	"SmallFormButtonClose"
+	dxSkinsStrs_sdxStatusBar,	"StatusBar"
+	dxSkinsStrs_sdxBorders,	"Borders"
+	dxSkinsStrs_sdxLeft,	"Left"
+	dxSkinsStrs_sdxTop,	"Top"
 	dxSkinsStrs_sdxRight,	"Right"
 	dxSkinsStrs_sdxBottom,	"Bottom"
 	DBConsts_SBcdOverflow,	"BCD overflow"
@@ -1127,11 +1142,11 @@ BEGIN
 	cxDataConsts_cxSDataWriteError,	"Stream write error"
 	cxDataConsts_cxSDataItemExistError,	"Item already exists"
 	cxDataConsts_cxSDataRecordIndexError,	"RecordIndex out of range"
-	cxDataConsts_cxSDataItemIndexError,	"ItemIndex out of range"
-	cxDataConsts_cxSDataProviderModeError,	"This operation is not supported in provider mode"
-	cxDataConsts_cxSDataInvalidStreamFormat,	"Invalid stream format"
-	cxDataConsts_cxSDataRowIndexError,	"RowIndex out of range"
-	cxDataConsts_cxSDataCustomDataSourceInvalidCompare,	"GetInfoForCompare not implemented"
+	dxSkinsStrs_sdxVGridRowHeader,	"Category"
+	dxSkinsStrs_sdxTextShadowColor,	"TextShadowColor"
+	dxSkinsStrs_sdxFormFrameLeft,	"FormFrameLeft"
+	dxSkinsStrs_sdxFormCaption,	"FormCaption"
+	dxSkinsStrs_sdxFormContent,	"FormContent"
 	dxSkinsStrs_sdxFormFrameRight,	"FormFrameRight"
 	dxSkinsStrs_sdxFormFrameBottom,	"FormFrameBottom"
 	dxSkinsStrs_sdxSmallFormFrameLeft,	"SmallFormFrameLeft"
@@ -1143,11 +1158,11 @@ BEGIN
 	dxSkinsStrs_sdxFormButtonMaximize,	"FormButtonMaximize"
 	dxSkinsStrs_sdxFormButtonMinimize,	"FormButtonMinimize"
 	dxSkinsStrs_sdxFormButtonRestore,	"FormButtonRestore"
-	dxSkinsStrs_sdxSmallFormButtonClose,	"SmallFormButtonClose"
-	dxSkinsStrs_sdxStatusBar,	"StatusBar"
-	dxSkinsStrs_sdxBorders,	"Borders"
-	dxSkinsStrs_sdxLeft,	"Left"
-	dxSkinsStrs_sdxTop,	"Top"
+	dxSkinsStrs_sdxFooterCell,	"FooterCell"
+	dxSkinsStrs_sdxFooterPanel,	"FooterPanel"
+	dxSkinsStrs_sdxGridLine,	"GridLine"
+	dxSkinsStrs_sdxGroupByBox,	"GridGroupPanel"
+	dxSkinsStrs_sdxGroupRow,	"GroupRow"
 	dxSkinsStrs_sdxHeader,	"Header"
 	dxSkinsStrs_sdxHeaderLeft,	"HeaderLeft"
 	dxSkinsStrs_sdxHeaderRight,	"HeaderRight"
@@ -1159,11 +1174,11 @@ BEGIN
 	dxSkinsStrs_sdxVGridBandLine,	"BandBorder"
 	dxSkinsStrs_sdxVGridLine,	"GridLine"
 	dxSkinsStrs_sdxVGridRow,	"Row"
-	dxSkinsStrs_sdxVGridRowHeader,	"Category"
-	dxSkinsStrs_sdxTextShadowColor,	"TextShadowColor"
-	dxSkinsStrs_sdxFormFrameLeft,	"FormFrameLeft"
-	dxSkinsStrs_sdxFormCaption,	"FormCaption"
-	dxSkinsStrs_sdxFormContent,	"FormContent"
+	dxSkinsStrs_sdxPageControlHeaderLeft,	"TabHeaderLeft"
+	dxSkinsStrs_sdxPageControlHeaderRight,	"TabHeaderRight"
+	dxSkinsStrs_sdxPageControlHeaderTop,	"TabHeader"
+	dxSkinsStrs_sdxPageControlHorz,	"TabButtonHorz"
+	dxSkinsStrs_sdxPageControlPane,	"TabPane"
 	dxSkinsStrs_sdxPageControlVert,	"TabButtonVert"
 	dxSkinsStrs_sdxHeaderDownGrow,	"HeaderDownGrow"
 	dxSkinsStrs_sdxRowIndentFar,	"RowIndentFar"
@@ -1175,11 +1190,11 @@ BEGIN
 	dxSkinsStrs_sdxFilterButton,	"FilterButton"
 	dxSkinsStrs_sdxFilterButtonActive,	"FilterButtonActive"
 	dxSkinsStrs_sdxFilterPanel,	"GridFilterPanel"
-	dxSkinsStrs_sdxFooterCell,	"FooterCell"
-	dxSkinsStrs_sdxFooterPanel,	"FooterPanel"
-	dxSkinsStrs_sdxGridLine,	"GridLine"
-	dxSkinsStrs_sdxGroupByBox,	"GridGroupPanel"
-	dxSkinsStrs_sdxGroupRow,	"GroupRow"
+	dxSkinsStrs_sdxSizeGrip,	"SizeGrip"
+	dxSkinsStrs_sdxSplitterHorz,	"SplitterHorz"
+	dxSkinsStrs_sdxSplitterVert,	"Splitter"
+	dxSkinsStrs_sdxScreenTipItem,	"ScreenTipItem"
+	dxSkinsStrs_sdxScreenTipSeparator,	"ScreenTipSeparator"
 	dxSkinsStrs_sdxScreenTipTitleItem,	"ScreenTipTitleItem"
 	dxSkinsStrs_sdxScreenTipWindow,	"ScreenTipWindow"
 	dxSkinsStrs_sdxTrackBarThumb,	"TrackBarThumb"
@@ -1191,11 +1206,11 @@ BEGIN
 	dxSkinsStrs_sdxTrackBarTrack,	"TrackBarTrack"
 	dxSkinsStrs_sdxTrackBarTrackVert,	"TrackBarTrackVert"
 	dxSkinsStrs_sdxPageControlHeaderBottom,	"TabHeaderBottom"
-	dxSkinsStrs_sdxPageControlHeaderLeft,	"TabHeaderLeft"
-	dxSkinsStrs_sdxPageControlHeaderRight,	"TabHeaderRight"
-	dxSkinsStrs_sdxPageControlHeaderTop,	"TabHeader"
-	dxSkinsStrs_sdxPageControlHorz,	"TabButtonHorz"
-	dxSkinsStrs_sdxPageControlPane,	"TabPane"
+	dxSkinsStrs_sdxButton,	"Button"
+	dxSkinsStrs_sdxCheckbox,	"Checkbox"
+	dxSkinsStrs_sdxClock,	"ClockFace"
+	dxSkinsStrs_sdxClockGlass,	"ClockGlass"
+	dxSkinsStrs_sdxNavigatorGlyphs,	"Navigator"
 	dxSkinsStrs_sdxNavigatorGlyphsVert,	"NavigatorVert"
 	dxSkinsStrs_sdxProgressBorder,	"ProgressBorder"
 	dxSkinsStrs_sdxProgressBorderVert,	"ProgressBorderVert"
@@ -1207,11 +1222,11 @@ BEGIN
 	dxSkinsStrs_sdxScrollContentVert,	"ScrollContentVert"
 	dxSkinsStrs_sdxScrollThumbButtonHorz,	"ScrollThumbHorz"
 	dxSkinsStrs_sdxScrollThumbButtonVert,	"ScrollThumbVert"
-	dxSkinsStrs_sdxSizeGrip,	"SizeGrip"
-	dxSkinsStrs_sdxSplitterHorz,	"SplitterHorz"
-	dxSkinsStrs_sdxSplitterVert,	"Splitter"
-	dxSkinsStrs_sdxScreenTipItem,	"ScreenTipItem"
-	dxSkinsStrs_sdxScreenTipSeparator,	"ScreenTipSeparator"
+	dxSkinsStrs_sdxDockCtrlTabHeader,	"TabHeader"
+	dxSkinsStrs_sdxDockCtrlTabHeaderAutoHideBar,	"TabHeaderAutoHideBar"
+	dxSkinsStrs_sdxDockCtrlTabHeaderBackground,	"TabHeaderBackground"
+	dxSkinsStrs_sdxDockCtrlTabHeaderLine,	"TabHeaderLine"
+	dxSkinsStrs_sdxDockCtrlWindowButton,	"DockWindowButton"
 	dxSkinsStrs_sdxDockCtrlWindowGlyphs,	"DockWindowButtonGlyphs"
 	dxSkinsStrs_sdxGroupPanel,	"GroupPanel"
 	dxSkinsStrs_sdxGroupPanelBottom,	"GroupPanelBottom"
@@ -1223,11 +1238,11 @@ BEGIN
 	dxSkinsStrs_sdxGroupPanelNoBorder,	"GroupPanelNoBorder"
 	dxSkinsStrs_sdxGroupPanelRight,	"GroupPanelRight"
 	dxSkinsStrs_sdxGroupPanelTop,	"GroupPanelTop"
-	dxSkinsStrs_sdxButton,	"Button"
-	dxSkinsStrs_sdxCheckbox,	"Checkbox"
-	dxSkinsStrs_sdxClock,	"ClockFace"
-	dxSkinsStrs_sdxClockGlass,	"ClockGlass"
-	dxSkinsStrs_sdxNavigatorGlyphs,	"Navigator"
+	dxSkinsStrs_sdxSchedulerNavButtonPrevArrow,	"NavButtonPrevArrow"
+	dxSkinsStrs_sdxSchedulerTimeGridCurrentTimeIndicator,	"TimeGridCurrentTimeIndicator"
+	dxSkinsStrs_sdxSchedulerTimeGridHeader,	"TimeGridHeader"
+	dxSkinsStrs_sdxSchedulerTimeGridHeaderSelected,	"TimeGridHeaderSelected"
+	dxSkinsStrs_sdxSchedulerTimeLine,	"DefaultTimeLine"
 	dxSkinsStrs_sdxSchedulerTimeRuler,	"Ruler"
 	dxSkinsStrs_sdxDCActiveTabHeaderDownGrow,	"ActiveTabHeaderDownGrow"
 	dxSkinsStrs_sdxDCActiveTabHeaderHGrow,	"ActiveTabHeaderHGrow"
@@ -1239,11 +1254,11 @@ BEGIN
 	dxSkinsStrs_sdxDockCtrlBorder,	"DockWindowBorder"
 	dxSkinsStrs_sdxDockCtrlCaption,	"DockWindowCaption"
 	dxSkinsStrs_sdxDockCtrlInactiveCaptionTextColor,	"InactiveCaptionTextColor"
-	dxSkinsStrs_sdxDockCtrlTabHeader,	"TabHeader"
-	dxSkinsStrs_sdxDockCtrlTabHeaderAutoHideBar,	"TabHeaderAutoHideBar"
-	dxSkinsStrs_sdxDockCtrlTabHeaderBackground,	"TabHeaderBackground"
-	dxSkinsStrs_sdxDockCtrlTabHeaderLine,	"TabHeaderLine"
-	dxSkinsStrs_sdxDockCtrlWindowButton,	"DockWindowButton"
+	dxSkinsStrs_sdxNavPaneScrollDownBtn,	"ScrollDownButton"
+	dxSkinsStrs_sdxNavPaneScrollUpBtn,	"ScrollUpButton"
+	dxSkinsStrs_sdxNavPaneSplitter,	"Splitter"
+	dxSkinsStrs_sdxSchedulerAllDayArea,	"AllDayArea"
+	dxSkinsStrs_sdxSchedulerAllDayAreaSelected,	"AllDayAreaSelected"
 	dxSkinsStrs_sdxSchedulerAppointment,	"Appointment"
 	dxSkinsStrs_sdxSchedulerAppointmentBorderSize,	"BorderSize"
 	dxSkinsStrs_sdxSchedulerAppointmentBottomShadow,	"AppointmentBottomShadow"
@@ -1255,11 +1270,11 @@ BEGIN
 	dxSkinsStrs_sdxSchedulerNavButtonNext,	"NavButtonNext"
 	dxSkinsStrs_sdxSchedulerNavButtonNextArrow,	"NavButtonNextArrow"
 	dxSkinsStrs_sdxSchedulerNavButtonPrev,	"NavButtonPrev"
-	dxSkinsStrs_sdxSchedulerNavButtonPrevArrow,	"NavButtonPrevArrow"
-	dxSkinsStrs_sdxSchedulerTimeGridCurrentTimeIndicator,	"TimeGridCurrentTimeIndicator"
-	dxSkinsStrs_sdxSchedulerTimeGridHeader,	"TimeGridHeader"
-	dxSkinsStrs_sdxSchedulerTimeGridHeaderSelected,	"TimeGridHeaderSelected"
-	dxSkinsStrs_sdxSchedulerTimeLine,	"DefaultTimeLine"
+	dxSkinsStrs_sdxNavPaneCaptionFontSize,	"FontSize"
+	dxSkinsStrs_sdxNavPaneCaptionHeight,	"Height"
+	dxSkinsStrs_sdxNavPaneCollapseButton,	"CollapseButton"
+	dxSkinsStrs_sdxNavPaneCollapsedGroupClient,	"CollapsedGroupClient"
+	dxSkinsStrs_sdxNavPaneExpandButton,	"ExpandButton"
 	dxSkinsStrs_sdxNavPaneFormBorder,	"PopupBorder"
 	dxSkinsStrs_sdxNavPaneFormSizeGrip,	"PopupSizeGrip"
 	dxSkinsStrs_sdxNavPaneGroupButton,	"GroupButton"
@@ -1271,11 +1286,11 @@ BEGIN
 	dxSkinsStrs_sdxNavPaneOverflowPanel,	"OverflowPanel"
 	dxSkinsStrs_sdxNavPaneOverflowPanelExpandItem,	"OverflowPanelExpandItem"
 	dxSkinsStrs_sdxNavPaneOverflowPanelItem,	"OverflowPanelItem"
-	dxSkinsStrs_sdxNavPaneScrollDownBtn,	"ScrollDownButton"
-	dxSkinsStrs_sdxNavPaneScrollUpBtn,	"ScrollUpButton"
-	dxSkinsStrs_sdxNavPaneSplitter,	"Splitter"
-	dxSkinsStrs_sdxSchedulerAllDayArea,	"AllDayArea"
-	dxSkinsStrs_sdxSchedulerAllDayAreaSelected,	"AllDayAreaSelected"
+	dxSkinsStrs_sdxRibbonStatusBarButton,	"StatusBarButton"
+	dxSkinsStrs_sdxRibbonStatusBarSeparator,	"StatusBarSeparator"
+	dxSkinsStrs_sdxRibbonTabGroup,	"TabGroup"
+	dxSkinsStrs_sdxRibbonTabGroupHeader,	"TabGroupCaption"
+	dxSkinsStrs_sdxRibbonTabGroupLeftScroll,	"TabGroupLeftScrollButton"
 	dxSkinsStrs_sdxRibbonTabGroupRightScroll,	"TabGroupRightScrollButton"
 	dxSkinsStrs_sdxRibbonTabHeaderDownGrowIndent,	"TabHeaderDownGrow"
 	dxSkinsStrs_sdxRibbonTabHeaderPage,	"Tab"
@@ -1287,11 +1302,11 @@ BEGIN
 	dxSkinsStrs_sdxNavBarGroupHeader,	"GroupHeader"
 	dxSkinsStrs_sdxNavBarGroupOpenButton,	"GroupOpenButton"
 	dxSkinsStrs_sdxNavBarItem,	"Item"
-	dxSkinsStrs_sdxNavPaneCaptionFontSize,	"FontSize"
-	dxSkinsStrs_sdxNavPaneCaptionHeight,	"Height"
-	dxSkinsStrs_sdxNavPaneCollapseButton,	"CollapseButton"
-	dxSkinsStrs_sdxNavPaneCollapsedGroupClient,	"CollapsedGroupClient"
-	dxSkinsStrs_sdxNavPaneExpandButton,	"ExpandButton"
+	dxSkinsStrs_sdxRibbonLargeButton,	"LargeButton"
+	dxSkinsStrs_sdxRibbonLargeSplitButtonBottom,	"LargeSplitButtonBottom"
+	dxSkinsStrs_sdxRibbonLargeSplitButtonTop,	"LargeSplitButtonTop"
+	dxSkinsStrs_sdxRibbonQATCustomizeButtonOutsideQAT,	"DisplayCustomizeButtonOutsideQAT"
+	dxSkinsStrs_sdxRibbonQATIndentBeforeCustomizeItem,	"IndentBeforeCustomizeButton"
 	dxSkinsStrs_sdxRibbonQuickAccessToolbarOffset,	"Offset"
 	dxSkinsStrs_sdxRibbonQuickToolbarAbove,	"QATAboveBackground"
 	dxSkinsStrs_sdxRibbonQuickToolbarBelow,	"QATBelowBackground"
@@ -1303,11 +1318,11 @@ BEGIN
 	dxSkinsStrs_sdxRibbonSplitButtonLeft,	"SplitButtonLeft"
 	dxSkinsStrs_sdxRibbonSplitButtonRight,	"SplitButtonRight"
 	dxSkinsStrs_sdxRibbonStatusBarBackground,	"StatusBarBackground"
-	dxSkinsStrs_sdxRibbonStatusBarButton,	"StatusBarButton"
-	dxSkinsStrs_sdxRibbonStatusBarSeparator,	"StatusBarSeparator"
-	dxSkinsStrs_sdxRibbonTabGroup,	"TabGroup"
-	dxSkinsStrs_sdxRibbonTabGroupHeader,	"TabGroupCaption"
-	dxSkinsStrs_sdxRibbonTabGroupLeftScroll,	"TabGroupLeftScrollButton"
+	dxSkinsStrs_sdxRibbonDialogFrameRight,	"DialogFrameRight"
+	dxSkinsStrs_sdxRibbonDocumentNameTextColor,	"DocumentNameTextColor"
+	dxSkinsStrs_sdxRibbonExtraPaneColor,	"AppMenuExtraPaneColor"
+	dxSkinsStrs_sdxRibbonFormBottom,	"FormFrameBottom"
+	dxSkinsStrs_sdxRibbonFormCaption,	"FormCaption"
 	dxSkinsStrs_sdxRibbonFormFrameLeft,	"FormFrameLeft"
 	dxSkinsStrs_sdxRibbonFormFrameRight,	"FormFrameRight"
 	dxSkinsStrs_sdxRibbonGalleryBackground,	"DropDownGalleryBackground"
@@ -1319,11 +1334,11 @@ BEGIN
 	dxSkinsStrs_sdxRibbonGallerySizeGrips,	"DropDownGallerySizeGrip"
 	dxSkinsStrs_sdxRibbonGallerySizingPanel,	"DropDownGallerySizePanel"
 	dxSkinsStrs_sdxRibbonHeaderBackground,	"TabBackground"
-	dxSkinsStrs_sdxRibbonLargeButton,	"LargeButton"
-	dxSkinsStrs_sdxRibbonLargeSplitButtonBottom,	"LargeSplitButtonBottom"
-	dxSkinsStrs_sdxRibbonLargeSplitButtonTop,	"LargeSplitButtonTop"
-	dxSkinsStrs_sdxRibbonQATCustomizeButtonOutsideQAT,	"DisplayCustomizeButtonOutsideQAT"
-	dxSkinsStrs_sdxRibbonQATIndentBeforeCustomizeItem,	"IndentBeforeCustomizeButton"
+	dxSkinsStrs_sdxTextColorHot,	"TextColorHot"
+	dxSkinsStrs_sdxTextColorSelected,	"TextColorSelected"
+	dxSkinsStrs_sdxTextInactiveColor,	"TextColorInactive"
+	dxSkinsStrs_sdxRibbonAppButtonRightIndent,	"RightIndent"
+	dxSkinsStrs_sdxRibbonApplicationButton,	"FormAppButton"
 	dxSkinsStrs_sdxRibbonAppMenuFooterBackground,	"AppMenuBackgroundBottom"
 	dxSkinsStrs_sdxRibbonAppMenuHeaderBackground,	"AppMenuBackground"
 	dxSkinsStrs_sdxRibbonButtonArrow,	"ButtonArrow"
@@ -1335,11 +1350,11 @@ BEGIN
 	dxSkinsStrs_sdxRibbonCollapsedToolBarGlyphBackground,	"TabGroupCollapsedBox"
 	dxSkinsStrs_sdxRibbonDialogFrameBottom,	"DialogFrameBottom"
 	dxSkinsStrs_sdxRibbonDialogFrameLeft,	"DialogFrameLeft"
-	dxSkinsStrs_sdxRibbonDialogFrameRight,	"DialogFrameRight"
-	dxSkinsStrs_sdxRibbonDocumentNameTextColor,	"DocumentNameTextColor"
-	dxSkinsStrs_sdxRibbonExtraPaneColor,	"AppMenuExtraPaneColor"
-	dxSkinsStrs_sdxRibbonFormBottom,	"FormFrameBottom"
-	dxSkinsStrs_sdxRibbonFormCaption,	"FormCaption"
+	dxSkinsStrs_sdxBarsMainMenu,	"MainMenu"
+	dxSkinsStrs_sdxBarsMainMenuCustomize,	"MainMenuCustomize"
+	dxSkinsStrs_sdxBarsMainMenuDrag,	"MainMenuDrag"
+	dxSkinsStrs_sdxBarsMainMenuLinkSelected,	"MainMenuLinkSelected"
+	dxSkinsStrs_sdxBarsMainMenuVertical,	"MainMenuVertical"
 	dxSkinsStrs_sdxBarsPopupMenu,	"PopupMenu"
 	dxSkinsStrs_sdxBarsPopupMenuCheck,	"PopupMenuCheck"
 	dxSkinsStrs_sdxBarsPopupMenuExpandButton,	"PopupMenuExpandButton"
@@ -1351,11 +1366,11 @@ BEGIN
 	dxSkinsStrs_sdxBarsPopupMenuDropDownButtonArrow,	"PopupMenuDropDownButtonArrow"
 	dxSkinsStrs_sdxTextColorNormal,	"TextColor"
 	dxSkinsStrs_sdxTextColorDisabled,	"TextColorDisabled"
-	dxSkinsStrs_sdxTextColorHot,	"TextColorHot"
-	dxSkinsStrs_sdxTextColorSelected,	"TextColorSelected"
-	dxSkinsStrs_sdxTextInactiveColor,	"TextColorInactive"
-	dxSkinsStrs_sdxRibbonAppButtonRightIndent,	"RightIndent"
-	dxSkinsStrs_sdxRibbonApplicationButton,	"FormAppButton"
+	dxSkinsStrs_sdxSpinLeftGlyph,	"SpinLeftGlyph"
+	dxSkinsStrs_sdxSpinRightGlyph,	"SpinRightGlyph"
+	dxSkinsStrs_sdxEditorButton,	"EditorButton"
+	dxSkinsStrs_sdxCloseButton,	"CloseButton"
+	dxSkinsStrs_sdxBarsBar,	"Bar"
 	dxSkinsStrs_sdxBarsBarCustomize,	"BarCustomize"
 	dxSkinsStrs_sdxBarsBarCustomizeVertical,	"BarCustomizeVertical"
 	dxSkinsStrs_sdxBarsBarFinger,	"BarDragGrip"
@@ -1367,11 +1382,11 @@ BEGIN
 	dxSkinsStrs_sdxBarsFloatBar,	"FloatBar"
 	dxSkinsStrs_sdxBarsLinkStatic,	"LinkStatic"
 	dxSkinsStrs_sdxBarsLinkSelected,	"LinkSelected"
-	dxSkinsStrs_sdxBarsMainMenu,	"MainMenu"
-	dxSkinsStrs_sdxBarsMainMenuCustomize,	"MainMenuCustomize"
-	dxSkinsStrs_sdxBarsMainMenuDrag,	"MainMenuDrag"
-	dxSkinsStrs_sdxBarsMainMenuLinkSelected,	"MainMenuLinkSelected"
-	dxSkinsStrs_sdxBarsMainMenuVertical,	"MainMenuVertical"
+	dxSkinsStrs_sdxSkinsDCHiddenBarTextColor,	"DockControlHiddenBarTextColor"
+	dxSkinsStrs_sdxSkinGroupBars,	"Bars"
+	dxSkinsStrs_sdxSkinGroupCommon,	"Common"
+	dxSkinsStrs_sdxSkinGroupDocking,	"Docking"
+	dxSkinsStrs_sdxSkinGroupEditors,	"Editors"
 	dxSkinsStrs_sdxSkinGroupForm,	"Form"
 	dxSkinsStrs_sdxSkinGroupGrid,	"Grid"
 	dxSkinsStrs_sdxSkinGroupNavBar,	"NavBar"
@@ -1383,11 +1398,11 @@ BEGIN
 	dxSkinsStrs_sdxComboButtonGlyph,	"ComboButtonGlyph"
 	dxSkinsStrs_sdxSpinUpGlyph,	"SpinUpGlyph"
 	dxSkinsStrs_sdxSpinDownGlyph,	"SpinDownGlyph"
-	dxSkinsStrs_sdxSpinLeftGlyph,	"SpinLeftGlyph"
-	dxSkinsStrs_sdxSpinRightGlyph,	"SpinRightGlyph"
-	dxSkinsStrs_sdxEditorButton,	"EditorButton"
-	dxSkinsStrs_sdxCloseButton,	"CloseButton"
-	dxSkinsStrs_sdxBarsBar,	"Bar"
+	dxSkinsStrs_sdxSkinsContentEvenColor,	"ContentEvenColor"
+	dxSkinsStrs_sdxSkinsContentOddColor,	"ContentOddColor"
+	dxSkinsStrs_sdxSkinsContentTextColor,	"ContentTextColor"
+	dxSkinsStrs_sdxSkinsHeaderBackgroundColor,	"HeaderBackgroundColor"
+	dxSkinsStrs_sdxSkinsHeaderBackgroundTextColor,	"HeaderBackgroundTextColor"
 	dxSkinsStrs_sdxSkinsLayoutControlColor,	"LayoutControlColor"
 	dxSkinsStrs_sdxSkinsSchedulerNavigatorColor,	"NavigatorColor"
 	dxSkinsStrs_sdxSkinsSelectionColor,	"SelectionColor"
@@ -1399,11 +1414,11 @@ BEGIN
 	dxSkinsStrs_sdxSkinsEditorTextColor,	"TextColor"
 	dxSkinsStrs_sdxSkinsEditorTextDisabledColor,	"TextDisabledColor"
 	dxSkinsStrs_sdxCaptionFontDelta,	"FontDelta"
-	dxSkinsStrs_sdxSkinsDCHiddenBarTextColor,	"DockControlHiddenBarTextColor"
-	dxSkinsStrs_sdxSkinGroupBars,	"Bars"
-	dxSkinsStrs_sdxSkinGroupCommon,	"Common"
-	dxSkinsStrs_sdxSkinGroupDocking,	"Docking"
-	dxSkinsStrs_sdxSkinGroupEditors,	"Editors"
+	ExtCtrls_clName3DDkShadow,	"3D Dark Shadow"
+	ExtCtrls_clName3DLight,	"3D Light"
+	ExtCtrls_clNameWindow,	"Window Background"
+	ExtCtrls_clNameWindowFrame,	"Window Frame"
+	ExtCtrls_clNameWindowText,	"Window Text"
 	WinHelpViewer_hNoKeyword,	"No help keyword specified."
 	dxGDIPlusAPI_scxGdipInvalidOperation,	"Invalid operation in GDI+"
 	dxSkinsStrs_sdxResourceType,	"DXSKINS"
@@ -1415,11 +1430,11 @@ BEGIN
 	dxSkinsStrs_sdxSkinsContainerBorderColor,	"ContainerBorderColor"
 	dxSkinsStrs_sdxSkinsContainerHighlightBorderColor,	"ContainerHighlightBorderColor"
 	dxSkinsStrs_sdxSkinsContentColor,	"ContentColor"
-	dxSkinsStrs_sdxSkinsContentEvenColor,	"ContentEvenColor"
-	dxSkinsStrs_sdxSkinsContentOddColor,	"ContentOddColor"
-	dxSkinsStrs_sdxSkinsContentTextColor,	"ContentTextColor"
-	dxSkinsStrs_sdxSkinsHeaderBackgroundColor,	"HeaderBackgroundColor"
-	dxSkinsStrs_sdxSkinsHeaderBackgroundTextColor,	"HeaderBackgroundTextColor"
+	ExtCtrls_clNameBtnShadow,	"Button Shadow"
+	ExtCtrls_clNameBtnText,	"Button Text"
+	ExtCtrls_clNameCaptionText,	"Caption Text"
+	ExtCtrls_clNameDefault,	"Default"
+	ExtCtrls_clNameGrayText,	"Gray Text"
 	ExtCtrls_clNameHighlight,	"Highlight Background"
 	ExtCtrls_clNameHighlightText,	"Highlight Text"
 	ExtCtrls_clNameInactiveBorder,	"Inactive Border"
@@ -1431,11 +1446,11 @@ BEGIN
 	ExtCtrls_clNameMenuText,	"Menu Text"
 	ExtCtrls_clNameNone,	"None"
 	ExtCtrls_clNameScrollBar,	"Scroll Bar"
-	ExtCtrls_clName3DDkShadow,	"3D Dark Shadow"
-	ExtCtrls_clName3DLight,	"3D Light"
-	ExtCtrls_clNameWindow,	"Window Background"
-	ExtCtrls_clNameWindowFrame,	"Window Frame"
-	ExtCtrls_clNameWindowText,	"Window Text"
+	ExtCtrls_clNameLime,	"Lime"
+	ExtCtrls_clNameYellow,	"Yellow"
+	ExtCtrls_clNameBlue,	"Blue"
+	ExtCtrls_clNameFuchsia,	"Fuchsia"
+	ExtCtrls_clNameAqua,	"Aqua"
 	ExtCtrls_clNameWhite,	"White"
 	ExtCtrls_clNameMoneyGreen,	"Money Green"
 	ExtCtrls_clNameSkyBlue,	"Sky Blue"
@@ -1447,11 +1462,11 @@ BEGIN
 	ExtCtrls_clNameBackground,	"Background"
 	ExtCtrls_clNameBtnFace,	"Button Face"
 	ExtCtrls_clNameBtnHighlight,	"Button Highlight"
-	ExtCtrls_clNameBtnShadow,	"Button Shadow"
-	ExtCtrls_clNameBtnText,	"Button Text"
-	ExtCtrls_clNameCaptionText,	"Caption Text"
-	ExtCtrls_clNameDefault,	"Default"
-	ExtCtrls_clNameGrayText,	"Gray Text"
+	Consts_SErrorSettingCount,	"Error setting %s.Count"
+	Consts_SListBoxMustBeVirtual,	"Listbox (%s) style must be virtual in order to set Count"
+	HelpIntfs_hNoTableOfContents,	"Unable to find a Table of Contents"
+	HelpIntfs_hNothingFound,	"No help found for %s"
+	HelpIntfs_hNoContext,	"No context-sensitive help installed"
 	HelpIntfs_hNoTopics,	"No topic-based help system installed"
 	ExtCtrls_clNameBlack,	"Black"
 	ExtCtrls_clNameMaroon,	"Maroon"
@@ -1463,27 +1478,26 @@ BEGIN
 	ExtCtrls_clNameGray,	"Gray"
 	ExtCtrls_clNameSilver,	"Silver"
 	ExtCtrls_clNameRed,	"Red"
-	ExtCtrls_clNameLime,	"Lime"
-	ExtCtrls_clNameYellow,	"Yellow"
-	ExtCtrls_clNameBlue,	"Blue"
-	ExtCtrls_clNameFuchsia,	"Fuchsia"
-	ExtCtrls_clNameAqua,	"Aqua"
+	Consts_SmkcDown,	"Down"
+	Consts_SmkcIns,	"Ins"
+	Consts_SmkcDel,	"Del"
+	Consts_SmkcShift,	"Shift+"
 	Consts_SmkcCtrl,	"Ctrl+"
 	Consts_SmkcAlt,	"Alt+"
 	Consts_SInsertLineError,	"Unable to insert a line"
 	Consts_SInvalidClipFmt,	"Invalid clipboard format"
 	Consts_SIconToClipboard,	"Clipboard does not support Icons"
 	Consts_SCannotOpenClipboard,	"Cannot open clipboard"
+	Consts_SInvalidMemoSize,	"Text exceeds memo capacity"
 	Consts_SDuplicateMenus,	"Menu '%s' is already being used by another form"
 	Consts_SDockedCtlNeedsName,	"Docked control must have a name"
 	Consts_SDockTreeRemoveError,	"Error removing control from dock tree"
 	Consts_SDockZoneNotFound,	" - Dock zone not found"
 	Consts_SDockZoneHasNoCtl,	" - Dock zone has no control"
-	Consts_SErrorSettingCount,	"Error setting %s.Count"
-	Consts_SListBoxMustBeVirtual,	"Listbox (%s) style must be virtual in order to set Count"
-	HelpIntfs_hNoTableOfContents,	"Unable to find a Table of Contents"
-	HelpIntfs_hNothingFound,	"No help found for %s"
-	HelpIntfs_hNoContext,	"No context-sensitive help installed"
+	Consts_SMsgDlgIgnore,	"&Ignore"
+	Consts_SMsgDlgAll,	"&All"
+	Consts_SMsgDlgNoToAll,	"N&o to All"
+	Consts_SMsgDlgYesToAll,	"Yes to &All"
 	Consts_SmkcBkSp,	"BkSp"
 	Consts_SmkcTab,	"Tab"
 	Consts_SmkcEsc,	"Esc"
@@ -1496,10 +1510,10 @@ BEGIN
 	Consts_SmkcLeft,	"Left"
 	Consts_SmkcUp,	"Up"
 	Consts_SmkcRight,	"Right"
-	Consts_SmkcDown,	"Down"
-	Consts_SmkcIns,	"Ins"
-	Consts_SmkcDel,	"Del"
-	Consts_SmkcShift,	"Shift+"
+	Consts_SCannotDragForm,	"Cannot drag a form"
+	Consts_SVMetafiles,	"Metafiles"
+	Consts_SVEnhMetafiles,	"Enhanced Metafiles"
+	Consts_SVIcons,	"Icons"
 	Consts_SVBitmaps,	"Bitmaps"
 	Consts_SMsgDlgWarning,	"Warning"
 	Consts_SMsgDlgError,	"Error"
@@ -1512,10 +1526,10 @@ BEGIN
 	Consts_SMsgDlgHelp,	"&Help"
 	Consts_SMsgDlgAbort,	"&Abort"
 	Consts_SMsgDlgRetry,	"&Retry"
-	Consts_SMsgDlgIgnore,	"&Ignore"
-	Consts_SMsgDlgAll,	"&All"
-	Consts_SMsgDlgNoToAll,	"N&o to All"
-	Consts_SMsgDlgYesToAll,	"Yes to &All"
+	Consts_SMenuReinserted,	"Menu inserted twice"
+	Consts_SMenuNotFound,	"Sub-menu is not in menu"
+	Consts_SNoTimers,	"Not enough timers available"
+	Consts_SGroupIndexTooLow,	"GroupIndex cannot be less than a previous menu item's GroupIndex"
 	Consts_SNoMDIForm,	"Cannot create form. No MDI forms are currently active"
 	Consts_SControlParentSetToSelf,	"A control cannot have itself as its parent"
 	Consts_SOKButton,	"OK"
@@ -1528,10 +1542,10 @@ BEGIN
 	Consts_SRetryButton,	"&Retry"
 	Consts_SAbortButton,	"Abort"
 	Consts_SAllButton,	"&All"
-	Consts_SCannotDragForm,	"Cannot drag a form"
-	Consts_SVMetafiles,	"Metafiles"
-	Consts_SVEnhMetafiles,	"Enhanced Metafiles"
-	Consts_SVIcons,	"Icons"
+	Consts_SOutOfResources,	"Out of system resources"
+	Consts_SNoCanvasHandle,	"Canvas does not allow drawing"
+	Consts_SInvalidImageSize,	"Invalid image size"
+	Consts_SInvalidImageList,	"Invalid ImageList"
 	Consts_SImageIndexError,	"Invalid ImageList Index"
 	Consts_SImageReadFail,	"Failed to read ImageList data from stream"
 	Consts_SImageWriteFail,	"Failed to write ImageList data to stream"
@@ -1544,15 +1558,15 @@ BEGIN
 	Consts_SCannotShowModal,	"Cannot make a visible window modal"
 	Consts_SScrollBarRange,	"Scrollbar property out of range"
 	Consts_SMenuIndexError,	"Menu index out of range"
-	Consts_SMenuReinserted,	"Menu inserted twice"
-	Consts_SMenuNotFound,	"Sub-menu is not in menu"
-	Consts_SNoTimers,	"Not enough timers available"
-	Consts_SGroupIndexTooLow,	"GroupIndex cannot be less than a previous menu item's GroupIndex"
+	RTLConsts_SReadOnlyProperty,	"Property is read-only"
+	RTLConsts_SResNotFound,	"Resource %s not found"
 	RTLConsts_SSeekNotImplemented,	"%s.Seek not implemented"
 	RTLConsts_SSortedListError,	"Operation not allowed on sorted list"
 	RTLConsts_SUnknownGroup,	"%s not in a class registration group"
 	RTLConsts_SUnknownProperty,	"Property %s does not exist"
 	RTLConsts_SWriteError,	"Stream write error"
+	RTLConsts_SMissingDateTimeField,	"?"
+	RTLConsts_SInvalidDateTime,	"''%s'' is not a valid date and time"
 	Consts_SInvalidBitmap,	"Bitmap image is not valid"
 	Consts_SInvalidIcon,	"Icon image is not valid"
 	Consts_SInvalidMetafile,	"Metafile is not valid"
@@ -1560,10 +1574,8 @@ BEGIN
 	Consts_SScanLine,	"Scan line index out of range"
 	Consts_SChangeIconSize,	"Cannot change the size of an icon"
 	Consts_SUnknownClipboardFormat,	"Unsupported clipboard format"
-	Consts_SOutOfResources,	"Out of system resources"
-	Consts_SNoCanvasHandle,	"Canvas does not allow drawing"
-	Consts_SInvalidImageSize,	"Invalid image size"
-	Consts_SInvalidImageList,	"Invalid ImageList"
+	RTLConsts_SDuplicateString,	"String list does not allow duplicates"
+	RTLConsts_SFCreateErrorEx,	"Cannot create file \"%s\". %s"
 	RTLConsts_SFOpenErrorEx,	"Cannot open file \"%s\". %s"
 	RTLConsts_SInvalidImage,	"Invalid stream format"
 	RTLConsts_SInvalidName,	"''%s'' is not a valid component name"
@@ -1578,8 +1590,8 @@ BEGIN
 	RTLConsts_SMemoryStreamError,	"Out of memory while expanding memory stream"
 	RTLConsts_SPropertyException,	"Error reading %s%s%s: %s"
 	RTLConsts_SReadError,	"Stream read error"
-	RTLConsts_SReadOnlyProperty,	"Property is read-only"
-	RTLConsts_SResNotFound,	"Resource %s not found"
+	SysConst_SLongDayNameSun,	"Sunday"
+	SysConst_SLongDayNameMon,	"Monday"
 	SysConst_SLongDayNameTue,	"Tuesday"
 	SysConst_SLongDayNameWed,	"Wednesday"
 	SysConst_SLongDayNameThu,	"Thursday"
@@ -1594,8 +1606,8 @@ BEGIN
 	RTLConsts_SDuplicateClass,	"A class named %s already exists"
 	RTLConsts_SDuplicateItem,	"List does not allow duplicates ($0%x)"
 	RTLConsts_SDuplicateName,	"A component named %s already exists"
-	RTLConsts_SDuplicateString,	"String list does not allow duplicates"
-	RTLConsts_SFCreateErrorEx,	"Cannot create file \"%s\". %s"
+	SysConst_SLongMonthNameApr,	"April"
+	SysConst_SLongMonthNameMay,	"May"
 	SysConst_SLongMonthNameJun,	"June"
 	SysConst_SLongMonthNameJul,	"July"
 	SysConst_SLongMonthNameAug,	"August"
@@ -1610,8 +1622,8 @@ BEGIN
 	SysConst_SShortDayNameThu,	"Thu"
 	SysConst_SShortDayNameFri,	"Fri"
 	SysConst_SShortDayNameSat,	"Sat"
-	SysConst_SLongDayNameSun,	"Sunday"
-	SysConst_SLongDayNameMon,	"Monday"
+	SysConst_SUnkOSError,	"A call to an OS function failed"
+	SysConst_SShortMonthNameJan,	"Jan"
 	SysConst_SShortMonthNameFeb,	"Feb"
 	SysConst_SShortMonthNameMar,	"Mar"
 	SysConst_SShortMonthNameApr,	"Apr"
@@ -1626,8 +1638,8 @@ BEGIN
 	SysConst_SLongMonthNameJan,	"January"
 	SysConst_SLongMonthNameFeb,	"February"
 	SysConst_SLongMonthNameMar,	"March"
-	SysConst_SLongMonthNameApr,	"April"
-	SysConst_SLongMonthNameMay,	"May"
+	SysConst_SVarTypeTooManyCustom,	"Too many custom variant types have been registered"
+	SysConst_SVarTypeCouldNotConvert,	"Could not convert variant of type (%s) into type (%s)"
 	SysConst_SVarTypeConvertOverflow,	"Overflow while converting variant of type (%s) into type (%s)"
 	SysConst_SVarOverflow,	"Variant overflow"
 	SysConst_SVarInvalid,	"Invalid argument"
@@ -1642,8 +1654,8 @@ BEGIN
 	SysConst_SAbstractError,	"Abstract Error"
 	SysConst_SModuleAccessViolation,	"Access violation at address %p in module '%s'. %s of address %p"
 	SysConst_SOSError,	"System Error.  Code: %d.\r\n%s"
-	SysConst_SUnkOSError,	"A call to an OS function failed"
-	SysConst_SShortMonthNameJan,	"Jan"
+	SysConst_SInvalidFormat,	"Format '%s' invalid or incompatible with argument"
+	SysConst_SArgumentMissing,	"No argument for format '%s'"
 	SysConst_SDispatchError,	"Variant method calls not supported"
 	SysConst_SReadAccess,	"Read"
 	SysConst_SWriteAccess,	"Write"
@@ -1658,8 +1670,8 @@ BEGIN
 	SysConst_SVarTypeOutOfRangeWithPrefix,	"Custom variant type (%s%.4x) is out of range"
 	SysConst_SVarTypeAlreadyUsedWithPrefix,	"Custom variant type (%s%.4x) already used by %s"
 	SysConst_SVarTypeNotUsableWithPrefix,	"Custom variant type (%s%.4x) is not usable"
-	SysConst_SVarTypeTooManyCustom,	"Too many custom variant types have been registered"
-	SysConst_SVarTypeCouldNotConvert,	"Could not convert variant of type (%s) into type (%s)"
+	SysConst_SRangeError,	"Range check error"
+	SysConst_SIntOverflow,	"Integer overflow"
 	SysConst_SInvalidOp,	"Invalid floating point operation"
 	SysConst_SZeroDivide,	"Floating point division by zero"
 	SysConst_SOverflow,	"Floating point overflow"
@@ -1674,10 +1686,10 @@ BEGIN
 	SysConst_SOperationAborted,	"Operation aborted"
 	SysConst_SException,	"Exception %s in module %s at %p.\r\n%s%s\r\n"
 	SysConst_SExceptTitle,	"Application Error"
-	SysConst_SInvalidFormat,	"Format '%s' invalid or incompatible with argument"
-	SysConst_SArgumentMissing,	"No argument for format '%s'"
 	SysConst_SInvalidInteger,	"'%s' is not a valid integer value"
 	SysConst_SInvalidFloat,	"'%s' is not a valid floating point value"
+	SysConst_SInvalidTime,	"'%s' is not a valid time"
+	SysConst_SInvalidDateTime,	"'%s' is not a valid date and time"
 	SysConst_STimeEncodeError,	"Invalid argument to time encode"
 	SysConst_SDateEncodeError,	"Invalid argument to date encode"
 	SysConst_SOutOfMemory,	"Out of memory"
@@ -1690,7 +1702,5 @@ BEGIN
 	SysConst_SDiskFull,	"Disk full"
 	SysConst_SInvalidInput,	"Invalid numeric input"
 	SysConst_SDivByZero,	"Division by zero"
-	SysConst_SRangeError,	"Range check error"
-	SysConst_SIntOverflow,	"Integer overflow"
 END
 

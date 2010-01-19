@@ -14,7 +14,7 @@ uses
   cxControls, cxLookAndFeels, StdCtrls, ExtCtrls, cxContainer, cxEdit,
   cxTextEdit, Menus, cxLookAndFeelPainters, cxButtons, dxSkinsForm,
   cxGraphics, cxMaskEdit, cxDropDownEdit, cxImageComboBox, cxLabel,
-  cxCheckBox;
+  cxCheckBox, cxMemo, frameHydraCustom;
 
 type
   THydraForm = class(TForm)
@@ -24,12 +24,8 @@ type
     skinController: TdxSkinController;
     lstSkins: TcxImageComboBox;
     cbUseSkin: TcxCheckBox;
-    sheetStart: TcxTabSheet;
-    lblUserName: TcxLabel;
-    edtUserName: TcxTextEdit;
-    lblPassword: TcxLabel;
-    edtPassword: TcxMaskEdit;
-    btnLogin: TcxButton;
+    pnlTip: TPanel;
+    memoTip: TcxMemo;
     procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
@@ -38,18 +34,25 @@ type
   private
     FResNames: TStringList;
     FSkinNames: TStringList;
-    { Private declarations }
+
+    FPagesInitiated: Boolean;
+    FGlobalTip: String;
 
     procedure InitThemeChooser;
-    procedure InitPages;
     procedure SelectSkinByIndex(index: Integer);
-    
+
     procedure SetResNames(const Value: TStringList);
     procedure SetSkinNames(const Value: TStringList);
+
+    procedure InitPage(n: String; c: THydraFrameClass);
+    procedure InitPages;
+
+    procedure SetGlobalTip(const Value: String);
   public
-    { Public declarations }
     property ResNames: TStringList read FResNames write SetResNames;
     property SkinNames: TStringList read FSkinNames write SetSkinNames;
+
+    property GlobalTip: String read FGlobalTip write SetGlobalTip;
   end;
 
 var
@@ -58,28 +61,40 @@ var
 implementation
 
 uses
-  dxSkinsStrs, frameHydraCustom, frameHydraHome;
+  dxSkinsStrs, frameHydraTest, frameHydraHome;
 
 {$R *.dfm}
 
 procedure THydraForm.
 FormActivate(Sender: TObject);
 begin
+  FPagesInitiated := false;
+
   InitPages;
 end;
 
 procedure THydraForm.
-InitPages;
+InitPage(n: String; c: THydraFrameClass);
 var
   sheet: TcxTabSheet;
   frame: THydraCustomFrame;
 begin
   sheet := TcxTabSheet.Create(pcMain);
-  sheet.Caption := 'Home';
+  sheet.Caption := n;
   sheet.PageControl := pcMain;
 
-  frame := THydraHomeFrame.Create(sheet);
+  frame := THydraCustomFrame(c.Create(sheet));
   frame.Parent := sheet;
+  frame.HydraContainer := HydraForm;
+end;
+
+procedure THydraForm.
+InitPages;
+begin
+  InitPage('Test', THydraTestFrame);
+  InitPage('Home', THydraHomeFrame);
+
+  FPagesInitiated := true;
 end;
 
 procedure THydraForm.
@@ -164,6 +179,15 @@ begin
       rstream.Free;
     end;
   end;
+end;
+
+procedure THydraForm.
+SetGlobalTip(const Value: String);
+begin
+  if FGlobalTip = Value then Exit;
+
+  FGlobalTip := Value;
+  memoTip.Text := FGlobalTip;
 end;
 
 end.

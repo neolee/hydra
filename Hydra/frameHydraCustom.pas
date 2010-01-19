@@ -16,14 +16,51 @@ uses
 
 type
   THydraCustomFrame = class(TFrame)
+    procedure FrameEnter(Sender: TObject);
+    procedure FrameExit(Sender: TObject);
   private
-    { Private declarations }
+    FHydraContainer: TForm;
+
+    procedure SetHydraContainer(const Value: TForm);
+  protected
+    function GetComponentTip(Sender: TObject): String; virtual;
   public
-    { Public declarations }
+    property HydraContainer: TForm read FHydraContainer write SetHydraContainer;
   end;
+
+  THydraFrameClass = class of THydraCustomFrame;
 
 implementation
 
+uses
+  formHydra;
+
 {$R *.dfm}
+
+{ THydraCustomFrame }
+
+function THydraCustomFrame.
+GetComponentTip(Sender: TObject): String;
+begin
+  Result := '';
+end;
+
+procedure THydraCustomFrame.
+SetHydraContainer(const Value: TForm);
+begin
+  FHydraContainer := Value;
+end;
+
+procedure THydraCustomFrame.
+FrameEnter(Sender: TObject);
+begin
+  THydraForm(FHydraContainer).GlobalTip := GetComponentTip(Sender);
+end;
+
+procedure THydraCustomFrame.
+FrameExit(Sender: TObject);
+begin
+  THydraForm(FHydraContainer).GlobalTip := '';
+end;
 
 end.

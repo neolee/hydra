@@ -1,9 +1,9 @@
-object HydraForm: THydraForm
-  Left = 283
-  Top = 124
-  Width = 768
-  Height = 581
-  Caption = 'Hydra Testbed'
+object OmniWSCustomForm: TOmniWSCustomForm
+  Left = 365
+  Top = 206
+  Width = 918
+  Height = 622
+  Caption = 'Omni Workspace'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -3131,79 +3131,60 @@ object HydraForm: THydraForm
   OnDestroy = FormDestroy
   PixelsPerInch = 96
   TextHeight = 13
+  object pnlBottom: TPanel
+    Left = 0
+    Top = 543
+    Width = 902
+    Height = 41
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 0
+  end
   object pnlTop: TPanel
     Left = 0
     Top = 0
-    Width = 752
-    Height = 77
+    Width = 902
+    Height = 41
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    object lblDesc: TcxLabel
-      Left = 16
-      Top = 18
-      Caption = 'Hydra is the test bed for Omni module developing and testing.'
-      Transparent = True
-    end
-    object lstSkins: TcxImageComboBox
-      Left = 94
-      Top = 48
-      Properties.Items = <>
-      Properties.OnChange = lstSkinsPropertiesEditValueChanged
-      TabOrder = 1
-      Visible = False
-      Width = 188
-    end
-    object cbUseSkin: TcxCheckBox
-      Left = 17
-      Top = 48
-      Caption = ' Use skin'
-      Properties.OnChange = cbUseSkinPropertiesChange
-      TabOrder = 0
-      Transparent = True
-      Width = 67
-    end
   end
-  object pcMain: TcxPageControl
+  object pnlCenter: TPanel
     Left = 0
-    Top = 77
-    Width = 567
-    Height = 466
+    Top = 41
+    Width = 902
+    Height = 494
     Align = alClient
-    Options = [pcoAlwaysShowGoDialogButton, pcoCloseButton, pcoGradient, pcoGradientClientArea, pcoRedrawOnResize]
-    TabOrder = 0
-    ClientRectBottom = 462
-    ClientRectLeft = 4
-    ClientRectRight = 563
-    ClientRectTop = 4
-  end
-  object pnlTip: TPanel
-    Left = 567
-    Top = 77
-    Width = 185
-    Height = 466
-    Align = alRight
-    Alignment = taLeftJustify
     BevelOuter = bvNone
+    Color = clWindow
     TabOrder = 2
-    DesignSize = (
-      185
-      466)
-    object memoTip: TcxMemo
-      Left = 4
-      Top = 20
-      Anchors = [akLeft, akTop, akRight, akBottom]
-      Style.Color = clInfoBk
+    object pcOmniWS: TcxPageControl
+      Left = 0
+      Top = 0
+      Width = 902
+      Height = 494
+      Align = alClient
       TabOrder = 0
-      Height = 442
-      Width = 177
+      ClientRectBottom = 490
+      ClientRectLeft = 4
+      ClientRectRight = 898
+      ClientRectTop = 4
     end
   end
-  object skinController: TdxSkinController
+  object splitterBottom: TcxSplitter
+    Left = 0
+    Top = 535
+    Width = 902
+    Height = 8
+    HotZoneClassName = 'TcxSimpleStyle'
+    AlignSplitter = salBottom
+    Control = pnlBottom
+  end
+  object skincOmniWS: TdxSkinController
     Kind = lfStandard
     NativeStyle = True
     SkinName = 'UserSkin'
-    Left = 368
-    Top = 40
+    Left = 864
+    Top = 48
   end
 end

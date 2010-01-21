@@ -26,7 +26,6 @@ type
     cbUseSkin: TcxCheckBox;
     pnlTip: TPanel;
     memoTip: TcxMemo;
-    procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure lstSkinsPropertiesEditValueChanged(Sender: TObject);
@@ -64,14 +63,6 @@ uses
   dxSkinsStrs, frameHydraTest, frameHydraHome;
 
 {$R *.dfm}
-
-procedure THydraForm.
-FormActivate(Sender: TObject);
-begin
-  FPagesInitiated := false;
-
-  InitPages;
-end;
 
 procedure THydraForm.
 InitPage(n: String; c: THydraFrameClass);
@@ -116,6 +107,10 @@ begin
   FSkinNames := TStringList.Create;
 
   InitThemeChooser;
+
+  FPagesInitiated := false;
+
+  InitPages;
 end;
 
 procedure THydraForm.
@@ -166,7 +161,7 @@ end;
 procedure THydraForm.
 SelectSkinByIndex(index: Integer);
 var
-  skin: string;
+  skin: String;
   rstream: TResourceStream;
 begin
   if index >= 0 then

@@ -1,11 +1,8 @@
-object OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
-  Left = 0
-  Top = 0
+inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
   Width = 435
   Height = 266
   Align = alClient
   AutoSize = True
-  TabOrder = 0
   OnResize = FrameResize
   object dockOmniWS: TdxBarDockControl
     Left = 0
@@ -18,23 +15,26 @@ object OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
   object barsOmniWS: TdxBarManager
     AutoAlignBars = True
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clHighlight
     Font.Height = -12
     Font.Name = 'Segoe UI'
     Font.Style = []
     CanCustomize = False
     Categories.Strings = (
-      'Global')
+      'Global'
+      'Space')
     Categories.ItemsVisibles = (
+      2
       2)
     Categories.Visibles = (
+      True
       True)
     PopupMenuLinks = <
       item
         Control = Owner
       end>
     Style = bmsUseLookAndFeel
-    UseSystemFont = True
+    UseSystemFont = False
     Left = 52
     Top = 44
     DockControlHeights = (
@@ -98,11 +98,20 @@ object OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
       FloatTop = 0
       FloatClientWidth = 0
       FloatClientHeight = 0
-      ItemLinks = <>
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold, fsItalic]
+      ItemLinks = <
+        item
+          Visible = True
+          ItemName = 'lblTopHint'
+        end>
       OneOnRow = False
       Row = 0
       ShowMark = False
-      UseOwnFont = False
+      UseOwnFont = True
       UseRestSpace = True
       Visible = True
       WholeRow = False
@@ -159,6 +168,12 @@ object OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
       Visible = ivAlways
       ButtonStyle = bsChecked
       GroupIndex = 1
+    end
+    object lblTopHint: TdxBarStatic
+      Caption = #31561#24453#29992#25143#36755#20837
+      Category = 1
+      Hint = #31561#24453#29992#25143#36755#20837
+      Visible = ivAlways
     end
   end
   object alOmniWS: TActionList

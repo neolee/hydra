@@ -11,10 +11,10 @@ uses
   dxSkinOffice2007Pink, dxSkinOffice2007Silver, dxSkinSilver,
   dxSkinStardust, dxSkinSummer2008, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinXmas2008Blue, dxSkinsdxBarPainter, cxClasses,
-  dxBar, ImgList, ActnList, Menus, formOmniWSCustom;
+  dxBar, ImgList, ActnList, Menus, frameOmniWSCustom, dxBarExtItems;
 
 type
-  TOmniWSGlobalMenuCustomFrame = class(TFrame)
+  TOmniWSGlobalMenuCustomFrame = class(TOmniWSCustomFrame)
     barsOmniWS: TdxBarManager;
     barOmniWSGlobal: TdxBar;
     btHelp: TdxBarButton;
@@ -35,6 +35,7 @@ type
     submenuMode: TdxBarSubItem;
     dockOmniWS: TdxBarDockControl;
     barLeftSpace: TdxBar;
+    lblTopHint: TdxBarStatic;
     procedure actHelpExecute(Sender: TObject);
     procedure actCommunityExecute(Sender: TObject);
     procedure actSettingExecute(Sender: TObject);
@@ -45,38 +46,26 @@ type
   private
     FResNames: TStringList;
     FSkinNames: TStringList;
-
-    FOmniWSMainForm: TOmniWSCustomForm;
-
-    procedure SetOmniWSMainForm(const Value: TOmniWSCustomForm);
-    function GetProperHeight: Integer;
   protected
-
+    function GetProperHeight: Integer; override;
   public
-    property OmniWSMainForm: TOmniWSCustomForm read FOmniWSMainForm write SetOmniWSMainForm;
-    property ProperHeight: Integer read GetProperHeight;
+    procedure OnWSCreate; override;
+    procedure OnWSDestroy; override;
 
     procedure OmniWSInitThemeList;
     procedure OmniWSSetTheme(Sender: TObject);
 
-    procedure OmniWSCreate;
-    procedure OmniWSDestroy;
+    procedure OmniWSUpdateTip(tip: String);
   end;
 
 implementation
 
 uses
-  dxSkinsStrs;
+  dxSkinsStrs, formOmniWSCustom;
   
 {$R *.dfm}
 
 { TOmniWSGlobalMenuCustomFrame }
-
-procedure TOmniWSGlobalMenuCustomFrame.
-SetOmniWSMainForm(const Value: TOmniWSCustomForm);
-begin
-  FOmniWSMainForm := Value;
-end;
 
 procedure TOmniWSGlobalMenuCustomFrame.
 actHelpExecute(Sender: TObject);
@@ -153,13 +142,13 @@ var
 begin
   bt := TdxBarButton(Sender);
   if bt = btModeThemeNative then begin
-    FOmniWSMainForm.skincOmniWS.NativeStyle := true;
+    TOmniWSCustomForm(WSForm).skincOmniWS.NativeStyle := true;
   end else begin
     // Otherwise, should enable skin mode
     index := bt.Tag;
 
     if index >= 0 then begin
-      FOmniWSMainForm.skincOmniWS.NativeStyle := false;
+      TOmniWSCustomForm(WSForm).skincOmniWS.NativeStyle := false;
 
       skin := FSkinNames[index];
       rstream := TResourceStream.Create(HInstance, FResNames[index], PChar(sdxResourceType));
@@ -173,8 +162,10 @@ begin
 end;
 
 procedure TOmniWSGlobalMenuCustomFrame.
-OmniWSCreate;
+OnWSCreate;
 begin
+  inherited;
+
   FResNames := TStringList.Create;
   FSkinNames := TStringList.Create;
 
@@ -182,8 +173,10 @@ begin
 end;
 
 procedure TOmniWSGlobalMenuCustomFrame.
-OmniWSDestroy;
+OnWSDestroy;
 begin
+  inherited;
+
   FreeAndNil(FResNames);
   FreeAndNil(FSkinNames);
 end;
@@ -199,6 +192,12 @@ function TOmniWSGlobalMenuCustomFrame.
 GetProperHeight: Integer;
 begin
   Result := dockOmniWS.ClientHeight;
+end;
+
+procedure TOmniWSGlobalMenuCustomFrame.
+OmniWSUpdateTip(tip: String);
+begin
+  lblTopHint.Caption := tip;
 end;
 
 end.

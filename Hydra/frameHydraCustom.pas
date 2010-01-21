@@ -19,17 +19,36 @@ type
   private
 
   protected
-
+    function GetProperHeight: Integer; override;
   public
-
+    procedure OnWSCreate; override;
+    procedure OnWSDestroy; override;
   end;
-
-  THydraFrameClass = class of THydraCustomFrame;
 
 implementation
 
 {$R *.dfm}
 
 { THydraCustomFrame }
+
+function THydraCustomFrame.
+GetProperHeight: Integer;
+begin
+  Result := 0;
+end;
+
+procedure THydraCustomFrame.
+OnWSCreate;
+begin
+  inherited;
+
+end;
+
+procedure THydraCustomFrame.
+OnWSDestroy;
+begin
+  inherited;
+
+end;
 
 end.

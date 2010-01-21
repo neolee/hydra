@@ -11,7 +11,7 @@ uses
   dxSkinOffice2007Pink, dxSkinOffice2007Silver, dxSkinSilver,
   dxSkinStardust, dxSkinSummer2008, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinXmas2008Blue, cxControls, cxSplitter, ExtCtrls,
-  dxSkinscxPCPainter, cxPC, cxLookAndFeels, dxSkinsForm;
+  dxSkinscxPCPainter, cxPC, cxLookAndFeels, dxSkinsForm, frameOmniWSCustom;
 
 type
   TOmniWSCustomForm = class(TForm)
@@ -26,13 +26,16 @@ type
   private
 
   protected
-    OmniWSGlobalMenuFrame: TFrame;
+    GlobalMenuFrame: TOmniWSCustomFrame;
+    InfoPaneFrame: TOmniWSCustomFrame;
 
-    procedure OmniWSInitGlobalMenu; virtual;
-    procedure OmniWSInitPages; virtual;
-    procedure OmniWSInitInfoPane; virtual;
+    function OmniWSAddPage(pageTitle: String; pageClass: TOmniWSCustomFrameClass): TcxTabSheet;
+
+    procedure OmniWSInitGlobalMenu; dynamic;
+    procedure OmniWSInitPages; dynamic;
+    procedure OmniWSInitInfoPane; dynamic;
   public
-
+    procedure OmniWSUpdateTip(const tip: String); dynamic;
   end;
 
 var
@@ -53,13 +56,31 @@ end;
 procedure TOmniWSCustomForm.
 FormDestroy(Sender: TObject);
 begin
-  //
+  GlobalMenuFrame.OnWSDestroy;
+  InfoPaneFrame.OnWSDestroy;
+end;
+
+function TOmniWSCustomForm.
+OmniWSAddPage(pageTitle: String; pageClass: TOmniWSCustomFrameClass): TcxTabSheet;
+var
+  sheet: TcxTabSheet;
+  frame: TOmniWSCustomFrame;
+begin
+  sheet := TcxTabSheet.Create(pcOmniWS);
+  sheet.Caption := pageTitle;
+  sheet.PageControl := pcOmniWS;
+
+  frame := TOmniWSCustomFrame(pageClass.Create(sheet));
+  frame.Parent := sheet;
+  frame.WSForm := Self;
+
+  Result := sheet;
 end;
 
 procedure TOmniWSCustomForm.
 OmniWSInitGlobalMenu;
 begin
-  
+  //
 end;
 
 procedure TOmniWSCustomForm.
@@ -71,7 +92,13 @@ end;
 procedure TOmniWSCustomForm.
 OmniWSInitPages;
 begin
+  //
+end;
 
+procedure TOmniWSCustomForm.
+OmniWSUpdateTip(const tip: String);
+begin
+  //
 end;
 
 end.

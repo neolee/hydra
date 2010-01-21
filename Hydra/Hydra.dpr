@@ -7,7 +7,12 @@ uses
   formOmniWS in 'formOmniWS.pas' {OmniWSForm},
   frameOmniWSGlobalMenuCustom in 'frameOmniWSGlobalMenuCustom.pas' {OmniWSGlobalMenuCustomFrame: TFrame},
   frameOmniWSGlobalMenu in 'frameOmniWSGlobalMenu.pas' {OmniWSGlobalMenuFrame: TFrame},
-  frameOmniWSCustom in 'frameOmniWSCustom.pas' {OmniWSCustomFrame: TFrame};
+  frameOmniWSCustom in 'frameOmniWSCustom.pas' {OmniWSCustomFrame: TFrame},
+  frameOmniWSInfoPaneCustom in 'frameOmniWSInfoPaneCustom.pas' {OmniWSInfoPaneCustomFrame: TFrame},
+  frameOmniWSInfoPane in 'frameOmniWSInfoPane.pas' {OmniWSInfoPaneFrame: TFrame},
+  frameHydraHome in 'frameHydraHome.pas' {HydraHomeFrame: TFrame},
+  unitHydraStrings in 'unitHydraStrings.pas',
+  frameHydraCreate in 'frameHydraCreate.pas' {HydraCreateFrame: TFrame};
 
 {$R *.res}
 

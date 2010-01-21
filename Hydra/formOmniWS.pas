@@ -15,7 +15,7 @@ uses
 
 type
   TOmniWSForm = class(TOmniWSCustomForm)
-    procedure FormDestroy(Sender: TObject);
+    procedure pcOmniWSChange(Sender: TObject);
   private
 
   protected
@@ -23,7 +23,7 @@ type
     procedure OmniWSInitPages; override;
     procedure OmniWSInitInfoPane; override;
   public
-
+    procedure OmniWSUpdateTip(const tip: String); override;
   end;
 
 var
@@ -32,29 +32,22 @@ var
 implementation
 
 uses
-  frameOmniWSGlobalMenu;
+  unitHydraStrings, frameOmniWSGlobalMenu, frameOmniWSInfoPane, frameHydraHome,
+  frameHydraCreate;
 
 {$R *.dfm}
 
 { TOmniWSForm }
 
 procedure TOmniWSForm.
-FormDestroy(Sender: TObject);
-begin
-  inherited;
-
-  TOmniWSGlobalMenuFrame(OmniWSGlobalMenuFrame).OmniWSDestroy;
-end;
-
-procedure TOmniWSForm.
 OmniWSInitGlobalMenu;
 begin
-  OmniWSGlobalMenuFrame := TOmniWSGlobalMenuFrame.Create(pnlTop);
-  with TOmniWSGlobalMenuFrame(OmniWSGlobalMenuFrame) do
+  GlobalMenuFrame := TOmniWSGlobalMenuFrame.Create(pnlTop);
+  with GlobalMenuFrame do
   begin
     Parent := pnlTop;
-    OmniWSMainForm := Self;
-    OmniWSCreate;
+    WSForm := Self;
+    OnWSCreate;
     
     pnlTop.Height := ProperHeight;
   end;
@@ -65,6 +58,15 @@ end;
 procedure TOmniWSForm.
 OmniWSInitInfoPane;
 begin
+  InfoPaneFrame := TOmniWSInfoPaneFrame.Create(pnlBottom);
+  with InfoPaneFrame do
+  begin
+    Parent := pnlBottom;
+    WSForm := Self;
+    OnWSCreate;
+    
+    pnlBottom.Height := ProperHeight;
+  end;
 
   inherited;
 end;
@@ -72,8 +74,27 @@ end;
 procedure TOmniWSForm.
 OmniWSInitPages;
 begin
-
+  OmniWSAddPage(PAGE_TITLE_HYDRA_HOME, THydraHomeFrame).Hint :=
+    PAGE_TIP_HYDRA_HOME;
+  OmniWSUpdateTip(PAGE_TIP_HYDRA_HOME);
+  
   inherited;
+end;
+
+procedure TOmniWSForm.
+OmniWSUpdateTip(const tip: String);
+begin
+  inherited;
+
+  TOmniWSGlobalMenuFrame(GlobalMenuFrame).OmniWSUpdateTip(tip);
+end;
+
+procedure TOmniWSForm.
+pcOmniWSChange(Sender: TObject);
+begin
+  inherited;
+
+  OmniWSUpdateTip(pcOmniWS.ActivePage.Hint);
 end;
 
 end.

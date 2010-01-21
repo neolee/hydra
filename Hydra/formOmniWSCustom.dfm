@@ -1,8 +1,8 @@
 object OmniWSCustomForm: TOmniWSCustomForm
-  Left = 365
-  Top = 206
-  Width = 918
-  Height = 622
+  Left = 335
+  Top = 136
+  Width = 900
+  Height = 700
   Caption = 'Omni Workspace'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -3127,14 +3127,15 @@ object OmniWSCustomForm: TOmniWSCustomForm
     0000000000000000000000000000000000000000000000000000000000000000
     000000000000000000000000000000000000000000000000000000000000}
   OldCreateOrder = False
+  Position = poDesktopCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   PixelsPerInch = 96
   TextHeight = 13
   object pnlBottom: TPanel
     Left = 0
-    Top = 543
-    Width = 902
+    Top = 621
+    Width = 884
     Height = 41
     Align = alBottom
     BevelOuter = bvNone
@@ -3143,7 +3144,7 @@ object OmniWSCustomForm: TOmniWSCustomForm
   object pnlTop: TPanel
     Left = 0
     Top = 0
-    Width = 902
+    Width = 884
     Height = 41
     Align = alTop
     BevelOuter = bvNone
@@ -3152,8 +3153,8 @@ object OmniWSCustomForm: TOmniWSCustomForm
   object pnlCenter: TPanel
     Left = 0
     Top = 41
-    Width = 902
-    Height = 494
+    Width = 884
+    Height = 572
     Align = alClient
     BevelOuter = bvNone
     Color = clWindow
@@ -3161,20 +3162,20 @@ object OmniWSCustomForm: TOmniWSCustomForm
     object pcOmniWS: TcxPageControl
       Left = 0
       Top = 0
-      Width = 902
-      Height = 494
+      Width = 884
+      Height = 572
       Align = alClient
       TabOrder = 0
-      ClientRectBottom = 490
+      ClientRectBottom = 568
       ClientRectLeft = 4
-      ClientRectRight = 898
+      ClientRectRight = 880
       ClientRectTop = 4
     end
   end
   object splitterBottom: TcxSplitter
     Left = 0
-    Top = 535
-    Width = 902
+    Top = 613
+    Width = 884
     Height = 8
     HotZoneClassName = 'TcxSimpleStyle'
     AlignSplitter = salBottom
@@ -3184,7 +3185,7 @@ object OmniWSCustomForm: TOmniWSCustomForm
     Kind = lfStandard
     NativeStyle = True
     SkinName = 'UserSkin'
-    Left = 864
-    Top = 48
+    Left = 20
+    Top = 56
   end
 end

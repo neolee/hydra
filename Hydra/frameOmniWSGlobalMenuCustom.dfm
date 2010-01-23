@@ -60,15 +60,15 @@ inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
       ItemLinks = <
         item
           Visible = True
-          ItemName = 'btHelp'
+          ItemName = 'btnHelp'
         end
         item
           Visible = True
-          ItemName = 'btCommunity'
+          ItemName = 'btnCommunity'
         end
         item
           Visible = True
-          ItemName = 'btSetting'
+          ItemName = 'btnSetting'
         end
         item
           Visible = True
@@ -76,7 +76,7 @@ inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
         end
         item
           Visible = True
-          ItemName = 'btLogout'
+          ItemName = 'btnLogout'
         end>
       OneOnRow = False
       Row = 0
@@ -98,11 +98,11 @@ inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
       FloatTop = 0
       FloatClientWidth = 0
       FloatClientHeight = 0
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clBlue
       Font.Height = -12
-      Font.Name = 'Segoe UI'
-      Font.Style = [fsBold, fsItalic]
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
       ItemLinks = <
         item
           Visible = True
@@ -116,15 +116,15 @@ inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
       Visible = True
       WholeRow = False
     end
-    object btHelp: TdxBarButton
+    object btnHelp: TdxBarButton
       Action = actHelp
       Category = 0
     end
-    object btCommunity: TdxBarButton
+    object btnCommunity: TdxBarButton
       Action = actCommunity
       Category = 0
     end
-    object btSetting: TdxBarButton
+    object btnSetting: TdxBarButton
       Action = actSetting
       Category = 0
     end
@@ -135,18 +135,18 @@ inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
       ItemLinks = <
         item
           Visible = True
-          ItemName = 'btModeAdvanced'
+          ItemName = 'btnModeAdvanced'
         end
         item
           Visible = True
           ItemName = 'menuModeTheme'
         end>
     end
-    object btLogout: TdxBarButton
+    object btnLogout: TdxBarButton
       Action = actLogout
       Category = 0
     end
-    object btModeAdvanced: TdxBarButton
+    object btnModeAdvanced: TdxBarButton
       Action = actModeAdvanced
       Category = 0
       ButtonStyle = bsChecked
@@ -158,10 +158,10 @@ inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
       ItemLinks = <
         item
           Visible = True
-          ItemName = 'btModeThemeNative'
+          ItemName = 'btnModeThemeNative'
         end>
     end
-    object btModeThemeNative: TdxBarButton
+    object btnModeThemeNative: TdxBarButton
       Caption = 'OS Native'
       Category = 0
       Hint = 'OS Native'
@@ -216,7 +216,7 @@ inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
     ItemLinks = <
       item
         Visible = True
-        ItemName = 'btModeAdvanced'
+        ItemName = 'btnModeAdvanced'
       end
       item
         BeginGroup = True

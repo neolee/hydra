@@ -23,6 +23,7 @@ type
     pcOmniWS: TcxPageControl;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure pcOmniWSCanClose(Sender: TObject; var ACanClose: Boolean);
   private
 
   protected
@@ -36,6 +37,7 @@ type
     procedure OmniWSInitInfoPane; dynamic;
   public
     procedure OmniWSUpdateTip(const tip: String); dynamic;
+    procedure OmniWSInvokeCommunity; dynamic;
   end;
 
 var
@@ -96,9 +98,28 @@ begin
 end;
 
 procedure TOmniWSCustomForm.
+OmniWSInvokeCommunity;
+begin
+  //
+end;
+
+procedure TOmniWSCustomForm.
 OmniWSUpdateTip(const tip: String);
 begin
   //
+end;
+
+procedure TOmniWSCustomForm.
+pcOmniWSCanClose(Sender: TObject; var ACanClose: Boolean);
+begin
+  if pcOmniWS.ActivePageIndex = 0 then begin
+    MessageDlg('您不能关闭发票助手的主页。', mtError, [mbOK], 0);
+    ACanClose := false;
+    Exit;
+  end;
+
+  ACanClose := MessageDlg(
+    '您确定要关闭当前页面？', mtConfirmation, [mbYes, mbNo], 0) = mrYes;
 end;
 
 end.

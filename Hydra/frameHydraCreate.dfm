@@ -1,7 +1,5 @@
 inherited HydraCreateFrame: THydraCreateFrame
-  Width = 435
-  Height = 266
-  object btPrint: TcxButton
+  object btnPrint: TcxButton
     Left = 176
     Top = 104
     Width = 75

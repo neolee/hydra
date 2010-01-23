@@ -9,7 +9,7 @@ uses
 
 type
   THydraCreateFrame = class(THydraCustomFrame)
-    btPrint: TcxButton;
+    btnPrint: TcxButton;
   private
     { Private declarations }
   public

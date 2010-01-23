@@ -1,8 +1,8 @@
 object OmniWSCustomForm: TOmniWSCustomForm
-  Left = 335
-  Top = 136
+  Left = 84
+  Top = 0
   Width = 900
-  Height = 700
+  Height = 677
   Caption = 'Omni Workspace'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -3134,7 +3134,7 @@ object OmniWSCustomForm: TOmniWSCustomForm
   TextHeight = 13
   object pnlBottom: TPanel
     Left = 0
-    Top = 621
+    Top = 598
     Width = 884
     Height = 41
     Align = alBottom
@@ -3154,7 +3154,7 @@ object OmniWSCustomForm: TOmniWSCustomForm
     Left = 0
     Top = 41
     Width = 884
-    Height = 572
+    Height = 549
     Align = alClient
     BevelOuter = bvNone
     Color = clWindow
@@ -3163,10 +3163,12 @@ object OmniWSCustomForm: TOmniWSCustomForm
       Left = 0
       Top = 0
       Width = 884
-      Height = 572
+      Height = 549
       Align = alClient
+      Options = [pcoAlwaysShowGoDialogButton, pcoCloseButton, pcoGradient, pcoGradientClientArea, pcoRedrawOnResize, pcoUsePageColorForTab]
       TabOrder = 0
-      ClientRectBottom = 568
+      OnCanClose = pcOmniWSCanClose
+      ClientRectBottom = 545
       ClientRectLeft = 4
       ClientRectRight = 880
       ClientRectTop = 4
@@ -3174,7 +3176,7 @@ object OmniWSCustomForm: TOmniWSCustomForm
   end
   object splitterBottom: TcxSplitter
     Left = 0
-    Top = 613
+    Top = 590
     Width = 884
     Height = 8
     HotZoneClassName = 'TcxSimpleStyle'

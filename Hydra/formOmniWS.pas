@@ -24,6 +24,7 @@ type
     procedure OmniWSInitInfoPane; override;
   public
     procedure OmniWSUpdateTip(const tip: String); override;
+    procedure OmniWSInvokeCommunity; override;
   end;
 
 var
@@ -33,7 +34,7 @@ implementation
 
 uses
   unitHydraStrings, frameOmniWSGlobalMenu, frameOmniWSInfoPane, frameHydraHome,
-  frameHydraCreate;
+  frameHydraCreate, unitOmniWSContext;
 
 {$R *.dfm}
 
@@ -79,6 +80,21 @@ begin
   OmniWSUpdateTip(PAGE_TIP_HYDRA_HOME);
   
   inherited;
+end;
+
+procedure TOmniWSForm.
+OmniWSInvokeCommunity;
+var
+  context: TOmniWSContext;
+begin
+  context := TOmniWSContext.Create;
+
+  with context do begin
+    ActivePageTitle := pcOmniWS.ActivePage.Caption;
+  end;
+
+  splitterBottom.OpenSplitter;
+  TOmniWSInfoPaneFrame(InfoPaneFrame).InvokeChat(context);
 end;
 
 procedure TOmniWSForm.

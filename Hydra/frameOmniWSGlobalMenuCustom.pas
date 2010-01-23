@@ -17,21 +17,21 @@ type
   TOmniWSGlobalMenuCustomFrame = class(TOmniWSCustomFrame)
     barsOmniWS: TdxBarManager;
     barOmniWSGlobal: TdxBar;
-    btHelp: TdxBarButton;
+    btnHelp: TdxBarButton;
     alOmniWS: TActionList;
     actHelp: TAction;
     actCommunity: TAction;
     actSetting: TAction;
     actLogout: TAction;
     actMode: TAction;
-    btCommunity: TdxBarButton;
-    btSetting: TdxBarButton;
-    btLogout: TdxBarButton;
+    btnCommunity: TdxBarButton;
+    btnSetting: TdxBarButton;
+    btnLogout: TdxBarButton;
     actModeAdvanced: TAction;
     menuMode: TdxBarPopupMenu;
-    btModeAdvanced: TdxBarButton;
+    btnModeAdvanced: TdxBarButton;
     menuModeTheme: TdxBarSubItem;
-    btModeThemeNative: TdxBarButton;
+    btnModeThemeNative: TdxBarButton;
     submenuMode: TdxBarSubItem;
     dockOmniWS: TdxBarDockControl;
     barLeftSpace: TdxBar;
@@ -46,6 +46,8 @@ type
   private
     FResNames: TStringList;
     FSkinNames: TStringList;
+
+    FAdvancedMode: Boolean;
   protected
     function GetProperHeight: Integer; override;
   public
@@ -76,7 +78,7 @@ end;
 procedure TOmniWSGlobalMenuCustomFrame.
 actCommunityExecute(Sender: TObject);
 begin
-  //
+  TOmniWSCustomForm(WSForm).OmniWSInvokeCommunity;
 end;
 
 procedure TOmniWSGlobalMenuCustomFrame.
@@ -94,7 +96,7 @@ end;
 procedure TOmniWSGlobalMenuCustomFrame.
 actLogoutExecute(Sender: TObject);
 begin
-  //
+  WSForm.Close;
 end;
 
 procedure TOmniWSGlobalMenuCustomFrame.
@@ -107,45 +109,45 @@ procedure TOmniWSGlobalMenuCustomFrame.
 OmniWSInitThemeList;
 var
   i: Integer;
-  bt: TdxBarButton;
+  btn: TdxBarButton;
   il: TdxBarItemLink;
 begin
-  btModeThemeNative.OnClick := OmniWSSetTheme;
+  btnModeThemeNative.OnClick := OmniWSSetTheme;
 
   dxSkinsPopulateSkinResources(HInstance, FResNames, FSkinNames);
 
   for i := 0 to FSkinNames.Count - 1 do begin
-    bt := barsOmniWS.AddButton;
-    bt.ButtonStyle := bsChecked;
-    bt.GroupIndex := 1;
-    bt.Caption := FSkinNames[i];
-    bt.Description := FResNames[i];
-    bt.Tag := i;
-    bt.OnClick := OmniWSSetTheme;
+    btn := barsOmniWS.AddButton;
+    btn.ButtonStyle := bsChecked;
+    btn.GroupIndex := 1;
+    btn.Caption := FSkinNames[i];
+    btn.Description := FResNames[i];
+    btn.Tag := i;
+    btn.OnClick := OmniWSSetTheme;
 
     il := menuModeTheme.ItemLinks.Add;
-    il.Item := bt;
+    il.Item := btn;
   end;
 
   // TODO: Should read from user preferences
-  btModeThemeNative.Click;
-  OmniWSSetTheme(btModeThemeNative);
+  btnModeThemeNative.Click;
+  OmniWSSetTheme(btnModeThemeNative);
 end;
 
 procedure TOmniWSGlobalMenuCustomFrame.
 OmniWSSetTheme(Sender: TObject);
 var
-  bt: TdxBarButton;
+  btn: TdxBarButton;
   index: Integer;
   skin: String;
   rstream: TResourceStream;
 begin
-  bt := TdxBarButton(Sender);
-  if bt = btModeThemeNative then begin
+  btn := TdxBarButton(Sender);
+  if btn = btnModeThemeNative then begin
     TOmniWSCustomForm(WSForm).skincOmniWS.NativeStyle := true;
   end else begin
     // Otherwise, should enable skin mode
-    index := bt.Tag;
+    index := btn.Tag;
 
     if index >= 0 then begin
       TOmniWSCustomForm(WSForm).skincOmniWS.NativeStyle := false;
@@ -168,6 +170,9 @@ begin
 
   FResNames := TStringList.Create;
   FSkinNames := TStringList.Create;
+
+  // TODO: Should read from user preferences
+  FAdvancedMode := false;
 
   OmniWSInitThemeList;
 end;

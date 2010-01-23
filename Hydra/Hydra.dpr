@@ -12,7 +12,8 @@ uses
   frameOmniWSInfoPane in 'frameOmniWSInfoPane.pas' {OmniWSInfoPaneFrame: TFrame},
   frameHydraHome in 'frameHydraHome.pas' {HydraHomeFrame: TFrame},
   unitHydraStrings in 'unitHydraStrings.pas',
-  frameHydraCreate in 'frameHydraCreate.pas' {HydraCreateFrame: TFrame};
+  frameHydraCreate in 'frameHydraCreate.pas' {HydraCreateFrame: TFrame},
+  unitOmniWSContext in 'unitOmniWSContext.pas';
 
 {$R *.res}
 

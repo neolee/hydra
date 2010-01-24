@@ -30,12 +30,13 @@ type
     GlobalMenuFrame: TOmniWSCustomFrame;
     InfoPaneFrame: TOmniWSCustomFrame;
 
-    function OmniWSAddPage(pageTitle: String; pageClass: TOmniWSCustomFrameClass): TcxTabSheet;
-
     procedure OmniWSInitGlobalMenu; dynamic;
     procedure OmniWSInitPages; dynamic;
     procedure OmniWSInitInfoPane; dynamic;
   public
+    function OmniWSAddPage(pTitle: String; pClass: TOmniWSCustomFrameClass;
+      context: TObject=nil): TcxTabSheet;
+
     procedure OmniWSUpdateTip(const tip: String); dynamic;
     procedure OmniWSInvokeCommunity; dynamic;
   end;
@@ -63,16 +64,18 @@ begin
 end;
 
 function TOmniWSCustomForm.
-OmniWSAddPage(pageTitle: String; pageClass: TOmniWSCustomFrameClass): TcxTabSheet;
+OmniWSAddPage(pTitle: String; pClass: TOmniWSCustomFrameClass;
+  context: TObject): TcxTabSheet;
 var
   sheet: TcxTabSheet;
   frame: TOmniWSCustomFrame;
 begin
   sheet := TcxTabSheet.Create(pcOmniWS);
-  sheet.Caption := pageTitle;
+  sheet.Caption := pTitle;
   sheet.PageControl := pcOmniWS;
 
-  frame := TOmniWSCustomFrame(pageClass.Create(sheet));
+  frame := TOmniWSCustomFrame(pClass.Create(sheet));
+  if context <> nil then frame.Context := context;
   frame.Parent := sheet;
   frame.WSForm := Self;
 

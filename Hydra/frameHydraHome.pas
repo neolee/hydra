@@ -14,7 +14,7 @@ uses
   dxSkinsdxLCPainter, dxLayoutControl, cxLookAndFeelPainters, cxContainer,
   cxEdit, cxGroupBox, cxRadioGroup, Menus, StdCtrls, cxButtons, CoolLabel,
   cxGraphics, cxDropDownEdit, cxCalendar, cxLabel, cxTextEdit, cxMaskEdit,
-  cxSpinEdit, ComCtrls, cxListView;
+  cxSpinEdit, ComCtrls, cxListView, frameHydraCreate, frameHydraQueryResult;
 
 type
   THydraHomeFrame = class(THydraCustomFrame)
@@ -71,8 +71,15 @@ type
     lstCreateTypes: TcxListView;
     lciCreateTypes: TdxLayoutItem;
     lcHomeGroup11: TdxLayoutGroup;
+    procedure btnCreate1Click(Sender: TObject);
+    procedure btnCreate2Click(Sender: TObject);
+    procedure btnQuery1Click(Sender: TObject);
+    procedure btnQuery2Click(Sender: TObject);
+    procedure btnQuery3Click(Sender: TObject);
   private
-
+    procedure InvokeCreateFrame(tag: THydraCreateProcessType);
+    procedure InvokeQueryResultFrame(tag: THydraQueryType);
+    procedure InvokeQueryFrame;
   protected
 
   public
@@ -86,7 +93,7 @@ var
 implementation
 
 uses
-  formOmniWSCustom, unitHydraStrings;
+  formOmniWSCustom, unitHydraStrings, frameHydraQuery;
 
 {$R *.dfm}
 
@@ -104,6 +111,124 @@ OnWSDestroy;
 begin
   inherited;
 
+end;
+
+procedure THydraHomeFrame.
+btnCreate1Click(Sender: TObject);
+begin
+  inherited;
+
+  InvokeCreateFrame(hcptSingle);
+end;
+
+procedure THydraHomeFrame.
+btnCreate2Click(Sender: TObject);
+begin
+  inherited;
+
+  InvokeCreateFrame(hcptBatch);
+end;
+
+procedure THydraHomeFrame.
+InvokeCreateFrame(tag: THydraCreateProcessType);
+var
+  context: THydraCreateContext;
+  sheet: TcxTabSheet;
+begin
+  inherited;
+
+  // Init context
+  context := THydraCreateContext.Create;
+  with context do begin
+    ProcessType := tag;
+
+    // TODO: Fill real biz codes here
+    InvoiceTypeCode := '';
+    InvoiceItemCode := '';
+  end;
+
+  // Open the Create frame
+  with TOmniWSCustomForm(WSForm) do begin
+    sheet := OmniWSAddPage(PAGE_TITLE_HYDRA_CREATE, THydraCreateFrame, context);
+    sheet.Hint := PAGE_TIP_HYDRA_CREATE;
+    pcOmniWS.ActivePage := sheet;
+
+    OmniWSUpdateTip(PAGE_TIP_HYDRA_CREATE);
+  end;
+end;
+
+procedure THydraHomeFrame.
+InvokeQueryResultFrame(tag: THydraQueryType);
+var
+  context: THydraQueryContext;
+  sheet: TcxTabSheet;
+  s: String;
+begin
+  inherited;
+
+  // Init context
+  context := THydraQueryContext.Create;
+  context.Profile := THydraQueryProfile.Create;
+  with context do begin
+    QueryType := tag;
+    
+    // TODO: Fill profile fields here
+
+  end;
+
+  if tag = hqtCreated then s := '已开'
+  else if tag = hqtReceived then s := '已收';
+
+  // Open the Result frame
+  with TOmniWSCustomForm(WSForm) do begin
+    sheet := OmniWSAddPage(s + PAGE_TITLE_HYDRA_QUERY_RESULT,
+      THydraQueryResultFrame, context);
+    sheet.Hint := PAGE_TIP_HYDRA_QUERY_RESULT;
+    pcOmniWS.ActivePage := sheet;
+
+    OmniWSUpdateTip(PAGE_TIP_HYDRA_QUERY_RESULT);
+  end;
+end;
+
+procedure THydraHomeFrame.
+btnQuery1Click(Sender: TObject);
+begin
+  inherited;
+
+  InvokeQueryResultFrame(hqtCreated);
+end;
+
+procedure THydraHomeFrame.
+btnQuery2Click(Sender: TObject);
+begin
+  inherited;
+
+  InvokeQueryResultFrame(hqtReceived);
+end;
+
+procedure THydraHomeFrame.
+InvokeQueryFrame;
+var
+  sheet: TcxTabSheet;
+begin
+  inherited;
+
+  // Open the Query frame
+  with TOmniWSCustomForm(WSForm) do begin
+    sheet := OmniWSAddPage(PAGE_TITLE_HYDRA_QUERY, THydraQueryFrame);
+    sheet.Hint := PAGE_TIP_HYDRA_QUERY;
+    pcOmniWS.ActivePage := sheet;
+
+    OmniWSUpdateTip(PAGE_TIP_HYDRA_QUERY);
+  end;
+end;
+
+procedure THydraHomeFrame.
+btnQuery3Click(Sender: TObject);
+begin
+  inherited;
+
+  InvokeQueryFrame;
 end;
 
 end.

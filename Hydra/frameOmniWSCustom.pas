@@ -11,9 +11,13 @@ type
   private
     FWSForm: TForm;
   protected
+    FContext: TObject;
+
     function GetProperHeight: Integer; virtual;
+    procedure SetContext(context: TObject); virtual;
   public
     property WSForm: TForm read FWSForm write FWSForm;
+    property Context: TObject read FContext write SetContext;
     property ProperHeight: Integer read GetProperHeight;
 
     procedure OnWSCreate; dynamic;
@@ -44,6 +48,12 @@ procedure TOmniWSCustomFrame.
 OnWSDestroy;
 begin
 
+end;
+
+procedure TOmniWSCustomFrame.
+SetContext(context: TObject);
+begin
+  FContext := context;
 end;
 
 end.

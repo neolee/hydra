@@ -1,11 +1,11 @@
 inherited HydraHomeFrame: THydraHomeFrame
-  Width = 647
-  Height = 510
+  Width = 607
+  Height = 446
   object lcHome: TdxLayoutControl
     Left = 0
     Top = 0
-    Width = 647
-    Height = 510
+    Width = 607
+    Height = 446
     Align = alClient
     TabOrder = 0
     TabStop = False
@@ -86,7 +86,7 @@ inherited HydraHomeFrame: THydraHomeFrame
       Cursor = crHandPoint
       Caption = #24320#31080#20043#21518#21457#29616#38169#35823#24590#20040#21150#65311
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clHotLight
+      Font.Color = clHighlight
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = [fsUnderline]
@@ -131,23 +131,25 @@ inherited HydraHomeFrame: THydraHomeFrame
     end
     object btnCreate1: TcxButton
       Left = 22
-      Top = 307
+      Top = 243
       Width = 75
       Height = 25
       Caption = #24320#31080
       TabOrder = 1
+      OnClick = btnCreate1Click
     end
     object btnCreate2: TcxButton
       Left = 103
-      Top = 307
+      Top = 243
       Width = 75
       Height = 25
       Caption = #25209#37327#24320#31080
       TabOrder = 2
+      OnClick = btnCreate2Click
     end
     object gbQuery: TcxGroupBox
       Left = 22
-      Top = 368
+      Top = 304
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.LookAndFeel.SkinName = ''
@@ -222,22 +224,24 @@ inherited HydraHomeFrame: THydraHomeFrame
     end
     object btnQuery1: TcxButton
       Left = 22
-      Top = 463
+      Top = 399
       Width = 75
       Height = 25
       Caption = #26597#24050#24320#31080
       TabOrder = 4
+      OnClick = btnQuery1Click
     end
     object btnQuery2: TcxButton
       Left = 103
-      Top = 463
+      Top = 399
       Width = 75
       Height = 25
       Caption = #26597#24050#25910#31080
       TabOrder = 5
+      OnClick = btnQuery2Click
     end
     object btnAdvanced1: TcxButton
-      Left = 550
+      Left = 510
       Top = 28
       Width = 75
       Height = 75
@@ -245,7 +249,7 @@ inherited HydraHomeFrame: THydraHomeFrame
       TabOrder = 7
     end
     object btnAdvanced2: TcxButton
-      Left = 550
+      Left = 510
       Top = 109
       Width = 75
       Height = 75
@@ -253,12 +257,13 @@ inherited HydraHomeFrame: THydraHomeFrame
       TabOrder = 8
     end
     object btnQuery3: TcxButton
-      Left = 445
-      Top = 463
+      Left = 405
+      Top = 399
       Width = 75
       Height = 25
       Caption = #39640#32423#26597#35810
       TabOrder = 6
+      OnClick = btnQuery3Click
     end
     object lstCreateTypes: TcxListView
       Left = 22

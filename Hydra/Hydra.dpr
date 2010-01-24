@@ -13,7 +13,9 @@ uses
   frameHydraHome in 'frameHydraHome.pas' {HydraHomeFrame: TFrame},
   unitHydraStrings in 'unitHydraStrings.pas',
   frameHydraCreate in 'frameHydraCreate.pas' {HydraCreateFrame: TFrame},
-  unitOmniWSContext in 'unitOmniWSContext.pas';
+  unitOmniWSContext in 'unitOmniWSContext.pas',
+  frameHydraQueryResult in 'frameHydraQueryResult.pas' {HydraQueryResultFrame: TFrame},
+  frameHydraQuery in 'frameHydraQuery.pas' {HydraQueryFrame: TFrame};
 
 {$R *.res}
 

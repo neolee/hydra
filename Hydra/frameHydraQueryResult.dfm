@@ -1,18 +1,18 @@
 inherited HydraQueryResultFrame: THydraQueryResultFrame
-  Width = 612
-  Height = 542
+  Width = 866
+  Height = 530
   AutoSize = True
   object lcQueryResult: TdxLayoutControl
     Left = 0
     Top = 0
-    Width = 612
-    Height = 542
+    Width = 866
+    Height = 530
     Align = alClient
     TabOrder = 0
     TabStop = False
     AutoContentSizes = [acsWidth, acsHeight]
     object btnViewQueryProfile: TcxButton
-      Left = 527
+      Left = 781
       Top = 10
       Width = 75
       Height = 25
@@ -27,6 +27,7 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       TabOrder = 2
       object gridResultDBTableView1: TcxGridDBTableView
         NavigatorButtons.ConfirmDelete = False
+        DataController.DataSource = HydraDM.dsFpxx
         DataController.Summary.DefaultGroupSummaryItems = <>
         DataController.Summary.FooterSummaryItems = <
           item
@@ -40,36 +41,71 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
         OptionsView.ColumnAutoWidth = True
         object gridResultDBTableView1Column1: TcxGridDBColumn
           Caption = #21457#31080#31181#31867
+          DataBinding.FieldName = 'FPZL_DM'
+          Width = 20
         end
         object gridResultDBTableView1Column2: TcxGridDBColumn
           Caption = #24320#31080#39033#30446
+          DataBinding.FieldName = 'KPXM_DM'
+          Width = 20
         end
         object gridResultDBTableView1Column3: TcxGridDBColumn
           Caption = #21457#31080#20195#30721
+          DataBinding.FieldName = 'FPDM'
+          Width = 25
         end
         object gridResultDBTableView1Column4: TcxGridDBColumn
           Caption = #21457#31080#21495#30721
+          DataBinding.FieldName = 'FPHM'
+          Width = 20
         end
         object gridResultDBTableView1Column5: TcxGridDBColumn
           Caption = #29366#24577
+          DataBinding.FieldName = 'FPZT_DM'
         end
         object gridResultDBTableView1Column6: TcxGridDBColumn
           Caption = #37329#39069
+          DataBinding.FieldName = 'HJ_JE'
+          Width = 22
         end
         object gridResultDBTableView1Column7: TcxGridDBColumn
           Caption = #24320#31080#26085#26399
+          DataBinding.FieldName = 'KPRQ'
+          Width = 37
         end
         object gridResultDBTableView1Column8: TcxGridDBColumn
           Caption = #24320#31080#20154
+          DataBinding.FieldName = 'KPR'
+          Width = 41
         end
         object gridResultDBTableView1Column9: TcxGridDBColumn
           Caption = #20184#27454#26041#32534#30721
+          DataBinding.FieldName = 'FKF_ZJHM'
+          Width = 201
         end
         object gridResultDBTableView1Column10: TcxGridDBColumn
           Caption = #20184#27454#26041#21517#31216
+          DataBinding.FieldName = 'FKF_MC'
+          Width = 305
         end
         object gridResultDBTableView1Column11: TcxGridDBColumn
           Caption = #25805#20316
+          PropertiesClassName = 'TcxButtonEditProperties'
+          Properties.Buttons = <
+            item
+              Caption = #20316#24223
+              Hint = #28857#20987#36825#37324#20316#24223#36825#24352#24050#24320#20855#30340#21457#31080#65292#21482#26377#22312#30830#35748#26377#24517#35201#26102#25165#36825#20040#20570
+              Kind = bkText
+            end
+            item
+              Caption = #32418#20914
+              Enabled = False
+              Hint = #24744#19981#33021#32418#20914#36825#24352#21457#31080#65292#22240#20026#19994#21153#29366#24577#19981#31526
+              Kind = bkText
+            end>
+          Properties.ViewStyle = vsButtonsOnly
+          Options.ShowEditButtons = isebAlways
+          Width = 116
         end
       end
       object gridResultLevel1: TcxGridLevel
@@ -78,7 +114,7 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
     end
     object pnlSummary: TPanel
       Left = 10
-      Top = 440
+      Top = 428
       Width = 185
       Height = 41
       Alignment = taLeftJustify
@@ -100,7 +136,7 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
     end
     object btnCustomize: TcxButton
       Left = 10
-      Top = 507
+      Top = 495
       Width = 75
       Height = 25
       Hint = #23450#21046#26597#35810#32467#26524#26174#31034#21644#25171#21360#30340#20869#23481#21644#26679#24335
@@ -110,8 +146,8 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       TabOrder = 4
     end
     object btnStat: TcxButton
-      Left = 365
-      Top = 507
+      Left = 619
+      Top = 495
       Width = 75
       Height = 25
       Caption = #32479#35745
@@ -120,8 +156,8 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       TabOrder = 5
     end
     object btnExport: TcxButton
-      Left = 446
-      Top = 507
+      Left = 700
+      Top = 495
       Width = 75
       Height = 25
       Caption = #23548#20986
@@ -130,8 +166,8 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       TabOrder = 6
     end
     object btnPrint: TcxButton
-      Left = 527
-      Top = 507
+      Left = 781
+      Top = 495
       Width = 75
       Height = 25
       Caption = #25171#21360

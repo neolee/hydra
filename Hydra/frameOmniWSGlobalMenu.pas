@@ -11,7 +11,7 @@ uses
   dxSkinOffice2007Blue, dxSkinOffice2007Green, dxSkinOffice2007Pink,
   dxSkinOffice2007Silver, dxSkinSilver, dxSkinStardust, dxSkinSummer2008,
   dxSkinsDefaultPainters, dxSkinValentine, dxSkinXmas2008Blue,
-  dxSkinsdxBarPainter, dxBar, ActnList, cxClasses;
+  dxSkinsdxBarPainter, dxBar, ActnList, cxClasses, dxBarExtItems;
 
 type
   TOmniWSGlobalMenuFrame = class(TOmniWSGlobalMenuCustomFrame)

@@ -16,7 +16,7 @@ uses
   cxDBData, ExtCtrls, cxGridLevel, cxClasses, cxGridCustomView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid,
   StdCtrls, cxButtons, cxContainer, cxTextEdit, cxMaskEdit, cxDropDownEdit,
-  cxCalendar, cxMemo;
+  cxCalendar, cxMemo, cxButtonEdit;
 
 type
   { Enum for whether the query for created or received invoice(s) }
@@ -86,6 +86,9 @@ var
   HydraQueryResultFrame: THydraQueryResultFrame;
 
 implementation
+
+uses
+  dmHydraCustom;
 
 {$R *.dfm}
 

@@ -1,12 +1,12 @@
 inherited HydraCreateFrame: THydraCreateFrame
-  Width = 648
-  Height = 524
+  Width = 701
+  Height = 553
   AutoSize = True
   object lcCreate: TdxLayoutControl
     Left = 0
     Top = 0
-    Width = 648
-    Height = 524
+    Width = 701
+    Height = 553
     Align = alClient
     TabOrder = 0
     TabStop = False
@@ -56,7 +56,7 @@ inherited HydraCreateFrame: THydraCreateFrame
     end
     object btnCreate: TcxButton
       Left = 10
-      Top = 377
+      Top = 406
       Width = 75
       Height = 25
       Hint = #26681#25454#24403#21069#22635#20805#30340#20449#24687#22312#32447#24320#20855#21457#31080#24182#25171#21360
@@ -67,7 +67,7 @@ inherited HydraCreateFrame: THydraCreateFrame
     end
     object btnReset: TcxButton
       Left = 91
-      Top = 377
+      Top = 406
       Width = 75
       Height = 25
       Hint = #28165#31354#24403#21069#22635#20805#30340#20449#24687
@@ -78,7 +78,7 @@ inherited HydraCreateFrame: THydraCreateFrame
     end
     object btnCopy: TcxButton
       Left = 172
-      Top = 377
+      Top = 406
       Width = 75
       Height = 25
       Hint = #20174#21069#19968#24352#25104#21151#24320#20855#30340#21457#31080#20013#22797#21046#20449#24687#22635#20805#24403#21069#21457#31080
@@ -88,8 +88,8 @@ inherited HydraCreateFrame: THydraCreateFrame
       TabOrder = 5
     end
     object btnNext: TcxButton
-      Left = 563
-      Top = 377
+      Left = 616
+      Top = 406
       Width = 75
       Height = 25
       Hint = #20445#25345#24403#21069#22635#20805#30340#20449#24687#32487#32493#24320#20855#19979#19968#24352#21457#31080
@@ -99,8 +99,8 @@ inherited HydraCreateFrame: THydraCreateFrame
       TabOrder = 8
     end
     object btnClearNext: TcxButton
-      Left = 482
-      Top = 377
+      Left = 535
+      Top = 406
       Width = 75
       Height = 25
       Hint = #28165#31354#24403#21069#22635#20805#30340#20449#24687#32487#32493#24320#20855#19979#19968#24352#21457#31080
@@ -110,8 +110,8 @@ inherited HydraCreateFrame: THydraCreateFrame
       TabOrder = 7
     end
     object btnDrop: TcxButton
-      Left = 401
-      Top = 377
+      Left = 454
+      Top = 406
       Width = 75
       Height = 25
       Hint = #20316#24223#21018#25165#24320#20855#30340#36825#24352#21457#31080
@@ -122,7 +122,7 @@ inherited HydraCreateFrame: THydraCreateFrame
     end
     object btnRelated1: TcxButton
       Left = 22
-      Top = 477
+      Top = 506
       Width = 100
       Height = 25
       Caption = #26597#35810#24050#24320#21457#31080
@@ -130,7 +130,7 @@ inherited HydraCreateFrame: THydraCreateFrame
     end
     object btnRelated2: TcxButton
       Left = 128
-      Top = 477
+      Top = 506
       Width = 100
       Height = 25
       Caption = #29983#25104#35760#36134#28165#21333
@@ -138,7 +138,7 @@ inherited HydraCreateFrame: THydraCreateFrame
     end
     object btnBatchPrev: TcxButton
       Left = 10
-      Top = 408
+      Top = 437
       Width = 75
       Height = 25
       Caption = #21069#19968#24352
@@ -146,23 +146,23 @@ inherited HydraCreateFrame: THydraCreateFrame
     end
     object btnBatchNext: TcxButton
       Left = 91
-      Top = 408
+      Top = 437
       Width = 75
       Height = 25
       Caption = #19979#19968#24352
       TabOrder = 10
     end
     object btnBatchCreate: TcxButton
-      Left = 482
-      Top = 408
+      Left = 535
+      Top = 437
       Width = 75
       Height = 25
       Caption = #24320#20855
       TabOrder = 11
     end
     object btnBatchCreateGo: TcxButton
-      Left = 563
-      Top = 408
+      Left = 616
+      Top = 437
       Width = 75
       Height = 25
       Caption = #24320#20855'&&'#32487#32493

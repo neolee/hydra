@@ -1,19 +1,19 @@
 inherited OmniWSInfoPaneCustomFrame: TOmniWSInfoPaneCustomFrame
-  Width = 819
-  Height = 157
+  Width = 702
+  Height = 163
   Align = alClient
   AutoSize = True
   object pcInfoPane: TcxPageControl
     Left = 0
     Top = 0
-    Width = 819
-    Height = 157
-    ActivePage = sheetInfo
+    Width = 702
+    Height = 163
+    ActivePage = sheetChat
     Align = alClient
     TabOrder = 0
-    ClientRectBottom = 153
+    ClientRectBottom = 159
     ClientRectLeft = 4
-    ClientRectRight = 815
+    ClientRectRight = 698
     ClientRectTop = 24
     object sheetInfo: TcxTabSheet
       Caption = #20449#24687
@@ -21,8 +21,8 @@ inherited OmniWSInfoPaneCustomFrame: TOmniWSInfoPaneCustomFrame
       object lcInfo: TdxLayoutControl
         Left = 0
         Top = 0
-        Width = 811
-        Height = 129
+        Width = 694
+        Height = 135
         Align = alClient
         TabOrder = 0
         TabStop = False
@@ -43,7 +43,7 @@ inherited OmniWSInfoPaneCustomFrame: TOmniWSInfoPaneCustomFrame
           Width = 185
         end
         object memoInfo2: TcxMemo
-          Left = 425
+          Left = 308
           Top = 28
           Style.BorderColor = clWindowFrame
           Style.BorderStyle = ebs3D
@@ -57,7 +57,7 @@ inherited OmniWSInfoPaneCustomFrame: TOmniWSInfoPaneCustomFrame
           Width = 185
         end
         object memoInfo3: TcxMemo
-          Left = 616
+          Left = 499
           Top = 28
           Style.BorderColor = clWindowFrame
           Style.BorderStyle = ebs3D
@@ -109,10 +109,10 @@ inherited OmniWSInfoPaneCustomFrame: TOmniWSInfoPaneCustomFrame
       Caption = #22312#32447#21672#35810
       ImageIndex = 1
       object dockChatGlobal: TdxBarDockControl
-        Left = 788
+        Left = 671
         Top = 0
         Width = 23
-        Height = 129
+        Height = 135
         Align = dalRight
         BarManager = barsChat
         SunkenBorder = False
@@ -121,15 +121,15 @@ inherited OmniWSInfoPaneCustomFrame: TOmniWSInfoPaneCustomFrame
       object pnlInput: TPanel
         Left = 0
         Top = 0
-        Width = 332
-        Height = 129
+        Width = 396
+        Height = 135
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
         object dockChatInput: TdxBarDockControl
           Left = 0
           Top = 0
-          Width = 332
+          Width = 396
           Height = 22
           Align = dalTop
           BarManager = barsChat
@@ -139,15 +139,15 @@ inherited OmniWSInfoPaneCustomFrame: TOmniWSInfoPaneCustomFrame
           Top = 22
           Align = alClient
           TabOrder = 1
-          Height = 107
-          Width = 332
+          Height = 113
+          Width = 396
         end
       end
       object pnlChatHistory: TPanel
-        Left = 340
+        Left = 404
         Top = 0
-        Width = 448
-        Height = 129
+        Width = 267
+        Height = 135
         Align = alRight
         BevelOuter = bvNone
         TabOrder = 2
@@ -156,15 +156,15 @@ inherited OmniWSInfoPaneCustomFrame: TOmniWSInfoPaneCustomFrame
           Top = 0
           Align = alClient
           TabOrder = 0
-          Height = 129
-          Width = 448
+          Height = 135
+          Width = 267
         end
       end
       object splitterChat: TcxSplitter
-        Left = 332
+        Left = 396
         Top = 0
         Width = 8
-        Height = 129
+        Height = 135
         HotZoneClassName = 'TcxSimpleStyle'
         HotZone.SizePercent = 60
         AlignSplitter = salRight

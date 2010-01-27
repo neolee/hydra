@@ -15,7 +15,8 @@ uses
   frameHydraCreate in 'frameHydraCreate.pas' {HydraCreateFrame: TFrame},
   unitOmniWSContext in 'unitOmniWSContext.pas',
   frameHydraQueryResult in 'frameHydraQueryResult.pas' {HydraQueryResultFrame: TFrame},
-  frameHydraQuery in 'frameHydraQuery.pas' {HydraQueryFrame: TFrame};
+  frameHydraQuery in 'frameHydraQuery.pas' {HydraQueryFrame: TFrame},
+  dmHydraCustom in 'dmHydraCustom.pas' {HydraDM: TDataModule};
 
 {$R *.res}
 
@@ -23,5 +24,6 @@ begin
   Application.Initialize;
   Application.Title := 'Hydra';
   Application.CreateForm(TOmniWSForm, OmniWSForm);
+  Application.CreateForm(THydraDM, HydraDM);
   Application.Run;
 end.

@@ -1,8 +1,10 @@
 inherited OmniWSGlobalMenuFrame: TOmniWSGlobalMenuFrame
   inherited barsOmniWS: TdxBarManager
     Categories.ItemsVisibles = (
+      2
       2)
     Categories.Visibles = (
+      True
       True)
     PopupMenuLinks = <
       item
@@ -10,7 +12,7 @@ inherited OmniWSGlobalMenuFrame: TOmniWSGlobalMenuFrame
     DockControlHeights = (
       0
       0
-      28
+      0
       0)
   end
 end

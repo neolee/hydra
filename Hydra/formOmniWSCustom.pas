@@ -29,6 +29,7 @@ type
   protected
     GlobalMenuFrame: TOmniWSCustomFrame;
     InfoPaneFrame: TOmniWSCustomFrame;
+    WorkingFrames: TStringList;
 
     procedure OmniWSInitGlobalMenu; dynamic;
     procedure OmniWSInitPages; dynamic;
@@ -58,9 +59,22 @@ end;
 
 procedure TOmniWSCustomForm.
 FormDestroy(Sender: TObject);
+var
+  i: Integer;
 begin
   GlobalMenuFrame.OnWSDestroy;
   InfoPaneFrame.OnWSDestroy;
+
+  if (WorkingFrames = nil) or (WorkingFrames.Count <= 0) then Exit;
+
+  for i := 0 to WorkingFrames.Count - 1 do begin
+    if WorkingFrames.Objects[i] <> nil then
+      TOmniWSCustomFrame(WorkingFrames.Objects[i]).OnWSDestroy;
+      
+    WorkingFrames.Objects[i].Destroy;
+  end;
+
+  FreeAndNil(WorkingFrames);
 end;
 
 function TOmniWSCustomForm.
@@ -78,6 +92,8 @@ begin
   if context <> nil then frame.Context := context;
   frame.Parent := sheet;
   frame.WSForm := Self;
+
+  frame.OnWSCreate;
 
   Result := sheet;
 end;
@@ -97,7 +113,7 @@ end;
 procedure TOmniWSCustomForm.
 OmniWSInitPages;
 begin
-  //
+  WorkingFrames := TStringList.Create;
 end;
 
 procedure TOmniWSCustomForm.

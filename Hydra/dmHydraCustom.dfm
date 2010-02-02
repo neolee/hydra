@@ -6,7 +6,6 @@ object HydraDM: THydraDM
   Width = 514
   object dbHydra: TDBISAMDatabase
     EngineVersion = '4.24 Build 1'
-    Connected = True
     DatabaseName = 'HydraDB'
     Directory = 'C:\Repo\hydra\Data'
     KeepTablesOpen = False
@@ -15,7 +14,6 @@ object HydraDM: THydraDM
     Top = 20
   end
   object tblFpxx: TDBISAMTable
-    Active = True
     AutoDisplayLabels = False
     CopyOnAppend = False
     DatabaseName = 'HydraDB'

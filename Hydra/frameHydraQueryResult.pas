@@ -79,7 +79,8 @@ type
   protected
     procedure SetContext(context: TObject); override;
   public
-
+    procedure OnWSCreate; override;
+    procedure OnWSDestroy; override;
   end;
 
 var
@@ -88,11 +89,26 @@ var
 implementation
 
 uses
-  dmHydraCustom;
+  xProcs, dmHydraCustom;
 
 {$R *.dfm}
 
 { THydraQueryResultFrame }
+
+procedure THydraQueryResultFrame.
+OnWSCreate;
+begin
+  inherited;
+
+  HydraDM.tblFpxx.Open;
+end;
+
+procedure THydraQueryResultFrame.
+OnWSDestroy;
+begin
+  inherited;
+
+end;
 
 procedure THydraQueryResultFrame.
 SetContext(context: TObject);

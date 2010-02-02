@@ -16,14 +16,17 @@ uses
   unitOmniWSContext in 'unitOmniWSContext.pas',
   frameHydraQueryResult in 'frameHydraQueryResult.pas' {HydraQueryResultFrame: TFrame},
   frameHydraQuery in 'frameHydraQuery.pas' {HydraQueryFrame: TFrame},
-  dmHydraCustom in 'dmHydraCustom.pas' {HydraDM: TDataModule};
+  dmHydraCustom in 'dmHydraCustom.pas' {HydraDM: TDataModule},
+  frameHydraCoreCustom in 'frameHydraCoreCustom.pas' {HydraCoreCustomFrame: TFrame},
+  frameHydraCoreCommonExpress in 'frameHydraCoreCommonExpress.pas' {HydraCoreCommonExpressFrame: TFrame},
+  frameHydraCoreShippingSpec in 'frameHydraCoreShippingSpec.pas' {HydraCoreShippingSpecFrame: TFrame};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.Title := 'Hydra';
-  Application.CreateForm(TOmniWSForm, OmniWSForm);
   Application.CreateForm(THydraDM, HydraDM);
+  Application.CreateForm(TOmniWSForm, OmniWSForm);
   Application.Run;
 end.

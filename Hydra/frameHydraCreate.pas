@@ -13,7 +13,7 @@ uses
   dxSkinStardust, dxSkinSummer2008, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinXmas2008Blue, dxSkinsdxLCPainter, dxLayoutControl,
   cxControls, cxGraphics, cxContainer, cxEdit, cxTextEdit, cxMaskEdit,
-  cxDropDownEdit, ExtCtrls;
+  cxDropDownEdit, ExtCtrls, dxSkinscxPCPainter, cxPC;
 
 type
   THydraCreateProcessType = (hcptSingle, hcptBatch);
@@ -73,12 +73,19 @@ type
     lcCreateItem14: TdxLayoutItem;
     btnBatchCreateGo: TcxButton;
     lcCreateItem15: TdxLayoutItem;
+    pcCoreFrames: TcxPageControl;
+    tsCommonExpress: TcxTabSheet;
+    tsShippingSpec: TcxTabSheet;
+    btnBatchCreateAll: TcxButton;
+    lcCreateItem16: TdxLayoutItem;
+    procedure lstTypesPropertiesChange(Sender: TObject);
   private
-
+    FCoreFrames: TStringList;
   protected
     procedure SetContext(context: TObject); override;
   public
-
+    procedure OnWSCreate; override;
+    procedure OnWSDestroy; override;
   end;
 
 var
@@ -86,9 +93,49 @@ var
 
 implementation
 
+uses
+  frameHydraCoreCustom, frameHydraCoreCommonExpress, frameHydraCoreShippingSpec;
+
 {$R *.dfm}
 
 { THydraCreateFrame }
+
+procedure THydraCreateFrame.
+OnWSCreate;
+var
+  frame: THydraCoreCustomFrame;
+begin
+  inherited;
+
+  FCoreFrames := TStringList.Create;
+
+  frame := THydraCoreCommonExpressFrame.Create(tsCommonExpress);
+  frame.Parent := tsCommonExpress;
+  frame.WSForm := Self.WSForm;
+  FCoreFrames.AddObject(tsCommonExpress.Caption, frame);
+
+  frame := THydraCoreShippingSpecFrame.Create(tsShippingSpec);
+  frame.Parent := tsShippingSpec;
+  frame.WSForm := Self.WSForm;
+  FCoreFrames.AddObject(tsShippingSpec.Caption, frame);
+
+  pcCoreFrames.ActivePageIndex := 0;
+end;
+
+procedure THydraCreateFrame.
+OnWSDestroy;
+var
+  i: Integer;
+begin
+  inherited;
+
+  if (FCoreFrames = nil) or (FCoreFrames.Count <= 0) then Exit;
+
+  for i := 0 to FCoreFrames.Count - 1 do
+    FCoreFrames.Objects[i].Destroy;
+
+  FreeAndNil(FCoreFrames);
+end;
 
 procedure THydraCreateFrame.
 SetContext(context: TObject);
@@ -104,6 +151,14 @@ begin
 
     // TODO: Other initiation
   end
+end;
+
+procedure THydraCreateFrame.
+lstTypesPropertiesChange(Sender: TObject);
+begin
+  inherited;
+
+  pcCoreFrames.ActivePageIndex := lstTypes.ItemIndex;
 end;
 
 end.

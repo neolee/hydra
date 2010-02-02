@@ -16,6 +16,8 @@ uses
 type
   TOmniWSForm = class(TOmniWSCustomForm)
     procedure pcOmniWSChange(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
   private
 
   protected
@@ -33,8 +35,8 @@ var
 implementation
 
 uses
-  unitHydraStrings, frameOmniWSGlobalMenu, frameOmniWSInfoPane, frameHydraHome,
-  frameHydraCreate, unitOmniWSContext;
+  xProcs, unitHydraStrings, frameOmniWSGlobalMenu, frameOmniWSInfoPane, frameHydraHome,
+  frameHydraCreate, unitOmniWSContext, dmHydraCustom;
 
 {$R *.dfm}
 
@@ -111,6 +113,28 @@ begin
   inherited;
 
   OmniWSUpdateTip(pcOmniWS.ActivePage.Hint);
+end;
+
+procedure TOmniWSForm.
+FormCreate(Sender: TObject);
+var
+  s: String;
+begin
+  inherited;
+
+  // Init data folder
+  s := strAddSlash(ExtractFilePath(Application.ExeName));
+  strSearchReplace(s, '\Bin\', '\Data\', []);
+
+  HydraDM.dbHydra.Directory := s;
+end;
+
+procedure TOmniWSForm.
+FormDestroy(Sender: TObject);
+begin
+  inherited;
+
+  //
 end;
 
 end.

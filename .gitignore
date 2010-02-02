@@ -1,0 +1,9 @@
+Bin
+*.dcu
+*.exe
+*.bpl
+*.map
+*.drc
+*.ddp
+*.stat
+*.lck

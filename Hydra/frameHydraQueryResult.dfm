@@ -1,18 +1,16 @@
 inherited HydraQueryResultFrame: THydraQueryResultFrame
-  Width = 866
-  Height = 530
   AutoSize = True
   object lcQueryResult: TdxLayoutControl
     Left = 0
     Top = 0
-    Width = 866
-    Height = 530
+    Width = 435
+    Height = 266
     Align = alClient
     TabOrder = 0
     TabStop = False
     AutoContentSizes = [acsWidth, acsHeight]
     object btnViewQueryProfile: TcxButton
-      Left = 781
+      Left = 350
       Top = 10
       Width = 75
       Height = 25
@@ -114,7 +112,7 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
     end
     object pnlSummary: TPanel
       Left = 10
-      Top = 428
+      Top = 164
       Width = 185
       Height = 41
       Alignment = taLeftJustify
@@ -136,7 +134,7 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
     end
     object btnCustomize: TcxButton
       Left = 10
-      Top = 495
+      Top = 231
       Width = 75
       Height = 25
       Hint = #23450#21046#26597#35810#32467#26524#26174#31034#21644#25171#21360#30340#20869#23481#21644#26679#24335
@@ -146,8 +144,8 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       TabOrder = 4
     end
     object btnStat: TcxButton
-      Left = 619
-      Top = 495
+      Left = 188
+      Top = 231
       Width = 75
       Height = 25
       Caption = #32479#35745
@@ -156,8 +154,8 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       TabOrder = 5
     end
     object btnExport: TcxButton
-      Left = 700
-      Top = 495
+      Left = 269
+      Top = 231
       Width = 75
       Height = 25
       Caption = #23548#20986
@@ -166,8 +164,8 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       TabOrder = 6
     end
     object btnPrint: TcxButton
-      Left = 781
-      Top = 495
+      Left = 350
+      Top = 231
       Width = 75
       Height = 25
       Caption = #25171#21360

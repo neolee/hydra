@@ -14,11 +14,11 @@ uses
   Menus, cxLookAndFeelPainters, StdCtrls, CoolLabel, cxLabel, cxRadioGroup,
   cxButtons, dxLayoutControl, cxContainer, cxEdit, cxTextEdit, cxMaskEdit,
   cxDropDownEdit, cxControls, cxCalendar, cxSpinEdit, cxGroupBox, ExtCtrls,
-  cxCheckBox, cxCurrencyEdit;
+  cxCheckBox, cxCurrencyEdit,
+  dxLayoutLookAndFeels;
 
 type
   THydraQueryFrame = class(THydraCustomFrame)
-    lcQuery: TdxLayoutControl;
     lblTypeOnlineDescExtra: TCoolLabel;
     lstSavedProfiles: TcxComboBox;
     btnSaveProfile: TcxButton;
@@ -36,7 +36,6 @@ type
     edtCriteria1b1: TcxDateEdit;
     lblCriteria1b: TcxLabel;
     edtCriteria1b2: TcxDateEdit;
-    lcQueryGroupRoot: TdxLayoutGroup;
     lcgProfiles: TdxLayoutGroup;
     lcQueryItem1: TdxLayoutItem;
     lcQueryItem2: TdxLayoutItem;

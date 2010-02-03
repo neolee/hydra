@@ -11,10 +11,17 @@ uses
   dxSkinOffice2007Green, dxSkinOffice2007Pink, dxSkinOffice2007Silver,
   dxSkinSilver, dxSkinStardust, dxSkinSummer2008, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinXmas2008Blue, dxSkinsdxLCPainter, dxLayoutControl,
-  cxControls;
+  cxControls, dxLayoutLookAndFeels;
 
 type
   THydraCoreCustomFrame = class(TOmniWSCustomFrame)
+    lcHydraCoreGroup_Root: TdxLayoutGroup;
+    lcHydraCore: TdxLayoutControl;
+    lnfHydraCore: TdxLayoutLookAndFeelList;
+    lnfHydraCoreStandard: TdxLayoutStandardLookAndFeel;
+    lnfHydraCoreOffice: TdxLayoutOfficeLookAndFeel;
+    lnfHydraCoreWeb: TdxLayoutWebLookAndFeel;
+    lnfHydraCoreSkin: TdxLayoutSkinLookAndFeel;
   private
     { Private declarations }
   public

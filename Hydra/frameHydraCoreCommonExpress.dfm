@@ -1,32 +1,27 @@
 inherited HydraCoreCommonExpressFrame: THydraCoreCommonExpressFrame
-  Width = 649
-  Height = 513
-  object lcCore: TdxLayoutControl
-    Left = 0
-    Top = 0
-    Width = 649
-    Height = 513
-    Align = alClient
-    TabOrder = 0
-    TabStop = False
+  Width = 650
+  Height = 562
+  inherited lcHydraCore: TdxLayoutControl
+    Width = 650
+    Height = 562
     AutoContentSizes = [acsWidth, acsHeight]
-    object lstPayer: TcxComboBox
+    object lstPayer: TcxComboBox [0]
       Left = 123
       Top = 10
       Properties.DropDownListStyle = lsFixedList
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 0
       Width = 121
     end
-    object lstPayerIDTypes: TcxComboBox
+    object lstPayerIDTypes: TcxComboBox [1]
       Left = 339
       Top = 10
       Properties.DropDownListStyle = lsFixedList
@@ -37,30 +32,30 @@ inherited HydraCoreCommonExpressFrame: THydraCoreCommonExpressFrame
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 3
       Text = #36523#20221#35777#21495
       Width = 121
     end
-    object edtPayerID: TcxTextEdit
+    object edtPayerID: TcxTextEdit [2]
       Left = 519
       Top = 10
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 5
       Width = 121
     end
-    object rbPayerTypes1: TcxRadioButton
+    object rbPayerTypes1: TcxRadioButton [3]
       Left = 123
       Top = 37
       Width = 58
@@ -72,7 +67,7 @@ inherited HydraCoreCommonExpressFrame: THydraCoreCommonExpressFrame
       TabOrder = 1
       TabStop = True
     end
-    object rbPayerTypes2: TcxRadioButton
+    object rbPayerTypes2: TcxRadioButton [4]
       Left = 187
       Top = 37
       Width = 56
@@ -82,23 +77,23 @@ inherited HydraCoreCommonExpressFrame: THydraCoreCommonExpressFrame
       ParentColor = False
       TabOrder = 2
     end
-    object edtPayerMobile: TcxTextEdit
+    object edtPayerMobile: TcxTextEdit [5]
       Left = 339
       Top = 37
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 4
       Width = 121
     end
-    object gridCreate: TcxGrid
+    object gridCreate: TcxGrid [6]
       Left = 10
       Top = 74
-      Width = 526
+      Width = 630
       Height = 123
       TabOrder = 6
       object gridCreateDBTableView1: TcxGridDBTableView
@@ -126,7 +121,7 @@ inherited HydraCoreCommonExpressFrame: THydraCoreCommonExpressFrame
         GridView = gridCreateDBTableView1
       end
     end
-    object lblCreateTotal: TcxLabel
+    object lblCreateTotal: TcxLabel [7]
       Left = 10
       Top = 203
       Align = alClient
@@ -135,63 +130,63 @@ inherited HydraCoreCommonExpressFrame: THydraCoreCommonExpressFrame
         #21512#35745#37329#39069#65288#22823#20889#65289#65306'                                                       ' +
         '               '#65288#23567#20889#65289#65306#65509' 0.00'
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       Height = 17
-      Width = 307
+      Width = 630
     end
-    object lstTaxation: TcxComboBox
+    object lstTaxation: TcxComboBox [8]
       Left = 123
       Top = 246
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 8
       Text = #24191#24030#24066#22320#26041#31246#21153#23616#24320#21457#21306#20998#23616
-      Width = 121
+      Width = 390
     end
-    object edtMemo: TcxTextEdit
+    object edtMemo: TcxTextEdit [9]
       Left = 123
       Top = 273
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 10
       Text = #32654#20803
-      Width = 121
+      Width = 517
     end
-    object edtTaxationCode: TcxTextEdit
-      Left = 518
+    object edtTaxationCode: TcxTextEdit [10]
+      Left = 519
       Top = 246
       Properties.ReadOnly = True
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 9
       Text = '244000000'
       Width = 121
     end
-    object gridSummary: TcxGrid
+    object gridSummary: TcxGrid [11]
       Left = 10
       Top = 320
-      Width = 564
-      Height = 85
+      Width = 630
+      Height = 232
       Align = alClient
       TabOrder = 11
       object gridSummaryDBTableView1: TcxGridDBTableView
@@ -225,10 +220,7 @@ inherited HydraCoreCommonExpressFrame: THydraCoreCommonExpressFrame
         GridView = gridSummaryDBTableView1
       end
     end
-    object lcCoreGroup_Root: TdxLayoutGroup
-      ShowCaption = False
-      Hidden = True
-      ShowBorder = False
+    inherited lcHydraCoreGroup_Root: TdxLayoutGroup
       object lcgBasic: TdxLayoutGroup
         Caption = 'Basic'
         ShowCaption = False

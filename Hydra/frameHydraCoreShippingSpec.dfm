@@ -1,94 +1,89 @@
 inherited HydraCoreShippingSpecFrame: THydraCoreShippingSpecFrame
-  Width = 607
-  Height = 546
-  object lcCore: TdxLayoutControl
-    Left = 0
-    Top = 0
-    Width = 607
-    Height = 546
-    Align = alClient
-    TabOrder = 0
-    TabStop = False
+  Width = 671
+  Height = 557
+  inherited lcHydraCore: TdxLayoutControl
+    Width = 671
+    Height = 557
     AutoContentSizes = [acsWidth, acsHeight]
-    object lstProfiles: TcxComboBox
+    object lstProfiles: TcxComboBox [0]
       Left = 99
       Top = 12
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 0
       Text = #20174#20445#23384#30340#26816#32034#39033#20013#24555#36895#35843#20837#25968#25454
-      Width = 121
+      Width = 481
     end
-    object btnProfileSearch: TcxButton
-      Left = 522
+    object btnProfileSearch: TcxButton [1]
+      Left = 586
       Top = 10
       Width = 75
       Height = 25
       Caption = #26597#35810
       TabOrder = 1
     end
-    object lstPayer1: TcxComboBox
+    object lstPayer1: TcxComboBox [2]
       Left = 99
       Top = 51
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 2
-      Width = 121
+      Width = 283
     end
-    object edtPayer2: TcxTextEdit
-      Left = 413
+    object edtPayer2: TcxTextEdit [3]
+      Left = 477
       Top = 51
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 6
       Width = 184
     end
-    object edtPayerIDType: TcxTextEdit
+    object edtPayerIDType: TcxTextEdit [4]
       Left = 99
       Top = 78
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 3
-      Width = 121
+      Width = 283
     end
-    object edtPayerID: TcxTextEdit
-      Left = 413
+    object edtPayerID: TcxTextEdit [5]
+      Left = 477
       Top = 78
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 7
-      Width = 121
+      Width = 184
     end
-    object rbPayerType1: TcxRadioButton
+    object rbPayerType1: TcxRadioButton [6]
       Left = 99
       Top = 105
       Width = 66
@@ -96,7 +91,7 @@ inherited HydraCoreShippingSpecFrame: THydraCoreShippingSpecFrame
       Caption = #20010#20154
       TabOrder = 4
     end
-    object rbPayerType2: TcxRadioButton
+    object rbPayerType2: TcxRadioButton [7]
       Left = 171
       Top = 105
       Width = 66
@@ -106,98 +101,98 @@ inherited HydraCoreShippingSpecFrame: THydraCoreShippingSpecFrame
       TabOrder = 5
       TabStop = True
     end
-    object cxButton1: TcxButton
-      Left = 469
+    object cxButton1: TcxButton [8]
+      Left = 533
       Top = 105
       Width = 128
       Height = 25
       Caption = #28155#21152#21040#24120#29992#20184#27454#26041#21015#34920
       TabOrder = 8
     end
-    object edtShipping1: TcxTextEdit
+    object edtShipping1: TcxTextEdit [9]
       Left = 99
       Top = 146
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 9
-      Width = 218
+      Width = 282
     end
-    object edtShipping3: TcxTextEdit
+    object edtShipping3: TcxTextEdit [10]
       Left = 99
       Top = 173
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 10
-      Width = 121
+      Width = 282
     end
-    object edtShipping5: TcxTextEdit
+    object edtShipping5: TcxTextEdit [11]
       Left = 99
       Top = 200
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 11
-      Width = 121
+      Width = 282
     end
-    object edtShipping4: TcxTextEdit
-      Left = 412
+    object edtShipping4: TcxTextEdit [12]
+      Left = 476
       Top = 173
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 13
-      Width = 121
+      Width = 185
     end
-    object edtShipping6: TcxTextEdit
-      Left = 412
+    object edtShipping6: TcxTextEdit [13]
+      Left = 476
       Top = 200
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 14
-      Width = 121
+      Width = 185
     end
-    object edtShipping2: TcxDateEdit
-      Left = 412
+    object edtShipping2: TcxDateEdit [14]
+      Left = 476
       Top = 146
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 12
       Width = 185
     end
-    object gridItems: TcxGrid
+    object gridItems: TcxGrid [15]
       Left = 10
       Top = 237
-      Width = 587
+      Width = 651
       Height = 128
       TabOrder = 15
       object gridItemsDBTableView1: TcxGridDBTableView
@@ -231,126 +226,123 @@ inherited HydraCoreShippingSpecFrame: THydraCoreShippingSpecFrame
         GridView = gridItemsDBTableView1
       end
     end
-    object lblItemsSummary: TcxLabel
+    object lblItemsSummary: TcxLabel [16]
       Left = 10
       Top = 371
       Caption = 
         #21512#35745#37329#39069#65288#22823#20889#65289#65306'                                                       ' +
         '               '#65288#23567#20889#65289#65306#65509' 0.00'
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
     end
-    object edtSelf1: TcxTextEdit
+    object edtSelf1: TcxTextEdit [17]
       Left = 99
       Top = 404
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 17
-      Width = 121
+      Width = 286
     end
-    object edtSelf3: TcxTextEdit
+    object edtSelf3: TcxTextEdit [18]
       Left = 99
       Top = 431
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 18
-      Width = 121
+      Width = 286
     end
-    object edtSelf5: TcxTextEdit
+    object edtSelf5: TcxTextEdit [19]
       Left = 99
       Top = 458
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 19
-      Width = 121
+      Width = 286
     end
-    object edtSelf6: TcxTextEdit
-      Left = 392
+    object edtSelf6: TcxTextEdit [20]
+      Left = 456
       Top = 458
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 23
-      Width = 121
+      Width = 205
     end
-    object edtSelf2: TcxTextEdit
-      Left = 392
+    object edtSelf2: TcxTextEdit [21]
+      Left = 456
       Top = 404
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 21
       Width = 205
     end
-    object edtSelf4: TcxTextEdit
-      Left = 392
+    object edtSelf4: TcxTextEdit [22]
+      Left = 456
       Top = 431
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 22
-      Width = 121
+      Width = 205
     end
-    object edtSelf7: TcxTextEdit
+    object edtSelf7: TcxTextEdit [23]
       Left = 99
       Top = 485
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 20
-      Width = 121
+      Width = 286
     end
-    object edtSelf8: TcxTextEdit
-      Left = 392
+    object edtSelf8: TcxTextEdit [24]
+      Left = 456
       Top = 485
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 24
-      Width = 121
+      Width = 205
     end
-    object lcCoreGroup_Root: TdxLayoutGroup
-      ShowCaption = False
-      Hidden = True
-      ShowBorder = False
+    inherited lcHydraCoreGroup_Root: TdxLayoutGroup
       object lcgProfiles: TdxLayoutGroup
         Caption = 'Profiles'
         Offsets.Bottom = 10

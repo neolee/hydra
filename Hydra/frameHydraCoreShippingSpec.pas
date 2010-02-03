@@ -16,12 +16,11 @@ uses
   cxDropDownEdit, cxControls, cxRadioGroup, cxCalendar, cxStyles,
   dxSkinscxPCPainter, cxCustomData, cxFilter, cxData, cxDataStorage, DB,
   cxDBData, cxGridCustomTableView, cxGridTableView, cxGridDBTableView,
-  cxGridLevel, cxClasses, cxGridCustomView, cxGrid, cxLabel;
+  cxGridLevel, cxClasses, cxGridCustomView, cxGrid, cxLabel,
+  dxLayoutLookAndFeels;
 
 type
   THydraCoreShippingSpecFrame = class(THydraCoreCustomFrame)
-    lcCoreGroup_Root: TdxLayoutGroup;
-    lcCore: TdxLayoutControl;
     lcgPayer: TdxLayoutGroup;
     lcgShipping: TdxLayoutGroup;
     lcgItems: TdxLayoutGroup;

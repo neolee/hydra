@@ -16,7 +16,8 @@ uses
   cxDBData, ExtCtrls, cxGridLevel, cxClasses, cxGridCustomView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid,
   StdCtrls, cxButtons, cxContainer, cxTextEdit, cxMaskEdit, cxDropDownEdit,
-  cxCalendar, cxMemo, cxButtonEdit;
+  cxCalendar, cxMemo, cxButtonEdit,
+  dxLayoutLookAndFeels;
 
 type
   { Enum for whether the query for created or received invoice(s) }
@@ -37,8 +38,6 @@ type
   end;
 
   THydraQueryResultFrame = class(THydraCustomFrame)
-    lcQueryResultGroup_Root: TdxLayoutGroup;
-    lcQueryResult: TdxLayoutControl;
     lcgProfiles: TdxLayoutGroup;
     lcgResult: TdxLayoutGroup;
     lcgButtons1: TdxLayoutGroup;

@@ -1,27 +1,23 @@
 inherited HydraQueryResultFrame: THydraQueryResultFrame
-  AutoSize = True
-  object lcQueryResult: TdxLayoutControl
-    Left = 0
-    Top = 0
-    Width = 435
-    Height = 266
-    Align = alClient
-    TabOrder = 0
-    TabStop = False
+  Width = 624
+  Height = 485
+  inherited lcHydra: TdxLayoutControl
+    Width = 624
+    Height = 485
     AutoContentSizes = [acsWidth, acsHeight]
-    object btnViewQueryProfile: TcxButton
-      Left = 350
+    object btnViewQueryProfile: TcxButton [0]
+      Left = 539
       Top = 10
       Width = 75
       Height = 25
       Caption = #26597#30475
       TabOrder = 1
     end
-    object gridResult: TcxGrid
+    object gridResult: TcxGrid [1]
       Left = 10
       Top = 51
-      Width = 250
-      Height = 200
+      Width = 604
+      Height = 326
       TabOrder = 2
       object gridResultDBTableView1: TcxGridDBTableView
         NavigatorButtons.ConfirmDelete = False
@@ -110,10 +106,10 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
         GridView = gridResultDBTableView1
       end
     end
-    object pnlSummary: TPanel
+    object pnlSummary: TPanel [2]
       Left = 10
-      Top = 164
-      Width = 185
+      Top = 383
+      Width = 604
       Height = 41
       Alignment = taLeftJustify
       BevelOuter = bvNone
@@ -129,12 +125,12 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
           '18345.45 '#20803)
         TabOrder = 0
         Height = 41
-        Width = 185
+        Width = 604
       end
     end
-    object btnCustomize: TcxButton
+    object btnCustomize: TcxButton [3]
       Left = 10
-      Top = 231
+      Top = 450
       Width = 75
       Height = 25
       Hint = #23450#21046#26597#35810#32467#26524#26174#31034#21644#25171#21360#30340#20869#23481#21644#26679#24335
@@ -143,9 +139,9 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       ShowHint = True
       TabOrder = 4
     end
-    object btnStat: TcxButton
-      Left = 188
-      Top = 231
+    object btnStat: TcxButton [4]
+      Left = 377
+      Top = 450
       Width = 75
       Height = 25
       Caption = #32479#35745
@@ -153,9 +149,9 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       ShowHint = True
       TabOrder = 5
     end
-    object btnExport: TcxButton
-      Left = 269
-      Top = 231
+    object btnExport: TcxButton [5]
+      Left = 458
+      Top = 450
       Width = 75
       Height = 25
       Caption = #23548#20986
@@ -163,9 +159,9 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       ShowHint = True
       TabOrder = 6
     end
-    object btnPrint: TcxButton
-      Left = 350
-      Top = 231
+    object btnPrint: TcxButton [6]
+      Left = 539
+      Top = 450
       Width = 75
       Height = 25
       Caption = #25171#21360
@@ -173,26 +169,23 @@ inherited HydraQueryResultFrame: THydraQueryResultFrame
       ShowHint = True
       TabOrder = 7
     end
-    object lstSavedProfiles: TcxComboBox
+    object lstSavedProfiles: TcxComboBox [7]
       Left = 63
       Top = 12
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 0
       Text = #20174#24050#32463#20445#23384#30340#26597#35810#26041#26696#20013#36873#25321#19968#20010#26469#36827#34892#24555#36895#26597#35810
-      Width = 519
+      Width = 470
     end
-    object lcQueryResultGroup_Root: TdxLayoutGroup
-      ShowCaption = False
-      Hidden = True
-      ShowBorder = False
+    inherited lcHydraGroup_Root: TdxLayoutGroup
       object lcgProfiles: TdxLayoutGroup
         Caption = #24050#20445#23384#30340#26597#35810#26041#26696
         ShowCaption = False

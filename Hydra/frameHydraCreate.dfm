@@ -1,17 +1,11 @@
 inherited HydraCreateFrame: THydraCreateFrame
-  Width = 736
-  Height = 622
-  AutoSize = True
-  object lcCreate: TdxLayoutControl
-    Left = 0
-    Top = 0
-    Width = 736
-    Height = 622
-    Align = alClient
-    TabOrder = 0
-    TabStop = False
+  Width = 670
+  Height = 566
+  inherited lcHydra: TdxLayoutControl
+    Width = 670
+    Height = 566
     AutoContentSizes = [acsWidth, acsHeight]
-    object lstItems: TcxComboBox
+    object lstItems: TcxComboBox [0]
       Left = 340
       Top = 10
       Properties.DropDownListStyle = lsFixedList
@@ -27,7 +21,7 @@ inherited HydraCreateFrame: THydraCreateFrame
       TabOrder = 1
       Width = 217
     end
-    object lstTypes: TcxComboBox
+    object lstTypes: TcxComboBox [1]
       Left = 63
       Top = 10
       Properties.DropDownListStyle = lsFixedList
@@ -48,11 +42,11 @@ inherited HydraCreateFrame: THydraCreateFrame
       Text = #36890#29992#21457#31080#65288#24179#25512#65289#65288#24555#36895#65289
       Width = 218
     end
-    object pnlMain: TPanel
+    object pnlMain: TPanel [2]
       Left = 10
       Top = 47
-      Width = 483
-      Height = 264
+      Width = 650
+      Height = 356
       Align = alClient
       BevelOuter = bvNone
       Caption = '<'#36825#37324#26159#24320#31080#26680#24515#25511#20214'>'
@@ -60,14 +54,14 @@ inherited HydraCreateFrame: THydraCreateFrame
       object pcCoreFrames: TcxPageControl
         Left = 0
         Top = 0
-        Width = 483
-        Height = 264
+        Width = 650
+        Height = 356
         ActivePage = tsCommonExpress
         Align = alClient
         HideTabs = True
         TabOrder = 0
-        ClientRectBottom = 264
-        ClientRectRight = 483
+        ClientRectBottom = 356
+        ClientRectRight = 650
         ClientRectTop = 0
         object tsCommonExpress: TcxTabSheet
           Caption = #36890#29992#21457#31080#65288#24179#25512#65289#65288#24555#36895#65289
@@ -79,9 +73,9 @@ inherited HydraCreateFrame: THydraCreateFrame
         end
       end
     end
-    object btnCreate: TcxButton
+    object btnCreate: TcxButton [3]
       Left = 10
-      Top = 475
+      Top = 419
       Width = 75
       Height = 25
       Hint = #26681#25454#24403#21069#22635#20805#30340#20449#24687#22312#32447#24320#20855#21457#31080#24182#25171#21360
@@ -90,9 +84,9 @@ inherited HydraCreateFrame: THydraCreateFrame
       ShowHint = True
       TabOrder = 3
     end
-    object btnReset: TcxButton
+    object btnReset: TcxButton [4]
       Left = 91
-      Top = 475
+      Top = 419
       Width = 75
       Height = 25
       Hint = #28165#31354#24403#21069#22635#20805#30340#20449#24687
@@ -101,9 +95,9 @@ inherited HydraCreateFrame: THydraCreateFrame
       ShowHint = True
       TabOrder = 4
     end
-    object btnCopy: TcxButton
+    object btnCopy: TcxButton [5]
       Left = 172
-      Top = 475
+      Top = 419
       Width = 75
       Height = 25
       Hint = #20174#21069#19968#24352#25104#21151#24320#20855#30340#21457#31080#20013#22797#21046#20449#24687#22635#20805#24403#21069#21457#31080
@@ -112,9 +106,9 @@ inherited HydraCreateFrame: THydraCreateFrame
       ShowHint = True
       TabOrder = 5
     end
-    object btnNext: TcxButton
-      Left = 651
-      Top = 475
+    object btnNext: TcxButton [6]
+      Left = 585
+      Top = 419
       Width = 75
       Height = 25
       Hint = #20445#25345#24403#21069#22635#20805#30340#20449#24687#32487#32493#24320#20855#19979#19968#24352#21457#31080
@@ -123,9 +117,9 @@ inherited HydraCreateFrame: THydraCreateFrame
       ShowHint = True
       TabOrder = 8
     end
-    object btnClearNext: TcxButton
-      Left = 570
-      Top = 475
+    object btnClearNext: TcxButton [7]
+      Left = 504
+      Top = 419
       Width = 75
       Height = 25
       Hint = #28165#31354#24403#21069#22635#20805#30340#20449#24687#32487#32493#24320#20855#19979#19968#24352#21457#31080
@@ -134,9 +128,9 @@ inherited HydraCreateFrame: THydraCreateFrame
       ShowHint = True
       TabOrder = 7
     end
-    object btnDrop: TcxButton
-      Left = 489
-      Top = 475
+    object btnDrop: TcxButton [8]
+      Left = 423
+      Top = 419
       Width = 75
       Height = 25
       Hint = #20316#24223#21018#25165#24320#20855#30340#36825#24352#21457#31080
@@ -145,66 +139,63 @@ inherited HydraCreateFrame: THydraCreateFrame
       ShowHint = True
       TabOrder = 6
     end
-    object btnRelated1: TcxButton
+    object btnRelated1: TcxButton [9]
       Left = 22
-      Top = 575
+      Top = 519
       Width = 100
       Height = 25
       Caption = #26597#35810#24050#24320#21457#31080
       TabOrder = 14
     end
-    object btnRelated2: TcxButton
+    object btnRelated2: TcxButton [10]
       Left = 128
-      Top = 575
+      Top = 519
       Width = 100
       Height = 25
       Caption = #29983#25104#35760#36134#28165#21333
       TabOrder = 15
     end
-    object btnBatchPrev: TcxButton
+    object btnBatchPrev: TcxButton [11]
       Left = 10
-      Top = 506
+      Top = 450
       Width = 75
       Height = 25
       Caption = #21069#19968#24352
       TabOrder = 9
     end
-    object btnBatchNext: TcxButton
+    object btnBatchNext: TcxButton [12]
       Left = 91
-      Top = 506
+      Top = 450
       Width = 75
       Height = 25
       Caption = #19979#19968#24352
       TabOrder = 10
     end
-    object btnBatchCreate: TcxButton
-      Left = 570
-      Top = 506
+    object btnBatchCreate: TcxButton [13]
+      Left = 504
+      Top = 450
       Width = 75
       Height = 25
       Caption = #24320#20855
       TabOrder = 12
     end
-    object btnBatchCreateGo: TcxButton
-      Left = 651
-      Top = 506
+    object btnBatchCreateGo: TcxButton [14]
+      Left = 585
+      Top = 450
       Width = 75
       Height = 25
       Caption = #24320#20855'&&'#32487#32493
       TabOrder = 13
     end
-    object btnBatchCreateAll: TcxButton
-      Left = 489
-      Top = 506
+    object btnBatchCreateAll: TcxButton [15]
+      Left = 423
+      Top = 450
       Width = 75
       Height = 25
       Caption = #20840#37096#24320#20855
       TabOrder = 11
     end
-    object lcCreateGroup_Root: TdxLayoutGroup
-      ShowCaption = False
-      Hidden = True
-      ShowBorder = False
+    inherited lcHydraGroup_Root: TdxLayoutGroup
       object lcgInfoMainButtons: TdxLayoutGroup
         AutoAligns = [aaHorizontal]
         AlignVert = avClient

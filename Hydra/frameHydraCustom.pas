@@ -12,10 +12,18 @@ uses
   dxSkinStardust, dxSkinSummer2008, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinXmas2008Blue, Menus, cxLookAndFeelPainters,
   StdCtrls, cxButtons, cxMaskEdit, cxButtonEdit, cxControls, cxContainer,
-  cxEdit, cxTextEdit, frameOmniWSCustom;
+  cxEdit, cxTextEdit, frameOmniWSCustom, dxSkinsdxLCPainter,
+  dxLayoutLookAndFeels, dxLayoutControl;
 
 type
   THydraCustomFrame = class(TOmniWSCustomFrame)
+    lcHydraGroup_Root: TdxLayoutGroup;
+    lcHydra: TdxLayoutControl;
+    lnfHydraCore: TdxLayoutLookAndFeelList;
+    lnfHydraCoreStandard: TdxLayoutStandardLookAndFeel;
+    lnfHydraCoreOffice: TdxLayoutOfficeLookAndFeel;
+    lnfHydraCoreWeb: TdxLayoutWebLookAndFeel;
+    lnfHydraCoreSkin: TdxLayoutSkinLookAndFeel;
   private
 
   protected

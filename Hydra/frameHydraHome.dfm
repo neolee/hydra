@@ -1,16 +1,11 @@
 inherited HydraHomeFrame: THydraHomeFrame
-  Width = 607
-  Height = 446
-  object lcHome: TdxLayoutControl
-    Left = 0
-    Top = 0
-    Width = 607
-    Height = 446
-    Align = alClient
-    TabOrder = 0
-    TabStop = False
+  Width = 721
+  Height = 632
+  inherited lcHydra: TdxLayoutControl
+    Width = 721
+    Height = 632
     AutoContentSizes = [acsWidth, acsHeight]
-    object lblTips1: TCoolLabel
+    object lblTips1: TCoolLabel [0]
       Left = 22
       Top = 28
       Width = 240
@@ -18,7 +13,7 @@ inherited HydraHomeFrame: THydraHomeFrame
       Cursor = crHandPoint
       Caption = #31532#19968#27425#36816#34892#65311#35266#30475#25945#23398#24405#20687#26159#26368#24555#30340#19978#25163#21150#27861
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clHotLight
+      Font.Color = clHighlight
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = [fsUnderline]
@@ -27,15 +22,15 @@ inherited HydraHomeFrame: THydraHomeFrame
       ClickColor = clHotLight
       FontColor = clHighlight
     end
-    object lblTips2: TCoolLabel
+    object lblTips2: TCoolLabel [1]
       Left = 22
       Top = 47
-      Width = 204
+      Width = 240
       Height = 13
       Cursor = crHandPoint
       Caption = #23578#26410#23436#25104#21021#22987#21270#65292#28857#20987#36825#37324#35774#32622#25171#21360#26426
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clHotLight
+      Font.Color = clHighlight
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = [fsUnderline]
@@ -44,15 +39,15 @@ inherited HydraHomeFrame: THydraHomeFrame
       ClickColor = clHotLight
       FontColor = clHighlight
     end
-    object lblTips3: TCoolLabel
+    object lblTips3: TCoolLabel [2]
       Left = 22
       Top = 66
-      Width = 204
+      Width = 240
       Height = 13
       Cursor = crHandPoint
       Caption = #24320#31080#38480#39069#20313#37327#19981#36275#65292#28857#20987#36825#37324#30003#35831#22686#21152
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clHotLight
+      Font.Color = clHighlight
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = [fsUnderline]
@@ -61,15 +56,15 @@ inherited HydraHomeFrame: THydraHomeFrame
       ClickColor = clHotLight
       FontColor = clHighlight
     end
-    object lblFAQs1: TCoolLabel
+    object lblFAQs1: TCoolLabel [3]
       Left = 292
       Top = 28
-      Width = 108
+      Width = 302
       Height = 13
       Cursor = crHandPoint
       Caption = #21457#31080#25171#27498#20102#24590#20040#21150#65311
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clHotLight
+      Font.Color = clHighlight
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = [fsUnderline]
@@ -78,10 +73,10 @@ inherited HydraHomeFrame: THydraHomeFrame
       ClickColor = clHotLight
       FontColor = clHighlight
     end
-    object lblFAQs2: TCoolLabel
+    object lblFAQs2: TCoolLabel [4]
       Left = 292
       Top = 47
-      Width = 144
+      Width = 302
       Height = 13
       Cursor = crHandPoint
       Caption = #24320#31080#20043#21518#21457#29616#38169#35823#24590#20040#21150#65311
@@ -95,15 +90,15 @@ inherited HydraHomeFrame: THydraHomeFrame
       ClickColor = clHotLight
       FontColor = clHighlight
     end
-    object lblFAQs3: TCoolLabel
+    object lblFAQs3: TCoolLabel [5]
       Left = 292
       Top = 66
-      Width = 108
+      Width = 302
       Height = 13
       Cursor = crHandPoint
       Caption = #22914#20309#29983#25104#23545#36134#28165#21333#65311
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clHotLight
+      Font.Color = clHighlight
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = [fsUnderline]
@@ -112,15 +107,15 @@ inherited HydraHomeFrame: THydraHomeFrame
       ClickColor = clHotLight
       FontColor = clHighlight
     end
-    object lblFAQs4: TCoolLabel
+    object lblFAQs4: TCoolLabel [6]
       Left = 292
       Top = 85
-      Width = 156
+      Width = 302
       Height = 13
       Cursor = crHandPoint
       Caption = #26356#22810#38382#39064#65311#28857#20987#36825#37324#21672#35810#19987#23478
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clHotLight
+      Font.Color = clHighlight
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = [fsUnderline]
@@ -129,27 +124,27 @@ inherited HydraHomeFrame: THydraHomeFrame
       ClickColor = clHotLight
       FontColor = clHighlight
     end
-    object btnCreate1: TcxButton
+    object btnCreate1: TcxButton [7]
       Left = 22
-      Top = 243
+      Top = 429
       Width = 75
       Height = 25
       Caption = #24320#31080
       TabOrder = 1
       OnClick = btnCreate1Click
     end
-    object btnCreate2: TcxButton
+    object btnCreate2: TcxButton [8]
       Left = 103
-      Top = 243
+      Top = 429
       Width = 75
       Height = 25
       Caption = #25209#37327#24320#31080
       TabOrder = 2
       OnClick = btnCreate2Click
     end
-    object gbQuery: TcxGroupBox
+    object gbQuery: TcxGroupBox [9]
       Left = 22
-      Top = 304
+      Top = 490
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.LookAndFeel.SkinName = ''
@@ -158,7 +153,7 @@ inherited HydraHomeFrame: THydraHomeFrame
       StyleHot.LookAndFeel.SkinName = ''
       TabOrder = 3
       Height = 89
-      Width = 426
+      Width = 572
       object edtQuery1: TcxSpinEdit
         Left = 71
         Top = 20
@@ -222,54 +217,54 @@ inherited HydraHomeFrame: THydraHomeFrame
         Width = 121
       end
     end
-    object btnQuery1: TcxButton
+    object btnQuery1: TcxButton [10]
       Left = 22
-      Top = 399
+      Top = 585
       Width = 75
       Height = 25
       Caption = #26597#24050#24320#31080
       TabOrder = 4
       OnClick = btnQuery1Click
     end
-    object btnQuery2: TcxButton
+    object btnQuery2: TcxButton [11]
       Left = 103
-      Top = 399
+      Top = 585
       Width = 75
       Height = 25
       Caption = #26597#24050#25910#31080
       TabOrder = 5
       OnClick = btnQuery2Click
     end
-    object btnAdvanced1: TcxButton
-      Left = 510
+    object btnAdvanced1: TcxButton [12]
+      Left = 624
       Top = 28
       Width = 75
       Height = 75
       Caption = #31995#32479#35774#32622
       TabOrder = 7
     end
-    object btnAdvanced2: TcxButton
-      Left = 510
+    object btnAdvanced2: TcxButton [13]
+      Left = 624
       Top = 109
       Width = 75
       Height = 75
       Caption = #35760#36134#28165#21333
       TabOrder = 8
     end
-    object btnQuery3: TcxButton
-      Left = 405
-      Top = 399
+    object btnQuery3: TcxButton [14]
+      Left = 519
+      Top = 585
       Width = 75
       Height = 25
       Caption = #39640#32423#26597#35810
       TabOrder = 6
       OnClick = btnQuery3Click
     end
-    object lstCreateTypes: TcxListView
+    object lstCreateTypes: TcxListView [15]
       Left = 22
       Top = 134
-      Width = 426
-      Height = 70
+      Width = 572
+      Height = 289
       ColumnClick = False
       Columns = <
         item
@@ -305,11 +300,8 @@ inherited HydraHomeFrame: THydraHomeFrame
       TabOrder = 0
       ViewStyle = vsReport
     end
-    object lcHomeGroup_Root: TdxLayoutGroup
-      ShowCaption = False
-      Hidden = True
+    inherited lcHydraGroup_Root: TdxLayoutGroup
       LayoutDirection = ldHorizontal
-      ShowBorder = False
       object lcHomeGroup9: TdxLayoutGroup
         AutoAligns = [aaVertical]
         AlignHorz = ahClient

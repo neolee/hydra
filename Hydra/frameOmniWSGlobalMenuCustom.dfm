@@ -51,13 +51,17 @@ inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
       CaptionButtons = <>
       DockControl = dockOmniWS
       DockedDockControl = dockOmniWS
-      DockedLeft = 260
+      DockedLeft = 229
       DockedTop = 0
       FloatLeft = 694
       FloatTop = 0
       FloatClientWidth = 0
       FloatClientHeight = 0
       ItemLinks = <
+        item
+          Visible = True
+          ItemName = 'btnFeatures'
+        end
         item
           Visible = True
           ItemName = 'btnHelp'
@@ -169,6 +173,10 @@ inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
       ButtonStyle = bsChecked
       GroupIndex = 1
     end
+    object btnFeatures: TdxBarButton
+      Action = actFeatures
+      Category = 0
+    end
     object lblTopHint: TdxBarStatic
       Caption = #31561#24453#29992#25143#36755#20837
       Category = 1
@@ -209,6 +217,12 @@ inherited OmniWSGlobalMenuCustomFrame: TOmniWSGlobalMenuCustomFrame
       AutoCheck = True
       Caption = #39640#32423#27169#24335
       OnExecute = actModeAdvancedExecute
+    end
+    object actFeatures: TAction
+      Category = 'Global'
+      Caption = #21151#33021
+      Hint = #26174#31034#25152#26377#21151#33021
+      OnExecute = actFeaturesExecute
     end
   end
   object menuMode: TdxBarPopupMenu

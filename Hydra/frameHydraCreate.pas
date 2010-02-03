@@ -13,7 +13,8 @@ uses
   dxSkinStardust, dxSkinSummer2008, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinXmas2008Blue, dxSkinsdxLCPainter, dxLayoutControl,
   cxControls, cxGraphics, cxContainer, cxEdit, cxTextEdit, cxMaskEdit,
-  cxDropDownEdit, ExtCtrls, dxSkinscxPCPainter, cxPC;
+  cxDropDownEdit, ExtCtrls, dxSkinscxPCPainter, cxPC,
+  dxLayoutLookAndFeels;
 
 type
   THydraCreateProcessType = (hcptSingle, hcptBatch);
@@ -29,8 +30,6 @@ type
   end;
 
   THydraCreateFrame = class(THydraCustomFrame)
-    lcCreateGroup_Root: TdxLayoutGroup;
-    lcCreate: TdxLayoutControl;
     lcgInfo: TdxLayoutGroup;
     lcgMain: TdxLayoutGroup;
     lcgButtonsMain: TdxLayoutGroup;

@@ -36,6 +36,8 @@ type
     dockOmniWS: TdxBarDockControl;
     barLeftSpace: TdxBar;
     lblTopHint: TdxBarStatic;
+    actFeatures: TAction;
+    btnFeatures: TdxBarButton;
     procedure actHelpExecute(Sender: TObject);
     procedure actCommunityExecute(Sender: TObject);
     procedure actSettingExecute(Sender: TObject);
@@ -43,6 +45,7 @@ type
     procedure actLogoutExecute(Sender: TObject);
     procedure actModeAdvancedExecute(Sender: TObject);
     procedure FrameResize(Sender: TObject);
+    procedure actFeaturesExecute(Sender: TObject);
   private
     FResNames: TStringList;
     FSkinNames: TStringList;
@@ -142,24 +145,30 @@ var
   skin: String;
   rstream: TResourceStream;
 begin
-  btn := TdxBarButton(Sender);
-  if btn = btnModeThemeNative then begin
-    TOmniWSCustomForm(WSForm).skincOmniWS.NativeStyle := true;
-  end else begin
-    // Otherwise, should enable skin mode
-    index := btn.Tag;
+  try
+    LockWindowUpdate(WSForm.Handle);
 
-    if index >= 0 then begin
-      TOmniWSCustomForm(WSForm).skincOmniWS.NativeStyle := false;
+    btn := TdxBarButton(Sender);
+    if btn = btnModeThemeNative then begin
+      TOmniWSCustomForm(WSForm).skincOmniWS.NativeStyle := true;
+    end else begin
+      // Otherwise, should enable skin mode
+      index := btn.Tag;
 
-      skin := FSkinNames[index];
-      rstream := TResourceStream.Create(HInstance, FResNames[index], PChar(sdxResourceType));
-      try
-        dxSkinsUserSkinLoadFromStream(rstream, skin);
-      finally
-        rstream.Free;
+      if index >= 0 then begin
+        TOmniWSCustomForm(WSForm).skincOmniWS.NativeStyle := false;
+
+        skin := FSkinNames[index];
+        rstream := TResourceStream.Create(HInstance, FResNames[index], PChar(sdxResourceType));
+        try
+          dxSkinsUserSkinLoadFromStream(rstream, skin);
+        finally
+          rstream.Free;
+        end;
       end;
     end;
+  finally
+    LockWindowUpdate(0);
   end;
 end;
 
@@ -190,7 +199,7 @@ procedure TOmniWSGlobalMenuCustomFrame.
 FrameResize(Sender: TObject);
 begin
   // Arrange the global toolbar
-  barOmniWSGlobal.DockedLeft := 260 + (dockOmniWS.ClientWidth - 435);
+  barOmniWSGlobal.DockedLeft := 229 + (dockOmniWS.ClientWidth - 435);
 end;
 
 function TOmniWSGlobalMenuCustomFrame.
@@ -203,6 +212,14 @@ procedure TOmniWSGlobalMenuCustomFrame.
 OmniWSUpdateTip(tip: String);
 begin
   lblTopHint.Caption := tip;
+end;
+
+procedure TOmniWSGlobalMenuCustomFrame.
+actFeaturesExecute(Sender: TObject);
+begin
+  inherited;
+
+  //
 end;
 
 end.

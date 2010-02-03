@@ -14,12 +14,11 @@ uses
   dxSkinsdxLCPainter, dxLayoutControl, cxLookAndFeelPainters, cxContainer,
   cxEdit, cxGroupBox, cxRadioGroup, Menus, StdCtrls, cxButtons, CoolLabel,
   cxGraphics, cxDropDownEdit, cxCalendar, cxLabel, cxTextEdit, cxMaskEdit,
-  cxSpinEdit, ComCtrls, cxListView, frameHydraCreate, frameHydraQueryResult;
+  cxSpinEdit, ComCtrls, cxListView, frameHydraCreate, frameHydraQueryResult,
+  dxLayoutLookAndFeels;
 
 type
   THydraHomeFrame = class(THydraCustomFrame)
-    lcHomeGroup_Root: TdxLayoutGroup;
-    lcHome: TdxLayoutControl;
     lcHomeGroup1: TdxLayoutGroup;
     lcHomeGroup2: TdxLayoutGroup;
     lcHomeGroup3: TdxLayoutGroup;

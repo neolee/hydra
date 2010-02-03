@@ -1,17 +1,11 @@
 inherited HydraQueryFrame: THydraQueryFrame
-  Width = 615
-  Height = 579
-  AutoSize = True
-  object lcQuery: TdxLayoutControl
-    Left = 0
-    Top = 0
-    Width = 615
-    Height = 579
-    Align = alClient
-    TabOrder = 0
-    TabStop = False
+  Width = 609
+  Height = 510
+  inherited lcHydra: TdxLayoutControl
+    Width = 609
+    Height = 510
     AutoContentSizes = [acsWidth, acsHeight]
-    object lblTypeOnlineDescExtra: TCoolLabel
+    object lblTypeOnlineDescExtra: TCoolLabel [0]
       Left = 295
       Top = 76
       Width = 96
@@ -19,7 +13,7 @@ inherited HydraQueryFrame: THydraQueryFrame
       Cursor = crHandPoint
       Caption = #28857#20987#36825#37324#26597#30475#35814#24773
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clHotLight
+      Font.Color = clHighlight
       Font.Height = -11
       Font.Name = 'Tahoma'
       Font.Style = [fsUnderline]
@@ -29,24 +23,24 @@ inherited HydraQueryFrame: THydraQueryFrame
       ClickColor = clHotLight
       FontColor = clHighlight
     end
-    object lstSavedProfiles: TcxComboBox
+    object lstSavedProfiles: TcxComboBox [1]
       Left = 75
       Top = 12
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 0
       Text = #20174#24050#32463#20445#23384#30340#26597#35810#26041#26696#20013#36873#25321#19968#20010#26469#36827#34892#24555#36895#26597#35810
-      Width = 121
+      Width = 443
     end
-    object btnSaveProfile: TcxButton
-      Left = 530
+    object btnSaveProfile: TcxButton [2]
+      Left = 524
       Top = 10
       Width = 75
       Height = 25
@@ -54,7 +48,7 @@ inherited HydraQueryFrame: THydraQueryFrame
       Caption = #20445#23384
       TabOrder = 1
     end
-    object rbTypeOnline: TcxRadioButton
+    object rbTypeOnline: TcxRadioButton [3]
       Left = 22
       Top = 74
       Width = 113
@@ -64,7 +58,7 @@ inherited HydraQueryFrame: THydraQueryFrame
       TabOrder = 2
       TabStop = True
     end
-    object rbTypeLocal: TcxRadioButton
+    object rbTypeLocal: TcxRadioButton [4]
       Left = 22
       Top = 101
       Width = 113
@@ -72,27 +66,27 @@ inherited HydraQueryFrame: THydraQueryFrame
       Caption = #26412#22320#26597#35810
       TabOrder = 4
     end
-    object lblTypeOnlineDesc: TcxLabel
+    object lblTypeOnlineDesc: TcxLabel [5]
       Left = 141
       Top = 74
       Caption = #22312#32447#26597#35810#26041#24335#23558#26377#26576#20123#38480#21046
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
     end
-    object lblTypeLocalDesc: TcxLabel
+    object lblTypeLocalDesc: TcxLabel [6]
       Left = 141
       Top = 101
       Caption = #26412#22320#26597#35810#20351#29992#26412#22320#25968#25454'    '#19978#27425#21516#27493#26102#38388': 2009'#24180'12'#26376'31'#26085
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
     end
-    object btnTypeLocalSync: TcxButton
+    object btnTypeLocalSync: TcxButton [7]
       Left = 446
       Top = 97
       Width = 75
@@ -100,10 +94,10 @@ inherited HydraQueryFrame: THydraQueryFrame
       Caption = #31435#21363#21516#27493
       TabOrder = 6
     end
-    object pnlCriteria1: TPanel
+    object pnlCriteria1: TPanel [8]
       Left = 75
       Top = 155
-      Width = 573
+      Width = 524
       Height = 25
       Align = alClient
       BevelOuter = bvNone
@@ -213,255 +207,252 @@ inherited HydraQueryFrame: THydraQueryFrame
         Width = 121
       end
     end
-    object edtCriteria1: TcxTextEdit
+    object edtCriteria1: TcxTextEdit [9]
       Left = 75
       Top = 196
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 8
       Width = 121
     end
-    object edtCriteria2: TcxTextEdit
+    object edtCriteria2: TcxTextEdit [10]
       Left = 267
       Top = 196
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 9
       Width = 121
     end
-    object edtCriteria3: TcxTextEdit
+    object edtCriteria3: TcxTextEdit [11]
       Left = 471
       Top = 196
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 10
       Width = 121
     end
-    object edtCriteria4: TcxTextEdit
+    object edtCriteria4: TcxTextEdit [12]
       Left = 75
       Top = 223
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 11
       Width = 121
     end
-    object lstCriteria7: TcxComboBox
+    object lstCriteria7: TcxComboBox [13]
       Left = 75
       Top = 250
       Properties.DropDownListStyle = lsFixedList
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 14
       Width = 121
     end
-    object lstCriteria8: TcxComboBox
+    object lstCriteria8: TcxComboBox [14]
       Left = 267
       Top = 250
       Properties.DropDownListStyle = lsFixedList
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 15
       Width = 121
     end
-    object lstCriteria9: TcxComboBox
+    object lstCriteria9: TcxComboBox [15]
       Left = 471
       Top = 250
       Properties.DropDownListStyle = lsFixedList
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 16
       Width = 121
     end
-    object lstCriteria10: TcxComboBox
+    object lstCriteria10: TcxComboBox [16]
       Left = 75
       Top = 277
       Properties.DropDownListStyle = lsFixedList
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 17
       Width = 121
     end
-    object lstCriteria11: TcxComboBox
+    object lstCriteria11: TcxComboBox [17]
       Left = 267
       Top = 277
       Properties.DropDownListStyle = lsFixedList
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 18
       Width = 121
     end
-    object lstCriteria12: TcxComboBox
+    object lstCriteria12: TcxComboBox [18]
       Left = 471
       Top = 277
       Properties.DropDownListStyle = lsFixedList
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
       Style.ButtonStyle = bts3D
       Style.PopupBorderStyle = epbsFrame3D
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 19
       Width = 121
     end
-    object chkAdvanced: TcxCheckBox
+    object chkAdvanced: TcxCheckBox [19]
       Left = 10
       Top = 324
       Caption = #39640#32423#26597#35810#65288#26681#25454#29305#23450#31080#31181#30340#26126#20449#20449#24687#26597#35810#65289
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 20
       OnClick = chkAdvancedClick
-      Width = 121
+      Width = 589
     end
-    object edtAdvanced1: TcxTextEdit
+    object edtAdvanced1: TcxTextEdit [20]
       Left = 91
       Top = 351
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 21
-      Width = 121
+      Width = 508
     end
-    object edtAdvanced2: TcxCurrencyEdit
+    object edtAdvanced2: TcxCurrencyEdit [21]
       Left = 91
       Top = 378
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 22
       Width = 121
     end
-    object edtAdvanced3: TcxCurrencyEdit
+    object edtAdvanced3: TcxCurrencyEdit [22]
       Left = 283
       Top = 378
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 23
       Width = 121
     end
-    object edtCriteria5: TcxCurrencyEdit
+    object edtCriteria5: TcxCurrencyEdit [23]
       Left = 267
       Top = 223
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 12
       Width = 121
     end
-    object edtCriteria6: TcxCurrencyEdit
+    object edtCriteria6: TcxCurrencyEdit [24]
       Left = 471
       Top = 223
       Style.BorderColor = clWindowFrame
       Style.BorderStyle = ebs3D
       Style.HotTrack = False
-      Style.LookAndFeel.SkinName = ''
-      StyleDisabled.LookAndFeel.SkinName = ''
-      StyleFocused.LookAndFeel.SkinName = ''
-      StyleHot.LookAndFeel.SkinName = ''
+      Style.LookAndFeel.SkinName = 'UserSkin'
+      StyleDisabled.LookAndFeel.SkinName = 'UserSkin'
+      StyleFocused.LookAndFeel.SkinName = 'UserSkin'
+      StyleHot.LookAndFeel.SkinName = 'UserSkin'
       TabOrder = 13
       Width = 121
     end
-    object btnQuery: TcxButton
-      Left = 449
-      Top = 544
+    object btnQuery: TcxButton [25]
+      Left = 443
+      Top = 475
       Width = 75
       Height = 25
       Caption = #26597#35810
       Default = True
       TabOrder = 24
     end
-    object btnResult: TcxButton
-      Left = 530
-      Top = 544
+    object btnResult: TcxButton [26]
+      Left = 524
+      Top = 475
       Width = 75
       Height = 25
       Caption = #37325#32622
       TabOrder = 25
     end
-    object lcQueryGroupRoot: TdxLayoutGroup
-      ShowCaption = False
-      Hidden = True
-      ShowBorder = False
+    inherited lcHydraGroup_Root: TdxLayoutGroup
       object lcgProfiles: TdxLayoutGroup
         AutoAligns = [aaHorizontal]
         Caption = #26597#35810#26041#26696
